@@ -44,6 +44,7 @@ public class MatriceSparsa {
 	public void set(int i, int j, int x) {
 		if(mat.equals(null)){
 			mat.add(new Elem(i, j, x));
+			return;
 		}
 
 		ListIterator it = mat.listIterator();
@@ -55,6 +56,7 @@ public class MatriceSparsa {
 			pos = e.getI()*((int)Math.pow(10, e.getI())) + e.getJ();
 			if(target >= pos){
 				it.set(new Elem(i, j, x));
+				System.out.println("Entrato");
 			}
 		}		
 		return ;	
@@ -66,8 +68,12 @@ public class MatriceSparsa {
 	}
 
 	public String toString() {
-		// TODO: Implement here
-		return null;
+		String ris;
+		Elem[] a =  mat.toArray();
+		for(int i =0; i< a.size(); i++){
+			ris += a[i].toString() + " "; 
+		}
+		return ris; 
 	}
 
 	public MatriceSparsa add(MatriceSparsa mat1, MatriceSparsa mat2) {
