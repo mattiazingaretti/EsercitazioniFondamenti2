@@ -42,22 +42,28 @@ public class MatriceSparsa {
 	}
 
 	public void set(int i, int j, int x) {
-		if(mat.equals(null)){
+		//Se la lista è vuota inserisci l'elemento in coda tanto è indifferente.
+		if(mat.size() == 0 && x != 0){
 			mat.add(new Elem(i, j, x));
 			return;
 		}
-
-		ListIterator it = mat.listIterator();
-		
-		int pos, target;
-		target = i*((int)Math.pow(10, i) ) + j;
+		//Altrimenti scorri la linkedList e inserisci opportunamente il valore.
+		//Scorro la Linked List
+		ListIterator it = mat.listIterator(0);
+		int pos, target, counter = 0;
+		target = i*10 + j;
 		while(it.hasNext()){
 			Elem e =(Elem) it.next();
-			pos = e.getI()*((int)Math.pow(10, e.getI())) + e.getJ();
-			if(target >= pos){
-				it.set(new Elem(i, j, x));
-				System.out.println("Entrato");
+			if(i>=e.getI() &&  j >= e.getJ() && x != 0){
+				mat.add(mat.size()- counter, new Elem(i,j,x));
+				counter++;
+				return;
+			}else if(i == e.getI() && j == e.getJ() && x == 0){	
+				mat.remove(counter);
+				counter++;
+				return;
 			}
+			
 		}		
 		return ;	
 	}
@@ -66,14 +72,15 @@ public class MatriceSparsa {
 		// TODO: Implement here
 		return 0;
 	}
-
+	@Override
 	public String toString() {
-		String ris;
-		Elem[] a =  mat.toArray();
-		for(int i =0; i< a.size(); i++){
-			ris += a[i].toString() + " "; 
+		String ris = "";
+		ListIterator li = mat.listIterator(0);
+		while(li.hasNext()){
+			Elem e = (Elem) li.next();
+			ris += "( "+ e.getI()+ " "+ e.getJ() +" "+ e.getVal() + " )\n";
 		}
-		return ris; 
+		return ris;
 	}
 
 	public MatriceSparsa add(MatriceSparsa mat1, MatriceSparsa mat2) {

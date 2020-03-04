@@ -12,7 +12,7 @@ public class Main {
 		System.out.println(mat1);
 		System.out.println("##################################");
 		System.out.println("##################################");
-		System.out.println("");
+	/*	System.out.println("");
 		System.out.println("");
 		System.out.println("Added -> 0,0,5");
 		mat1.set(0, 0, 5);
@@ -38,6 +38,7 @@ public class Main {
 		mat1.set(18, 17, 12);
 		System.out.println(mat1);
 		System.out.println("");
+	*/
 	}
 
 	private static MatriceSparsa readMatFF() {
