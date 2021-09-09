@@ -1,3 +1,4 @@
+import java.util.Random;
 
 // Implementazione del Bubble Sort in Java 
 class BubbleSort { 
@@ -25,20 +26,56 @@ class BubbleSort {
   
     // Driver per provare la classe 
     public static void main(String args[]) { 
-		
-		int i;
+
+		BubbleSort ob = new BubbleSort(); 
+
+		int i, random=0;
 		int l  = args.length;
+		int passedArr[] = new int[l];
 		
+
 		for(i = 0; i < l ; i++){
+			if(args[i].equals("rnd")){
+				if(i < l){
+					int dim = Integer.parseInt(args[i+1]); //try catch omitted for less boilerplate
+					Random r = new Random();
+					int randArr[] = new int[dim];
+					for(int j = 0; j< dim; j++)
+						 randArr[j] = r.nextInt(100);
+					random = 1;
+					System.out.println("Random array of size: "+dim); 
+					ob.printArray(randArr); 
+					 
+					long old = System.currentTimeMillis();
+					ob.bubbleSort(randArr);
+					System.out.println("Execution time: "+(System.currentTimeMillis()-old)); 
+					System.out.println("Sorted array");
+					ob.printArray(randArr); 
+					
+					break;
+				}else{
+					System.out.println("Missing size params: Usage: java BubbleSort rnd [SIZE]");
+					break;
+				}	
+			}else{
 			
+				try{
+					passedArr[i] = Integer.parseInt(args[i]);
+				}catch (NumberFormatException e ){
+					e.printStackTrace();
+				}
+			
+			}
 		}
-		 
 		
-        BubbleSort ob = new BubbleSort(); 
-        int arr[] = {64, 34, 25, 12, 22, 11, 90}; 
-        ob.bubbleSort(arr); 
-        System.out.println("Sorted array"); 
-        ob.printArray(arr); 
-    } 
+        if (random != 1){
+			long old = System.currentTimeMillis();
+			ob.bubbleSort(passedArr);
+			System.out.println("Execution time: "+(System.currentTimeMillis()-old)); 
+			System.out.println("Sorted array"); 
+			ob.printArray(passedArr); 
+		}
+        
+	}
 } 
 
