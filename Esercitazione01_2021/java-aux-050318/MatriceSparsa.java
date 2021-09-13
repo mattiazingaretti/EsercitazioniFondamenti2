@@ -37,9 +37,10 @@ public class MatriceSparsa {
 	public void set(int i, int j, int x) {
 		//extreme cases handling
 		//if(i < 0 || j < 0) throw new Exception("error in set values i or j is negative ! ");
-		
+		if(x == 0) return ;
 		if(head == null){
 			this.head = new Elem(i , j, x, null);
+			return;
 		}else{
 			Elem it = head;
 			int rowMajorIt; //Just to simplify if conditions.
@@ -50,7 +51,7 @@ public class MatriceSparsa {
 				if( rowMajorElem > rowMajorIt){
 					if(it.next != null){
 						if( (this.n*it.next.i+it.next.j) > rowMajorElem) {
-							//iNSERT ELEM THERE
+							//INSERT ELEM THERE
 							Elem newItem = new Elem(i, j ,x ,it.next);
 							it.next = newItem; //Leave other link to garbage collector.
 						}
@@ -109,46 +110,53 @@ public class MatriceSparsa {
 		Elem it1 = mat1.head;
 		Elem it2 = mat2.head;
 		int rM1 , rM2 ;
-		
-		
-		MatriceSparsa r = new MatriceSparsa(mat1.m , mat2.n);
-		
+				
 		
 		while(it1 != null && it2 != null){
 			rM1 = mat1.n*it1.i + it1.j;
-			rM2 = mat2.n*it2.i + it1.j;
-			
-			if(rM1 == rM2)
-				r.set(it1.i , it2.j , it1.x+it2.x );
-			else {
-				r.set(it1.i , it1.j , it1.x );
-				r.set(it2.i , it2.j , it2.x );
+			rM2 = mat2.n*it2.i + it2.j;
+			if(rM1 == rM2){
+				this.set(it1.i , it2.j , it1.x+it2.x );
+				it1 =it1.next;
+				it2 = it2.next;
+			}else if(rM1 < rM2){
+				this.set(it1.i , it1.j , it1.x );
+				it1 = it1.next;
+			}else{
+				this.set(it2.i , it2.j , it2.x );
+				it2 = it2.next;
 			}
-			it1 = it1.next;
-			it2 = it2.next;
 		}
 		
 		if(it1 == null && it2 != null){
 			while(it2 != null){
-				r.set(it2.i , it2.j , it2.x );
+				this.set(it2.i , it2.j , it2.x );
 				it2 = it2.next;
 			}
 		}else if(it1 != null && it2 == null){
 			while(it1 != null){
-				r.set(it1.i , it1.j , it1.x );
+				this.set(it1.i , it1.j , it1.x );
 				it1 = it1.next;
 			}
 		}
 		
 		
-		return r;
+		return this;
 	}
 
 
 
-	public MatriceSparsa tra(MatriceSparsa mat1, MatriceSparsa mat2) {
-		// TODO: Implement here
-		return null;
+	public MatriceSparsa tra(MatriceSparsa mat1) {
+		Elem it = mat1.head;
+		
+		while(it != null){
+			if(it.i != it.j){
+				mat1.set(it.j, it.i , it.x);
+			}
+			it = it.next;
+		}
+		
+		return mat1;
 	}
 
 	public MatriceSparsa mul(MatriceSparsa mat1, MatriceSparsa mat2) {
