@@ -31,7 +31,7 @@ public class Driver {
 
         } else if (argv[0].equals("maxGap")) {
 
-            int[] array = {0, 5, 8, 10, 15, 27, 32, 43, 45};
+            int[] array = {0, 5, 8, 10, 15, 20, 32, 33};
 
             System.out.print("[");
             for (int i = 0; i < array.length; i++) {
@@ -39,7 +39,7 @@ public class Driver {
             }
             System.out.print(" ]\n");
 
-            System.out.println("massimo gap: " + MaxGap.maxGap(array, 0, array.length));
+            System.out.println("massimo gap: " + MaxGap.maxGap(array, 0, array.length-1));
 
         } else if (argv[0].equals("labirinto")) {
 
