@@ -8,7 +8,7 @@ public class Heap {
 
     private HEAP_TYPE type;
     private int capacity;
-    private int[] heap;
+    private HeapEntry[] heap;
     private int empty;
     
     public Heap(HEAP_TYPE type, int capacity) {
@@ -23,25 +23,19 @@ public class Heap {
     }
 
     public int peek() {
-        if(this.size > 0 ) return heap[0];
+        if(this.size() > 0 ) return heap[0];
         return 0;
     }
     
+    //Custom dir
     public static int getParentIndex(int i){
         if(i %2 == 0)
             return (i/2 -1) > 0 ? (i/2 -2) : -1 ;
         else
             return (i/2 -1) > 0 ? (i/2 -1) : -1 ;
     }
-    
-    public HeapEntry add(int key) {
-        if(key < 0 || key > capacity || empty <= 0  )
-            return null;
-        HeapEntry e = this.upHeap(key , empty, Heap.getParentIndex(empty) );
-        empty--;
-        return e;
-    }
 
+    //Custom method
     public HeapEntry upHeap( int e_key, int pos_e ,  int i){
         HeapEntry e ;
         e.val = e_key;
@@ -54,6 +48,16 @@ public class Heap {
         }
     }
 
+
+    public HeapEntry add(int key) {
+        if(key < 0 || key > capacity || empty <= 0  )
+            return null;
+        HeapEntry e = this.upHeap(key , empty, Heap.getParentIndex(empty) );
+        empty--;
+        return e;
+    }
+
+    
 
     public int getEntryKey(HeapEntry e) {
         return 0;
