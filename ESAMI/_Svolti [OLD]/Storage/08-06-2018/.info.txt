@@ -1,0 +1,8 @@
+inizio	:	10.51
+stop	:	11.51
+inizio	:	12.17
+stop	:	13.52
+inizio	:	17.29
+fine	:	17.51
+
+complessivo	:	2h 57m.

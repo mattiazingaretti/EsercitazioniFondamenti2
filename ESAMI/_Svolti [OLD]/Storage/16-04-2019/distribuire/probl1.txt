@@ -1,0 +1,14 @@
+a)L' algoritmo s(int[] a) nel caso in cui a.length > 0 effettua una chiamata ricorsiva al metodo s(int[] a, int i).
+Il costo di tale metodo dipende dal costo dell'algoritmo p(int i, int[] a). Analizzando quest'ultimo, possiamo
+notare che viene eseguito un ciclo while per un totale di a.length-i-1  iterazioni. Indicando con z = |a| 
+la dimensione dell'array a, possiamo dedurre che il costo di tale algoritmo è lineare in funzione di z, cioè 
+Theta(z). Il costo del metodo s(int[] a, int i) può essere espresso nel seguente modo : 
+					Theta(z-1 + z-2 + ..... + 1) = z(z+1)/2 = Theta(z^2).
+Ne segue che il costo dell'algoritmo s(int[] a) è pari a Theta(z^2).
+
+b) Il metodo s(int[] a) descrive un algoritmo noto con il nome di insertionSort. Possiamo notare che nel metodo
+p(int i, int[] a) se l'elemento corrente in posizione i è maggiore dell'elemento in posizione i+1 allora 
+memorizzo in posizione i tale elemento, altrimenti termino il ciclo. Tale logica coincide proprio con la logica 
+del ciclo più interno utilizzata nell'algoritmo insertionSort. Inoltre, il suo ciclo esterno in questo caso è 
+rappresentato proprio dal metodo s(int[] a, int i) che chiama ricorsivamente se stesso incrementando l'indice 
+i, proprio come in un ciclo for.

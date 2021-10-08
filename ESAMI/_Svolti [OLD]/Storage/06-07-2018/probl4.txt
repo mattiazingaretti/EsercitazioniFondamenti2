@@ -1,0 +1,73 @@
+a) Un grafo diretto è debolmente conesso quando il suo grafo non orientato, ottenuto rimuovendo l'orientazione 
+   degli archi, è connesso.
+
+   Algorithm isConnected(D, start, size, explored) : 
+	  ret <- 0
+	  explored[start] <- 1
+      for(j <- start; j < size; j <- j + 1) do :
+		if(D[start][j] == 1 && explored[j] == 0) then :
+			ret <- ret + 1 + isConnected(D, j, size, explored)
+	  return ret
+
+   Algorithm isWeaklyConnected(D) : 
+      Input : matrice di adiacenza D rappresentante un grafo diretto
+      Output : 1 se il grafo è debolmente connesso, 0 altrimenti
+      
+      size <- numero di righe
+      for(i <- 0; i < size; i <- i + 1) do :
+		for(j <- 0; j < size; j <- j + 1) do :
+			if(A[i][j] == 1 && A[j][i] == 0) then :
+				A[j][i] <- 1
+	
+	  explored <- array inizializzato a 0 di dimensione size
+	  res <- isConnected(D, 0, size, explored)
+	  if(res != size) then :
+		return 0
+	  return 1
+	  
+   Il costo di tale algoritmo è dato dalla somma del tempo speso per i due cicli for e del tempo speso per
+   verificare se il grafo non orientato è connesso. Indicando con n il numero di nodi e con m il numero 
+   degli archi presenti nel grafo, la prima parte ha un costo pari a Theta(n^2), mentre la seconda parte 
+   Theta(n + m). Perciò, tale algoritmo ha costo pari a Theta(n^2).
+   
+ 
+b) Per prima cosa possiamo sfruttare la nota proprietà di albero binaro di ricerca che se due parole sono
+   uguali allora effettuando una visita in ordine le visiterò in sequenza. Perciò, l'algoritmo che andremo
+   a descrivere si baserà proprio su questa proprietà :
+   
+   Algorithm getCommonWord_aux(t, final_word, final_freq, curr_freq, prev_word) :
+       if(t == NULL) then :
+	       return
+	       
+	   getCommonWord_aux(t->left, final_word, final_freq, curr_freq, prev_word)
+	   
+	   if(t->word == prev_word) then :
+		  curr_freq <- curr_freq + 1
+	   else if(t->word == final_word) then :
+	      final_freq <- final_freq + 1
+	   else :
+		  curr_freq <- 1
+		  
+	   if(curr_freq > final_freq) then :
+			final_word <- t->word
+			final_freq <- curr_freq
+	   
+	   getCommonWord_aux(t->right, final_word, final_freq, curr_freq, prev_word)
+	   
+	   prev_word <- t->word
+   
+   
+   Algorithm getCommonWord(t) :
+       Input : bst t
+       Output : parola più frequente nel bst t
+       
+       if(t == NULL) then :
+	     return NULL;
+	     
+	   word <- NULL
+	   getCommonWord_aux(t, &word, 0, 0, NULL)
+	   
+	   return word
+      
+   Il costo di tale algoritmo dipende dal tempo speso per una visita in ordine del bst fornito in input. Perciò,
+   indicando con n il numero di nodi che il bst memorizza, il suo costo è pari a Theta(n).

@@ -1,0 +1,38 @@
+a) L'algoritmo m1(int a[][]) chiama l'algoritmo m1(int a[][], int l1, int l2, int c1, int c2). Quest'ultimo
+   termina se soddisfa una delle seguenti condizioni :
+     - se c1 > c2
+     - se l1 > l2
+     - se c1 == c2 && l1 == l2.
+   Altrimenti, utilizza la ricorsione multipla chiamando se stesso 4 volte. Possiamo notare che il numero di
+   chiamate che effettuano queste 4 chiamate ricorsive è approssimativamente lo stesso. Perciò, per tale
+   algoritmo possiamo scrivere la seguente equazione di ricorrenza :
+							T(n, m) = 4* T(n/2, m/2) + c,
+   avendo indicato con n il numero di righe e con m il numero di colonne della matrice. Visto che la 
+   matrice è quadrata (n = m), la precedente equazione può essere scritta nel seguente modo :
+                            T(n) = 4* T(n/2) + c.
+   Iterando questo ragionamento si ottiene
+							T(n) = 4* T(n/2) + c = ....... = 4^k * T(n/2^k) + k*c.
+   Il caso base viene raggiunto quando n/2^k = 1, cioè quando k = log_2(n). Perciò, sostituendo tale valore
+   nella precedente equazione, si ha
+							T(n) = 4*log_2(n)*T(1) + log_2(n)*c = 2^2log_2(n)*c' + log_2(n)*c =
+							= n^2 * c' + log_2(n)*c = Theta(n^2).
+   Perciò, il costo temporale dell'algoritmo m1(int a[][]) in funzione della dimensione dell'input è pari
+   a Theta(n^2).
+   
+b) L'algoritmo m2(int p) alloca un array di dimensione p e lo inizializza con dei valori crescenti. Visto
+   che il ciclo for esegue p iterazioni il costo temporale di tale algoritmo è pari a Theta(p). Ma visto che 
+   z = log_2(p) + 1, il costo assume la seguente forma : Theta(2^z).
+
+c) Per determinare il costo temporale dell'algoritmo m3(int a[][]), è utile determinare il coefficiente di
+   dilatazione della funzione più interna nella composizione di funzioni che esso chiama. Tale coefficiente
+   è definito nel seguente modo :
+								d = |output| / |input|.
+   Nel nostro caso, la funzione più interna è m1(int a[][]). Il suo coefficiente di dilatazione d_1 è pari :
+								d_1 = 2^z/n^2.
+   Il costo temporale dell'algoritmo m3(int a[][]) assumerà la seguente forma :
+								T(n) = T_1(n) + T_2(n^2 * d_1),
+   ove con T_1 e con T_2 abbiamo indicato rispettivamente il costo temporale associato alla funzione
+   m1(int a[][]) e m2(int p). La precedente equazione si può semplificare con dei semplici passaggi algebrici :
+								T(n) = T_1(n) + T_2(2^z) = Theta(n^2) + T_2(n) = Theta(n^2) + Theta(2^z) =
+								= Theta(2^z).
+   Perciò, il costo temporale dell'algoritmo m3(int a[][]) è pari a Theta(2^z).

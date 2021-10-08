@@ -1,0 +1,34 @@
+a) L'algoritmo funct1(int x) termina restituendo x, se quest'ultimo è minore o uguale ad uno. Altrimenti
+   chiama se stesso attraverso una composizione di funzioni. Analizziamo nel dettaglio il valore restituito
+   da tale algoritmo per diversi input di prova :
+   - x = 0 -> 0
+   - x = 1 -> 1
+   - x = 2 -> funct1(1) + 1 = 2
+   - x = 3 -> funct1(1) + 1 = 2
+   - x = 4 -> funct1(2) + 1 = 3
+   - x = 6 -> funct1(3) + 1 = 3
+   - x = 12 -> funct1(3) + 1 = 3
+   - x = 24 -> funct1(3) + 1 = 3
+   - x = 100 -> funct1(3) + 1 = 3.
+   
+   Possiamo notare che la funzione, eccetto per pochi valori di x, restituisce sempre 3. Perciò, per tale
+   algoritmo possiamo scrivere la seguente equazione di ricorrenza :
+						T(x) = T(x/2) + T(3) + c.
+   Iterando questo ragionamento si ha
+						T(x) = T(x/2) + T(3) + c = ...... = T(x/2^k) + k*(T(3) + c).
+   Il caso base viene raggiunto per x/2^k = 1, cioè per k = log_2(x). Inoltre, indicando con z1 = |x| =
+   log_2(x) + 1 la dimensione dell'input e sostituendo nella precedente relazione il valore di k, si ottiene
+						T(z1) = T(1) + log_2(2^z1)*(T(3) + c) = Theta(z1).
+   Perciò, il costo dell'algoritmo funct1(int) risulta essere pari a Theta(z1).
+   
+b) L'algoritmo funct2(int y) termina restituendo y se quest'ultimo è minore o uguale ad uno. Altrimenti,
+   utilizza la ricorsione binaria chiamando se stesso e il metodo funct1(int). Per tale algoritmo, possiamo
+   scrivere la seguente equazione di ricorrenza :
+						T(y) = T(y-1) + T_1(y) + c,
+   ove T_1 rappresenta il costo dell'algoritmo funct1(int). Iterando questo ragionamento si ha
+						T(y) = T(y-1) + T_1(y) + c = ....... = T(y-k) + k*(T_1(k) + c).
+   Il caso base viene raggiunto per y - k = 1, cioè per k = y - 1. Inoltre, indicando con z2 = |y| = 
+   log_2(y) + 1 la dimensione dell'input e sostituendo nella precedente relazione il valore di k, si ha
+						T(z2) = T(1) + (2^z2 - 1)*(T_1(2^z2-1) + c) = c' + (2^z2 - 1)*(z1 + c) =
+						Theta(z1*2^z2).
+   Perciò, il costo dell'algoritmo funct2(int y) è pari a Theta(z1*2^z2).

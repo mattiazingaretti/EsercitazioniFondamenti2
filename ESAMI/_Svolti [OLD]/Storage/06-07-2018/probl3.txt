@@ -1,0 +1,114 @@
+a) L'algoritmo che andremo ad utilizzare è chiamato quickSelect e di seguito troviamo lo pseudocodice :
+
+	Algorithm quickSelect(A, k) :
+		Input : sequenza A non ordinata, l'indice k del valore di A in ordine di grandezza crescente
+		Output : k-esimo valore di A in ordine di grandezza crescente 
+		
+		random <- random index of A
+		pivot <- A[random]
+		(L, E, G) <- partition(A, pivot)
+		
+		if(k <= |L|) then :
+			return quickSelect(L, k)
+		else if(k <= |L| + |E|) then :
+			return pivot
+		else :
+			return quickSelect(G, k - |L| - |E|)
+
+   In tal modo otteniamo il valore del k-esimo elemento di A in ordine di grandezza. Per ottenere l'indice 
+   di tale valore nell'array fornito in input, basterà scansionare l'array con il seguente metodo di 
+   supporto :
+
+	Algorithm getIndex(A, k) : 
+		elem <- quickSelect(A, k)
+		i <- 0
+		size <- A.length()
+		
+		while(i < size) do :
+			if(A[i] == elem) then :
+				return i
+			i <- i + 1
+		return -1
+
+  Il caso peggiore di tale algoritmo si verifica quando uno fra L e G ha dimensione maggiore di 3/4 * n, ove n
+  è la dimensione della sequenza fornita in input. Per comprendere bene il costo in tale caso, è bene rappresentare
+  l'esecuzione di tale algoritmo attraverso un albero di ricorsione T. Prendiamo un nodo generico v di T. Il 
+  tempo speso in esso dipenderà dalla dimensione della sequenza gestita dalla chiamata ricorsiva associata a tale
+  nodo. Inoltre, possiamo osservare che almeno un elemento (il pivot) non è trasferito ai figli di tale nodo; cioè
+  la dimensione della sequenza che gestirà un nodo nel livello i+1 sarà minore della dimensione della sequenza
+  che gestirà il suo nodo genitore, i.e. s_i+1 < s_i. In tal caso, il costo di tale algoritmo nel caso peggiore
+  è O(n*h). A causa della pratica comune di prendere come pivot l'ultimo elemento della sequenza, il caso peggiore
+  si verifica quando tale sequenza è ordinata (tutti gli elementi sono distinti). Infatti, |L| = n - 1, |E| = 1 e
+  |G| = 0. Ogni chiamata dell'algoritmo decrementerà di 1 la dimensione della sottosequenza L, il quale porta
+  ad un altezza h = n-1 per l'albero T associato. Perciò, il costo di tale algoritmo diventa O(n^2).
+  
+  Sia t(n) il tempo di esecuzione di questo algoritmo. Visto che il suo tempo di esecuzione dipende da eventi
+  randomici, allora esso è una variabile casuale. Adesso, vogliamo determinare il valore atteso di tale variabile,
+  i.e. E(t(n)). Una chiamata è buona quando la dimensione di L o G è minore o uguale a 3/4 *n, ove n è la 
+  dimensione della sequenza fornita in input. Sia g(n) il numero massimo di chiamate consecutive prima di
+  ottenerne una buona. Possiamo, allora, scrivere la seguente equazione di ricorrenza : 
+						E(t(n)) <= E(bn*g(n) + t(3/4 * n)),
+  ove b è una costante maggiore o uguale a uno. Per la linearità dell'aspettativa, indicando con T(n) = E(t(n)), si ha
+						T(n) <= bn*E(g(n)) + T(3/4 * n).
+  Un'importante osservazione è la seguente : il fatto che una chiamata ricorsiva sia buona è totalmente
+  indipendente dalla chiamata ricorsiva del genitore e inoltre un pivot è "buono" con una probabilità di 
+  almeno 1/2. Perciò, il valore atteso di g(n) è al massimo pari al numero atteso di volte che bisogna lanciare
+  una moneta onesta prima di ottenere testa, i.e. E(g(n)) <= 2. Perciò, si ottiene
+						T(n) <= 2bn * {sum i = 0 to log_4/3 n (3/4)^i}.
+  Il tempo di esecuzione atteso di tale algoritmo è 2bn volte la somma della precedente serie, cioè
+  Theta(n).
+   
+  
+b) Visto che non vi è nessuna nozione esplicita di unicità degli interi,  utilizzeremo un algoritmo robusto
+   come il radixSort : 
+   
+   
+   void countingSort(int* A, int d){
+     int count[10] = {0};
+     int size = A.length();
+	 int* output = (int*) malloc(sizeof(int)*size);
+	 int i;
+		
+	 for(i = 0; i < size; i++)
+		count[(A[i]/d) % 10]++;
+	
+	 for(i = 1; i < size; i++)
+		count[i] += count[i - 1];
+		
+	 for(i = size-1; i >= 0; i--){
+		output[count[(A[i]/d) % 10] - 1] = A[i];
+		count[(A[i]/d) % 10]--;
+	 }
+	 
+	 for(i = 0; i < size; i++)
+		A[i] = output[i];   
+   }
+   
+   
+   void radixSort(int* A){
+     if(A.length() < 2)
+	   return;
+   
+	 int max = getMaxElem(A);
+	 int exp;
+	 
+	 for(exp = 1; max/ exp > 0; exp*= 10) 
+		countingSort(A, exp);   
+   }
+   
+   
+   Il costo di tale algoritmo è Theta(exp*n), ove exp è il numero di bit del valore massimo presente nell'array
+   A.
+   
+c) Per prima cosa parliamo dell'upper bound di un dato problema A. Il problema A ha upper bound O(f(n)), se
+   esiste un algoritmo P che risolve A tale che il suo costo sia O(f(n)). Naturalmente, fra i vari upper bound
+   noti, prenderemo quello asintoticamente migliore, considerando gli altri banali. In altri termini, si dice
+   che gli algoritmi trasferiscono gli upper bound ad un dato problema. Nel nostro caso, gli upper bound noti
+   sono O(n^2) e O(n^2 * log(n)). Perciò, il problema A ha upper bound pari a O(n^2).
+   
+   Per trattare il concetto di lower bound di un dato problema A, abbiamo bisogno di introdurre alcune peculiarità
+   rispetto al caso precedente. Diremo che il problema A ha lower bound Omega(f(n)) se per ogni algoritmo P che
+   risolve A il suo costo è Omega(f(n)). Si osservi che, al posto del quantificare esistenziale abbiamo utilizzato
+   un quantificatore universale. Perciò, in tal caso, viene a mancare una procedura costruttiva per il lower 
+   bound di un problema. In altri termini, si dice che gli algoritmi non trasferiscono i lower bound ad un 
+   dato problema. Nel nostro caso, quindi, non possiamo dire nulla sul lower bound del problema A.

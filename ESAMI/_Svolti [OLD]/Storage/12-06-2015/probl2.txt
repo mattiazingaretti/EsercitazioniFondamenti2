@@ -1,0 +1,55 @@
+
+#define MIN 0
+#define MAX 1
+
+
+typedef struct {
+	char* path;
+	int height;
+} data_t;
+
+
+void getPath_aux(tree* t, int flag, data_t* data, int curr_height) {
+	if(t == NULL)
+		return;
+		
+	getPath_aux(t->left, flag, data, curr_height);
+	getPath_aux(t->right, flag, data, curr_height);
+	
+	if(curr_height <= data->height && flag == MIN && isLeaf(t)) {
+		data->height = curr_height;
+		data->path = "";
+	}
+	
+	if(curr_height > data->height && flag == MAX && isLeaf(t)) {
+		data->height = curr_height;
+		data->path = "";
+	}
+	
+	char* tmp = t->label;
+	
+	strcat(tmp, "/");
+	strcat(tmp, data->path);
+	data->path = tmp;
+	
+	return;
+}
+
+
+void getPath(tree* t) {
+	if(t == NULL)
+		return;
+		
+	data_t* data = (data_t*) malloc(sizeof(data_t));
+	data->path = "";
+	data->height = 0;
+	
+	getPath_aux(t, MAX, data, 0);
+	printf("- longest path : %s \n", data->path);
+	getPath_aux(t, MIN, data, 0);
+	printf("- shortest path : %s \n", data->path); 
+
+	return;
+}
+
+E' stata eseguita una visita post ordine.

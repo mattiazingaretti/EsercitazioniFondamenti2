@@ -1,0 +1,43 @@
+a) Basti pensare all'algoritmo bucketSort che prende in input un array di interi ∈ [1, k] e distribuisce i 
+   suoi elementi in vari bucket, da B[0] a B[k]. Ci si aspetta che la dimensione dei bucket sia abbastanza 
+   piccola (come nel caso in esame), perciò i bucket vengono ordinati con un qualsiasi algoritmo di ordinamento
+   in tempo costante e vengono enumerati in ordine fornendo l'array ordinato. Dopo questa analogia, darei 
+   ragione ad Alice poichè l'andamento asintotico alla fine non si manifesterà.
+
+b) Una funzione di hash è tipicamente una composizione di due funzioni :
+     - codice hash : tale funzione, data una funzione di hash h, mappa ogni chiave k della mappa ad un intero.
+       Tale intero può eccedere le dimensioni del bucket array e può essere non positivo. Se due k distinti
+       vengono mappate allo stesso intero, allora si è verificata una collisione. Il nostro obiettivo è di
+       minimizzare il numero delle collisioni che si verificano. In altre parole, vogliamo generare un insieme
+       di codici hash distinti. Se tale insieme porta a delle collisioni, allora non c'è modo per la funzione
+       di collisione di evitarle.
+     - funzione di compressione : tale funzione, mappa ogni codice hash dell'insieme ad un intero i ∈ [1, N-1],
+       ove N è la dimensione del bucket array. Se N è un numero primo, allora aiuta la funzione di compressione
+       nella diffusione dei valori di hash. Altrimenti, eventuali pattern nella distribuzione di codici hash
+       potrebbero ripetersi nella distribuzione di valori di hash. Una funzione di compressione è "buona" se
+       è una funzione tale da minimizzare il numero delle collisioni. In funzioni di questo tipo la 
+       probabilità che una collisione si verifichi è pari a 1/N.
+
+c)
+
+   Algorithm getHeap_aux(result, H, index, target) :
+     if(index > H.length()) then :
+       return
+     result[target] <- H[index]
+     getHeap_aux(result, H, 2*index + 1, 2*target + 1)
+     getHeap_aux(result, H, 2*index + 2, 2*target + 2)
+    
+
+
+   Algorithm getHeap(H, i) :
+     Input : array H che rappresenta un heap, indice i
+     Output : array che rappresenta un sotto-heap di H avente radice in i
+     
+     result <- array vuoto di dimensione n-i
+     
+     getHeap_aux(result, H, i, 0)
+     
+     return result
+
+  Il sotto-heap radicato in i occuperà le celle di indice k ∈ [0, n-i-1]. Perciò, tale heap avrà un upper 
+  bound sulla sua altezza pari a O(log_2(n - i)).

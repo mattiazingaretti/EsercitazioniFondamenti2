@@ -1,0 +1,29 @@
+a) L'algoritmo ternsearch(int[], int) chiama l'algoritmo ternsearch(int a[], int v, int start, int end). 
+   Tale algoritmo effettua delle chiamate ricorsive in base alle seguenti condizioni :
+     - se (end - start) < 2 termina chiamando l'algoritmo base(int[], int, int, int) 
+     - altrimenti definisce una variabile onethird = (end - start) / 3 e una variabile i = start + onethird :
+		- se (a[i] > v) effettua una chiamata ricorsiva a se stesso
+		- se (a[i] == v) restituisce la variabile i
+		- altrimenti, definisce una variabile j = i + onethird :
+			- se (a[j] > v) effettua una chiamata ricorsiva a se stesso
+			- se (a[j] == v) restituisce la variabile j
+			- altrimenti chiama ricorsivamente se stesso.
+   L'algoritmo base(int a[], int v, int start, int end) effettua un ciclo while, di al più end - start + 1
+   iterazioni. Perciò il costo di tale algoritmo è pari a Theta(1). Possiamo notare che le differenti
+   chiamate ricorsive di ternsearch(int [], int, int, int) effettuano approssimativamente lo stesso numero
+   di chiamate ricorsive a loro volta. Perciò, per tale algoritmo, indicando con n = |a| la dimensione dell'array
+   fornito in input, possiamo scrivere la seguente equazione di ricorrenza :
+						T(n) = T(n/3) + c,
+   ed iterando tale ragionamento si ottiene
+						T(n) = T(n/3) + c = .... = T(n/3^k) + kc.
+   Naturalmente mi fermo quando n/3^k = 1, cioè per k = log_3(n), ottenendo
+						T(n) = T(1) + log_3(n) * c = Theta(log_3(n)).
+   Perciò il costo dell'algoritmo ternsearch(int[], int) risulta pari al costo dell'algoritmo
+   ternsearch(int[], int, int, int), cioè Theta(log_3(n)).
+   
+b) L'algoritmo ternsearch(int[], int) è ugualmente efficiente, dal punto di vista temporale, all'algoritmo
+   binarySearch(int[], int). Per quanto riguarda l'efficienza spaziale, l'algoritmo ternsearch effettua
+   un numero di chiamate ricorsive minore rispetto a binarySearch, perciò la dimensione della pila delle
+   chiamate ricorsive sarà più piccola rispetto a quella associata a binarySearch. Perciò, ternsearch è
+   leggermente più efficiente, dal punto di vista spaziale, dell'algoritmo binarySearch.
+   

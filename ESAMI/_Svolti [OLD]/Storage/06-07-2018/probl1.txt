@@ -1,0 +1,17 @@
+a) L'algoritmo log2(int) ha un costo costante se x <= 1, altrimenti chiama ricorsivamente se stesso. Possiamo
+   notare che ad ogni chiamata il valore fornito in input viene dimezzato. Perciò, per tale algoritmo possiamo
+   scrivere la seguente equazione di ricorrenza :
+						T(x) = T(x/2) + c,
+	ed iterando questo ragionamento si ottiene
+						T(x) = T(x/2) + c = .... = T(x/2^k) + k*c.
+	Il caso base viene raggiuto quando 2^k = x, cioè quando k = log_2(x). In tal caso si ha
+						T(x) = T(1) + log_2(x)*c = c' + log_2(x)*c = Theta(log_2(x)).
+	Inoltre, visto che z = log_2(x), allora il costo dell'algoritmo log2(int) sarà pari a
+						T(z) = Theta(z).
+
+b) L'algoritmo loglog2(int) chiama una composizione di funzioni. In questo caso è utile determinare il
+   coefficiente di dilatazione della funzione interna. Perciò, d = |log_2(x)| / 2^z. Il costo di tale
+   algoritmo sarà dato da : 
+				C(x) = C_i(x) + C_o(x * d) = Theta(z) + Theta(2^z * z/ 2^z) = Theta(z) + Theta(z) =
+				= Theta(z).
+   

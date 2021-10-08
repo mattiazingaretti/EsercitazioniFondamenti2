@@ -1,0 +1,30 @@
+
+int countArityNode_aux(Tree* t, int k, int* counter){
+    if(t == NULL)	
+      return 1;
+    int res = countArityNode_aux(t->firstChild, k, counter);
+    
+    count_siblings = 0;
+    while(t->nextSibling != NULL){
+      count_siblings += countArityNode_aux(t->nextSibling, k, counter);
+	  t = t->nextSibling;
+   }
+   
+    if(res + count_siblings == k)
+      (*counter)++;
+    return 1;   
+}
+
+
+int countArityNode(t, k) {
+    if(t == NULL)
+      return 0;
+    
+    int num = 0;
+    countArityNode_aux(t, k, &num);
+    
+    return num;
+}
+
+Dato un albero con n nodi, tale algoritmo visita tutti i nodi dell'albero. Pertanto, il suo costo è pari a
+Theta(n).

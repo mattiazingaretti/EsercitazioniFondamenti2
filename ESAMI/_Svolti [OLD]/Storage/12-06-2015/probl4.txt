@@ -1,0 +1,41 @@
+
+a) Il problema può essere riformulato come problema sui grafi, rappresentando ogni utente con un vertice.Inoltre,
+indichiamo con un arco entrante nel vertice stesso l'insieme dei followers e con un arco uscente l'insieme dei following.
+Perciò, la struttura del social network Twitter può essere rappresentata con un grafo orientato non pesato. Il quesito
+che si pone Alice è equivalente nella teoria dei grafi alla ricerca del cammino minimo da un vertice ad un altro 
+(Shortest Path).
+
+b) 
+	Algorithm getMinPath(G, a, b) :
+		Input : grafo G che rappresenta la rete sociale Twitter, vertice a associato
+				all'utente Alice e vertice b associato all'utente Bob
+		Output : minimo numero di retweet r, affinchè Bob legga il tweet di Alice
+		
+		step <- 0
+		counter <- INF
+		l1 <- empty list
+		l2 <- empty list
+		l1.insertLast(a)
+		list <- l1
+		
+		while(!isEmpty(l1)) do :
+			while(!isEmpty(l1)) do :
+				f <- l1.removeHead()
+				
+				for w ∈ f->incident_edges do :	
+					if(f == b && step < counter) then :
+						return retweets
+					l2.insertLast(w)
+			
+			retweets <- retweets + 1
+			list <- l1
+			l1 <- l2
+			l2 <- list
+			
+		
+		return -1
+			
+			
+			
+c) Questo algoritmo visita una sola volta tutti gli archi e tutti i nodi, di conseguenza il suo costo 
+è quello classico della BFS ovvero Theta(n+m).

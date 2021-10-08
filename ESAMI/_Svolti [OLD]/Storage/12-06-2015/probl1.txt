@@ -1,0 +1,22 @@
+a) L'algoritmo mergeSort3(int a[], int i, int j) se i >= j termina immediatamente, altrimenti utilizza la
+ricorsione multipla effettuando 4 chiamate a se stesso. In particolare, vengono forniti in input a tali chiamate
+due parametri m1 ed m2, dove il loro valore dipende da determinate condizioni. Possiamo notare che le prime tre
+chiamate approssimativamente effettueranno un numero di ulteriori chiamate eguale. Perciò, per tale algoritmo
+possiamo scrivere la seguente equazione di ricorrenza : 
+					T(n) = 3*T(n/3) + C_m3(n) + c,
+ove n = |a| è la dimensione dell'array a fornito in input e C_m3 è il costo dell'algoritmo merge3(int a[], int h,
+int i, int j, int k). Tale algoritmo alloca un array temp di dimensione j-i e un array indice di dimensione 3 
+(allocando i relativi valori). In seguito viene eseguito un primo ciclo while che nel caso peggiore esegue n-2 
+iterazioni e un secondo che ne esegue altrettante n-2. Perciò, il costo di tale algoritmo è Theta(n). Tornando
+all'equazione di ricorrenza associata al metodo mergeSort3, iterando il ragionamento si ottiene : 
+					T(n) = 3*T(n/3) + C_m3(n) + c = ... = 3^k*T(n/3^k)+ k*Theta(n) + kc.
+Mi fermo per k = log_3 n, ottenendo
+					T(n) = 3^log_3(n) * T(1) + log_3(n)*(Theta(n) + c) = n*c' + log_3(n)*(Theta(n) + c) =
+					= Theta(n*log_3(n)).
+					
+					
+b) Per quanto riguarda l'efficienza temporale, mergeSort3 è leggermente più efficiente  del mergeSort tradizionale,
+poichè il loro tempo di esecuzione differisce per una costante (base del logaritmo pari a 3 per il mergeSort3 e pari
+a 2 per il mergeSort tradizionale).Da questo, ne segue una pila dei record di attivazione più piccola per l'algoritmo
+mergeSort3. Per quanto riguarda l'efficienza spaziale, mergeSort3 e mergeSort tradizionale sono egualmente efficienti,
+poichè entrambi utilizzano uno spazio pari a Theta(n).

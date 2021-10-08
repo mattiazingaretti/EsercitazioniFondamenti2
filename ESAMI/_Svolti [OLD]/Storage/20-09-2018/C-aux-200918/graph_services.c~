@@ -1,0 +1,226 @@
+#include <stdlib.h>
+#include <math.h>
+
+#include "graph_services.h"
+#include "graph.h"
+#include "linked_list.h"
+
+
+double dist(centrale* c1, centrale* c2){
+	double dx = c1->x - c2->x;
+	double dy = c1->y - c2->y;
+	return sqrt((dx*dx) + (dy*dy));
+}
+
+
+void graph_print_powplant(graph* g) {
+	if (g) {
+		linked_list_iterator *it = linked_list_iterator_new(g->nodes);
+		graph_node* cur = (graph_node*)linked_list_iterator_getvalue(it);
+		while (linked_list_iterator_hasnext(it)) {
+			printf("%s: ", ((centrale*)(cur->object))->name);
+			linked_list_iterator *it2 = linked_list_iterator_new(cur->incident_edges);
+			graph_edge* edge = linked_list_iterator_getvalue(it2);
+			while (linked_list_iterator_hasnext(it2)) {
+				printf("%s:%f ", edge->n2 == cur ? (((centrale*)(edge->n1->object))->name) : (((centrale*)(edge->n2->object))->name), edge->weight);
+				edge = linked_list_iterator_next(it2);
+			}
+			printf("\n");
+			linked_list_iterator_delete(it2);
+			cur = linked_list_iterator_next(it);
+		}
+		linked_list_iterator_delete(it);
+		printf("n_nodes:%d,  n_edges:%d\n", g->n_nodes, g->n_edges);
+	}
+	else {
+		printf("ERROR - invocation with NULL in graph_print\n");
+		return;
+	}
+}
+
+
+graph* get_complete_graph(linked_list* pp){
+  if(pp == NULL)
+    return NULL;
+
+  graph* g = graph_new();
+  linked_list* nodes = linked_list_new();
+  linked_list* storage = linked_list_new();
+
+  //Add vertex to input graph
+  linked_list_iterator* it = linked_list_iterator_new(pp);
+  centrale* c = (centrale*) linked_list_iterator_getvalue(it);
+
+  for( ; linked_list_iterator_hasnext(it); c = (centrale*) linked_list_iterator_next(it)){
+    graph_node* node = graph_add_node(g, c);
+    linked_list_insert_tail(nodes, node);
+    linked_list_insert_tail(storage, c);
+  }
+  linked_list_iterator_delete(it);
+
+
+  //Add edges to input graph
+  while(linked_list_size(nodes) > 0 && linked_list_size(storage)){
+    linked_list_node* lln = nodes->head;
+    linked_list_node* llnc = storage->head;
+
+    graph_node* curr_node = (graph_node*) lln->value;
+    //centrale* curr_central = (centrale*) lln->value;
+
+    while(lln->next != NULL && llnc->next != NULL){
+      graph_node* next_node = (graph_node*) lln->next->value;
+      // centrale* next_central = (centrale*) llnc->next->value;
+
+      graph_add_edge(g, curr_node, next_node, INF);
+
+      lln = lln->next;
+      llnc = llnc->next;
+    }
+    linked_list_remove_head(nodes);
+    linked_list_remove_head(storage);
+  }
+  linked_list_delete(nodes);
+  linked_list_delete(storage);
+
+  return g;
+}
+
+
+void set_weights_in_graph(graph* g){
+  if(g == NULL)
+    return;
+
+  linked_list_iterator* it = linked_list_iterator_new(g->nodes);
+  graph_node* node = (graph_node*) linked_list_iterator_getvalue(it);
+
+  for( ; linked_list_iterator_hasnext(it); node = (graph_node*) linked_list_iterator_next(it)){
+    min_heap* mh = min_heap_new();
+
+    centrale* curr_central = (centrale*) node->object;
+    linked_list_iterator* iti = linked_list_iterator_new(node->incident_edges);
+    graph_edge* edge = (graph_edge*) linked_list_iterator_getvalue(iti);
+
+    for( ; linked_list_iterator_hasnext(iti); edge = (graph_edge*) linked_list_iterator_next(iti)){
+      graph_node* opposite = graph_get_edge_opposite(edge, node);
+      centrale* next_central = (centrale*) opposite->object;
+      double distance = dist(curr_central, next_central);
+
+      min_heap_insert(mh, distance, edge);
+    }
+    linked_list_iterator_delete(iti);
+    int counter = 0;
+
+    while(counter < 3) {
+      min_heap_struct_entry* mhe = min_heap_remove_min(mh);
+      graph_edge* curr_edge = (graph_edge*) mhe->value;
+
+      double curr_dist = dist((centrale*) ((graph_node*) curr_edge->n1)->object
+			      ,(centrale*) ((graph_node*) curr_edge->n2)->object);
+      curr_edge->weight = curr_dist;
+      printf("(%s,%s) : %lf\n", ((centrale*) (((graph_node*)curr_edge->n1)->object))->name,
+	     ((centrale*) (((graph_node*)curr_edge->n2)->object))->name, curr_edge->weight);
+      counter++;
+    }
+    min_heap_free(mh);
+  }
+  linked_list_iterator_delete(it);
+}
+
+
+void getVertices(linked_list* list, graph_edge* edge, int* ret){
+
+  if(linked_list_size(list) == 0){
+    linked_list_insert_tail(list, edge);
+    *ret = 2;
+    return;
+  }
+
+
+  linked_list_iterator* it = linked_list_iterator_new(list);
+  graph_edge* e = (graph_edge*) linked_list_iterator_getvalue(it);
+
+  int flag_1 = 1;
+  int flag_2 = 1;
+  
+  for( ; linked_list_iterator_hasnext(it); e = (graph_edge*) linked_list_iterator_next(it)){
+    if(e->n1 == edge->n1 || e->n1 == edge->n2)
+      flag_1 = 0;
+    if(e->n2 == edge->n1 || e->n2 == edge->n2)
+      flag_2 = 0;
+  }
+  linked_list_iterator_delete(it);
+  
+  if(flag_1)
+    *ret += 1;
+
+  if(flag_2)
+    *ret += 1;
+
+  linked_list_insert_tail(list, edge);
+}
+
+
+void primJarnik(graph* g, graph_node* node, linked_list* list, int* completed, int* ret){
+
+  double min = INF;
+  graph_edge* min_edge = NULL;
+  
+  linked_list_iterator* it = linked_list_iterator_new(node->incident_edges);
+  graph_edge* edge = (graph_edge*) linked_list_iterator_getvalue(it);
+  
+  for( ; linked_list_iterator_hasnext(it); edge = (graph_edge*) linked_list_iterator_next(it)){
+    if(edge->weight < min && edge->tag != EXCLUDED){
+      min_edge = edge;
+      min = edge->weight;
+    }
+  }
+  linked_list_iterator_delete(it);
+
+  if(min_edge == NULL)
+    return;
+ 
+  getVertices(list, min_edge, ret);
+
+  //printf("(%s,%s) : %lf\n", ((centrale*) (((graph_node*)min_edge->n1)->object))->name,
+  //	     ((centrale*) (((graph_node*)min_edge->n2)->object))->name, min_edge->weight);
+  
+  if(*ret == g->n_nodes){
+    *completed = 1;
+    return;
+  }
+  
+  min_edge->tag = EXCLUDED;
+  primJarnik(g, graph_get_edge_opposite(min_edge, node), list, completed, ret);
+}
+
+linked_list* get_min_wire(graph* g){
+  if(g == NULL)
+    return NULL;
+
+  linked_list* result = linked_list_new();
+
+  //Setting vertex's and edges's tag to UNEXPLORED
+  linked_list_iterator* it = linked_list_iterator_new(g->nodes);
+  graph_node* node = (graph_node*) linked_list_iterator_getvalue(it);
+  
+  for( ; linked_list_iterator_hasnext(it); node = (graph_node*) linked_list_iterator_next(it)){
+    node->tag = UNEXPLORED;
+    linked_list_iterator* iti = linked_list_iterator_new(node->incident_edges);
+    graph_edge* edge = (graph_edge*) linked_list_iterator_getvalue(iti);
+    
+    for( ; linked_list_iterator_hasnext(iti); edge = (graph_edge*) linked_list_iterator_next(iti))
+      edge->tag = UNEXPLORED;
+    linked_list_iterator_delete(iti);
+  }
+  linked_list_iterator_delete(it);
+
+  //Compute MST
+  it = linked_list_iterator_new(g->nodes);
+  node = (graph_node*) linked_list_iterator_getvalue(it);
+  int completed = 0, ret = 0;
+  
+  while(!completed) 
+    primJarnik(g, node, result, &completed, &ret);
+
+  return result;
+}

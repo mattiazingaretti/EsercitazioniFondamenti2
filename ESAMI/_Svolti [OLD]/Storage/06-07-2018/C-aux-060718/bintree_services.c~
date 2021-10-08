@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+#include "bintree.h"
+#include "bintree_services.h"
+
+
+
+binTree* isComplete(binTree* bt, int height, binTree* current){
+  if(bt == NULL)
+    return current;
+
+  binTree* local = bintree_new(height);
+  local->left = bt;
+  
+  binTree* left = isComplete(bt->left, height + 1, local);
+  binTree* right = isComplete(bt->right, height + 1, local);
+
+  if(left->key != right->key)
+    return (left->key < right->key) ? left : right;
+
+  left->left = bt;
+  
+  return left;
+}
+
+
+int get_size_max_complete_subtree(binTree* bt){
+  if(bt == NULL)
+    return 0;
+
+  binTree* ret = isComplete(bt, 0, NULL);
+  
+  printf("root of max complete subtree : %d.\n", ret->key);
+  return 0;
+}

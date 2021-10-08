@@ -1,0 +1,20 @@
+#include <stdlib.h>
+
+#include "graph_services.h"
+#include "graph.h"
+#include "linked_list.h"
+
+linked_list * graph_get_edges(graph * g){
+	/* DA IMPLEMENTARE */
+	return NULL;
+}
+
+int graph_is_connected(graph * g){
+	/* DA IMPLEMENTARE */
+	return 0;
+}
+
+int graph_is_1_connected(graph * g){
+	/* DA IMPLEMENTARE */
+	return 0;
+}

@@ -1,0 +1,44 @@
+Una struttura dati efficiente per la gestione di insiemi disgiunti è il tda partizione. Una semplice implementazione
+di una partizione può essere realizzata attraverso una collezione di sequenze, una per ogni insieme, dove ogni
+sequenza di un insieme A, memorizza come suoi elementi le posizioni dell'insieme. Per ogni elemento viene
+utlizzata una variabile element, che rappresenta un riferimento all'elemento associato x. Inoltre, viene utilizzata
+un'altra variabile set, che è un riferimento all'insieme p che contiene l'elemento x. Il tda partizione supporta
+i seguenti metodi :
+- makeSet(x) : costruisce un insieme composto da il solo elemento x e restituisce la posizione in cui x viene
+               memorizzato.
+- union(A, B) : restituisce A U B, distruggendo i vecchi insiemi A e B.
+- find(p) : restituisce la posizione dell'insieme che memorizza l'elemento in posizione p.
+
+Una serie di operazioni union, makeSet e find su una partizione contenente n elementi viene eseguita in un tempo
+O(n*log(n)). Per dimostrare la precedente affermazione, possiamo notare che un operazione di find può essere
+eseguita in tempo costante seguendo il riferimento a set. In modo analogo, anche l'operazione di union può essere
+eseguita in tempo costante. Per n elementi, queste operazioni portano ad un tempo di esecuzione pari a O(n).
+Un'osservazione importante è la seguente : ogni volta che una posizione viene spostata da un insieme ad un'altro,
+la cardinalità del nuovo insieme sarà almeno doppia rispetto a quella dell'insieme spostato. Da questo segue che
+una posizione verrà spostata al più log(n) volte. Visto che, esistono O(n) elementi distinti che faranno
+riferimento a questa serie di operazioni, il costo di tale serie sarà pari a O(n*log(n)). Il costo ammortizzato
+di una operazione in una serie di operazioni è pari al tempo di esecuzione complessivo per tale serie diviso il
+numero di operazioni. In tal caso, il tempo di esecuzione ammortizzato per ciascuna operazione di makeSet, union
+e find sarà pari a O(log(n)).
+ 
+Di seguito si riportano lo pseudocodice per ciascuna operazione.
+
+Algorithm makeSet(x) :    
+	p[x] <- x                                      Theta(1)
+	rank[p] <- 0
+	
+Algorithm LINK(x, y) :
+	if rank[x] < rank[y] then :
+		rank[y] <- rank[x]
+	else if rank[x] > rank[y] then :               Theta(1)
+		rank[x] <- rank[y]
+	else
+		rank[y] + 1
+
+Algorithm union(A, B) :
+	return LINK(find(A), find(B))                  Theta(log n)
+	
+Algorithm find(x) : 
+	if p[x] != x
+		p[x] <- find(p[x])                         Theta(log n)
+	return p[x]

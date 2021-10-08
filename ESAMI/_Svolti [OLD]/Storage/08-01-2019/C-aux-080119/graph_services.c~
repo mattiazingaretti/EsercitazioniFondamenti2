@@ -1,0 +1,28 @@
+#include <stdlib.h>
+#include <math.h>
+
+#include "graph_services.h"
+#include "graph.h"
+#include "linked_list.h"
+
+static char* char_gen(int seed){
+	char* ret = malloc(2 * sizeof(char));
+	ret[0] = (char) (65 + (rand() % 26));
+	ret[1] = '\0';
+	return ret;
+}
+
+graph* mat2list(int** g, int n){
+    /*DA IMPLEMENTARE*/
+    return NULL;
+}
+
+int is_strongly_connected(graph* g){
+    /*DA IMPLEMENTARE*/
+    return 0;
+}
+
+int is_closed(graph* g){
+    /*DA IMPLEMENTARE*/
+    return 0;
+}

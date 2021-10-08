@@ -1,0 +1,105 @@
+a) Consideriamo di implementare una mappa attraverso una tabella di hash e sia il linear probing la metodologia
+   scelta per gestire le collisioni. Tale metodo prova ad inserire una nuova entry (k,v) nel bucket A[j],
+   ove j = h(k) ed h la funzione di hash. Se tale bucket è occupato allora proverà ad inserirla nel bucket
+   A[(j + 1) mod N], ove N è la dimensione del bucket array. Se anche tale bucket è occupato proverà nel
+   bucket A[(j + 2) mod N] e così via fino a trovare un bucket vuoto. Quando lo trova, vi inserisce direttamente
+   la entry (k,v). Adesso descriveremo le seguenti operazioni :
+     - remove(A, (k,v)) : per rimuovere una entry non possiamo semplicemente rimuoverla dallo slot della
+       tabella di hash in cui è memorizzata. Infatti, nel caso in cui degli slot successivi allo slot
+       considerato siano occupati, la ricerca per una data chiave k darebbe un esito negativo. Perciò, un
+       tipico approccio che viene utilizzato è di sostituire la entry da rimuovere con un particolare
+       oggetto sentinella chiamato available.
+     - put(A, (k,v)) : Dalle precedenti ipotesi, l'algoritmo di inserimento di una entry (k,v) deve essere
+       modificato. Infatti, quando incontriamo un oggetto available e negli slot successivi ad esso non vi
+       è alcuna entry che coincida con la entry che si vuole inserire, è bene tenere un riferimento a tale
+       oggetto poichè è un luogo valido dove inserire una nuova entry. In caso positivo inseriremo la entry
+       (k,v) al posto dell'oggetto available, altrimenti non inseriremo nulla.
+     - get(A, k) : Anche l'algoritmo di get deve essere modificato. Esso dovrà analizzare gli slot successivi
+       della generica entry analizzata, e quando incontreremo un oggetto available lo salteremo. La ricerca
+       termina quando viene trovato un bucket vuoto oppure una entry con chiave uguale a k.
+
+
+b) Per risolvere tale problema sfrutto la proprietà degli insiemi, essi non possono contenere elementi
+   duplicati. Un algoritmo di ordinamento efficiente per ordinare un sequenza di n elementi distinti è il
+   countingSort. Di seguito si riporta lo pseudocodice : 
+   
+  Algorithm getElements(S, n, k) :
+	Input : insieme S costituito da n elementi distinti, k elementi più piccoli da restituire
+	Output : i k elementi più piccoli di S
+	
+	max <- maximum element of S
+	output <- countingSort(S, max)
+	
+	return output[0], ..., output[k]
+
+  Algorithm countingSort(S, n) :
+	Input : insieme S, dove n è il valore massimo
+	Output : insieme S ordinato
+	
+    count <- array inizializzato a 0 di dimensione n + 1
+    
+    for i <- 0 to S.length() do :
+      count[S[i]] <- count[S[i]] + 1
+     
+    for i <- 1 to n do :
+	  count[i] <- count[i] + count[i-1]
+	  
+	for i <- 0 to S.length() do :
+	  output[count[S[i]]] <- S[i]
+	  count[S[i]] <- count[S[i]] - 1
+	return output
+    
+   Il costo di tale algoritmo è Theta(|S| + n).
+
+
+c) Un grafo G è una foresta se è un grafo aciclico non necessariamente connesso. Di seguito si riporta
+   lo pseudocodice di un algoritmo che esegue una visita in profondità di G :
+   
+   
+   
+   Algorithm isAcycle_aux(node) :
+     node->tag <- DISCOVERY
+     
+     ret <- 0
+     for e ∈ node.incident_edges() do :
+       if(e->tag == UNEXPLORED) then :
+         opp <- (e->source != node) ? e->source : e->dest
+         
+         if(opp->tag == UNEXPLORED) then :
+           edge->tag = DISCOVERY
+           ret <- isAcycle_aux(opp)
+           
+           if(ret) then :
+		     return 1
+         else :
+           return 1 //cycle found !
+     return ret
+   
+   
+   
+   Algorithm isAcycle(G) :
+      Input : grafo G
+      Output : 1 se G è aciclico, 0 altrimenti
+      
+      for v ∈ G.vertices() do :
+        v->tag <- UNEXPLORED
+        for e ∈ v.incidentEdges() do :
+          e->tag <- UNEXPLORED
+          
+      for v ∈ G.vertices() do :
+        if(v->tag == UNEXPLORED) then :
+          ret <- isAcycle_aux(v)
+          
+          if(ret) then :
+		    return 0
+      return 1
+      
+   Il costo di tale algoritmo equivale al costo di una visita in profondità di un dato grafo G. Perciò, 
+   risulta pari a Theta(n + m), ove n è il numero di vertici ed m è il numero degli archi del grafo.
+      
+   
+   
+   
+   
+   
+   

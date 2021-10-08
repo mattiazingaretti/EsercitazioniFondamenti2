@@ -1,0 +1,23 @@
+a) L'algoritmo g(int[] a) chiama il metodo g(int [] a, int i, int j). Analizzando tale algoritmo, notiamo
+   che se i = j, allora l'algoritmo termina restituendo a[i]. Altrimenti, memorizza nella variabile
+   onefourth una particolare computazione ed effettua due chiamate ricorsive a se stesso. Inoltre, possiamo
+   notare che la prima chiamata effettuerà circa (a.length - 1)/4 chiamate, mentre la seconda ne effettuerà
+   circa 3*(a.length - 1)/4. Perciò, rappresentando tale algoritmo attraverso un albero di ricorsione T ed 
+   indicando con n = a.length -1 la dimensione dell'array fornito in input, possiamo notare che i due 
+   sottoalberi radicati nella radice di T avranno altezza pari rispettivamente a log_4(n) e log_4/3 (n). 
+   Naturalmente, per ogni livello i = 1, ...., log_4(n) il tempo speso in ognuno di essi sarà pari a 
+   Theta(n). Per ogni livello i = log_4(n) + 1, ...., log_4/3(n) il tempo speso sarà necessariamente
+   minore di Theta(n). In altri termini, per i = 1, ...., log_4(n) si ha
+						T(n) = sum {i = 1 to log_4(n)} [(1/4)^i + (3/4)^i] *n,
+   Mentre per i = log_4(n) + 1, ...., log_4/3(n) si ha
+						T(n) = sum {i = log_4(n) to log_4/3(n)} (3/4)^i * n.
+   Nel caso peggiore l'altezza dell'albero T è pari a log_4/3(n), perciò il costo temporale asintotico di 
+   tale algoritmo è pari a Theta(h*n) = Theta(n*log_4/3(n)) = Theta(n*log(n)). Ne segue che il costo
+   dell'algoritmo g(int[] a) risulta pari a Theta(n*log(n)).
+   
+b) Nel caso in cui alla variabile onefourth venisse assegnato (j+1-i)/5, il costo asintotico temporale
+   dell'algoritmo non cambierebbe, poichè è vero che l'algoritmo effettua meno chiamate ricorsive ma nei due
+   casi il costo differirebbe per una base del logaritmo, che nel caso dell'analisi degli algoritmi è considerata
+   una costante. Per quanto precedentemente affermato, il costo spaziale dell'algoritmo in tale caso sarebbe
+   minore rispetto al caso precedente, a causa di una pila delle chiamate ricorsive più piccola.
+  

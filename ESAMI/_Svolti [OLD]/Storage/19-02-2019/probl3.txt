@@ -1,0 +1,73 @@
+a) Per stimare il costo computazionale di un algoritmo possiamo farlo operare su input di diverse dimensioni
+   e misurare il relativo tempo di esecuzione associato a ciascuno di essi. Queste misure possono essere
+   effettuate in modo accurato attraverso della chiamate di sistema previste dal linguaggio oppure dal sistema
+   operativo (ad esempio possiamo utilizzare il metodo getTimeMillis()). Il risultato che otteniamo è una 
+   relazione fra il tempo di esecuzione e un input di una particolare dimensione, mentre noi siamo interessati
+   ad una dipendenza generale fra il tempo di esecuzione e la dimensione dell'input. Per raggiungere questo
+   obiettivo possiamo rappresentare il tempo di esecuzione e la dimensione dell'input come punti su un grafico,
+   dove l'asse delle ordinate rappresenta la dimensione dell'input e l'asse ascisse il tempo di esecuzione.
+   I dati raccolti da questo grafico portano ad un'analisi statistica, il cui scopo è di determinare una
+   funzione che meglio si adatta al nostro algoritmo. Per conferire affidabilità a tale statistiche bisogna
+   scegliere accuratamente gli input ed eseguire un numero di esperimenti abbastanza elevato. Lo studio 
+   sperimentale del tempo di esecuzione di un algoritmo è molto utile, ma ha i seguenti svantaggi :
+     - il tempo di esecuzione di un algoritmo viene studiato su un insieme finito di input. Perciò, potremmo
+       trascurare degli input significativi (input non appartenenti all'insieme) per il tempo di esecuzione.
+     - se due algoritmi vengono confrontati, nel caso in cui essi siano stati compilati ed eseguiti su due
+       ambienti software e hardware differenti, allora potrebbero sorgere dei problemi.
+     - per studiare sperimentalmente il tempo di esecuzione di un algoritmo abbiamo bisogno di compilarlo
+       ed eseguirlo completamente.
+
+
+b) 
+   Algorithm cycleDFS(node) :
+     node->tag <- DISCOVERY
+     ret <- 0
+     
+     for e ∈ node.incident_edges() do :
+       if(e->tag == UNEXPLORED) then :
+         e->tag <- DISCOVERY
+         opp <- (e->source != node) ? e->source : e->dest
+         
+         if(opp->tag == UNEXPLORED) then :
+           ret <- cycleDFS(opp)
+           
+           if(ret) then :
+             return ret
+         else :
+           return 1 //cycle found
+     return ret
+     
+     
+   Algorithm isAcyclic(G) :
+     Input : grafo diretto G
+     Output : 1 se G è aciclico, 0 altrimenti
+     
+     for v ∈ G.vertices() do :
+	   v->tag <- UNEXPLORED
+	   for e ∈ v.incident_edges() do :
+	     e->tag <- UNEXPLORED
+	 
+	 for v ∈ G.vertices() do :
+	   if(v->tag == UNEXPLORED) then :
+	     if(cycleDFS(v)) then :
+	       return 0
+	 return 1
+	 
+   Abbiamo implementato una visita in profondità diretta (DDFS); perciò il costo di tale algoritmo risulta
+   pari a Theta(n + m), ove n è il numero di vertici ed m il numero degli archi del grafo G.
+   
+c) La rappresentazione di un albero binario di n nodi mediante un array A, memorizza ogni nodo p dell'albero
+   in una cella di A, dove l'indice è proprio pari al numero del livello (f(p)) in cui si trova il nodo. In
+   particolare :
+     - se p è la radice, allora f(p) = 0
+     - se q è il figlio sinistro di p, allora f(q) = 2*f(p) + 1
+     - se q è il figlio destro di p, allora f(q) = 2*f(p) + 2.
+     
+   Tale rappresentazione consente di determinare l'ultimo nodo dell'albero in tempo costante, poichè sarà
+   sempre memorizzato nella locazione A[n-1]. In questa rappresentazione, tale operazione richiede meno
+   sforzo rispetto all'implementazione di un albero binario tramite lista collegata. Tale rappresentazione
+   è molto conveniente se l'albero binario è completo, poichè le celle dell'array A verranno occupate
+   contiguamente dall'indice 0 a n-1. Se l'albero binario non è completo, allora vi è un spreco di memoria,
+   poichè sarà allocato in memoria un array di dimensione n, dove solamente poche delle sue celle verranno
+   realmente utilizzate.
+   

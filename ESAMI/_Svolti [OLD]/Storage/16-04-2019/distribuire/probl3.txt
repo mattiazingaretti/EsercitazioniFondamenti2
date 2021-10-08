@@ -1,0 +1,64 @@
+a) 
+	Algorithm Heapify(A, i) :
+		left <- 2*i
+		right <- 2*i + 1
+		
+		if(left <= n && A[left] > A[i])
+			max <- left
+		else
+			max <- i
+			
+		if(right <= n && A[right] > A[max])
+			max <- right
+		
+		if(max != i)
+			swap(A[i], A[max])
+			Heapify(A, max)
+
+
+	Algorithm maxHeap(A) :
+		n <- elements of A
+		for floor(n/2) downto 1 do :
+			Heapify(A, i)
+		
+Il costo di tale algoritmo è Theta(n*log(n)).
+
+
+b) 
+	int isComplete_aux(tree* t, int curr_height) {
+		if(t == NULL)
+			return curr_height - 1;
+
+		int left = isComplete_aux(t->left, curr_height + 1);
+		int right = isComplete_aux(t->right, curr_height + 1);
+		
+		if(left < 0 || right < 0)
+			return -1;
+			
+		if(left != right)
+			return -1;
+
+		return left; //oppure right
+	}
+
+
+
+	int isComplete(tree* t) {
+		if(t == NULL)
+			return 0;
+		
+		int res = isComplete_aux(t, 0);
+		return (res >= 0) ? 1 : 0;
+	}
+	
+c) 
+- Visita pre-order :  D, H, E, O, C, F, P, I, M, J, B, G, N, A, L, K.
+- Visita post-order : E, F, I, P, C, O, H, N, G, B, J, K, L, A, M, D. 
+- Visita in-order :   E, H, F, C, P, I, O, D, J, G, N, B, M, A, K, L.
+
+d) Gli alberi di Fibonacci sono una tipologia di alberi bilanciati più vicini alla condizione di sbilanciamento
+con il minimo numero di nodi. Prendono il nome del famoso matematico Leonardo Fibonacci, poichè utilizzano
+la proprietà della nota successione di Fibonacci, visto che sono alberi intrinsecamente ricorsivi. Un albero
+di Fibonacci di altezza h può essere sempre costruito da una radice, un sottoalbero sinistro di altezza h - 1 e
+un sottoalbero destro di altezza h - 2. Inoltre, permettono di dimostrare che un albero AVL ha un'altezza 
+logaritmica rispetto ai suoi nodi.

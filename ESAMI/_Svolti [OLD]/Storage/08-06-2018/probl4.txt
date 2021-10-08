@@ -1,0 +1,89 @@
+a) 
+   Algorithm getPath_aux(f, path, final_path) : 
+     if(f == NULL) then : 
+       return 0
+     
+     path.concat("/")
+     path.concat(f->name)
+     
+     fc <- getPath_aux(f->firstChild, path, final_path)
+     ns <- getPath_aux(f->nextSibling, path, final_path)
+     
+     if(f->firstChild == NULL && f->type == 2) then :
+       if(f->size > fc && f->size > ns) then :
+         *final_path <- path
+	     return f->size
+	 return (fc > ns) ? fc : ns
+     
+     
+     Algorithm getPath(f) :
+       final_path <- ""
+       
+       getPath_aux(f->firstChild, f->name, final_path)       
+       return final_path
+     
+  
+b) 
+   Algorithm getFoldersInfo_aux(f) : 
+     if(f == NULL) then :
+       return 0
+     
+     fc_size <- getFoldersInfo_aux(f->firstChild)
+     ns_size <- getFoldersInfo_aux(f->nextSibling)
+       
+     if(f->firstChild != NULL && f->type != 0) then :
+       printf("folder : %s with size : %d\n", f->name, fc_size + ns_size)
+   
+   
+     if(f->firstChild == NULL && f->nextSibling != NULL && f->type == 2) then :
+       return f->size + ns_size
+     return f->size
+     
+   
+   
+
+   Algorithm getFoldersInfo(f) :
+     if(f == NULL) then :
+       return 
+       
+     getFoldersInfo_aux(f->firstChild)
+
+
+c) 
+
+   Algorithm getNumFiles_aux(f, level, max_level, counter) :
+     if(f == NULL) then :
+       return
+       
+     getNumFiles_aux(f->firstChild, level + 1, max_level, counter)
+     getNumFiles_aux(f->nextSibling, level, max_level, counter)
+     
+     
+     if(f->firstChild == NULL && f->type == 2 && level <= max_level) then :
+       (*counter)++
+ 
+
+   Algorithm getNumFiles(f, d) :
+     if(f == NULL) then :
+       return 0
+     
+     counter <- 0
+     getNumFiles_aux(f->firstChild, 0, d, &counter)
+
+	 return counter
+
+d) Una struttura dati adatta per rappresentare un file system è un albero senza alcun vincolo sul numero di
+   figli che un nodo può avere. In particolare, utilizzeremo la seguente struttura :
+   
+   typedef struct {
+     struct Tree* firstChild,  // puntatore al primo figlio
+     struct Tree* nextSibling, // puntatore al prossimo fratello
+     int capacity,
+     int type, // 0 : radice, 1 : cartella vuota, 2 : file
+     int size
+     char* name
+   } Tree;
+   
+   
+   
+   

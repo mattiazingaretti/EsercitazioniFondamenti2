@@ -1,0 +1,48 @@
+
+typedef struct {
+  binTree* root,
+  int complete,
+  int size
+ } Data;
+
+
+int getHeight(int size){
+	return log2(size);
+}
+
+
+Data* isComplete_aux(binTree* bt){
+  Data* d = (Data*) malloc(sizeof(Data));
+
+  if(bt == NULL){
+    d->complete = 1;
+    d->size = 0;
+    d->root = NULL;
+    return d;
+  }
+  //printf("Visiting node : %d\n", bt->key);
+
+  Data* dl = isComplete_aux(bt->left);
+  Data* dr = isComplete_aux(bt->right);
+
+  if(dl->complete && dr->complete && getHeight(dl->size) == getHeight(dr->size)){
+    d->complete = 1;
+    d->size = dl->size + dr->size + 1;
+    d->root = bt;
+  }else{
+    d->complete = 0;
+    d->size = (dl->size > dr->size) ? dl->size : dr->size;
+    d->root = (dl->size > dr->size) ? dl->root : dr->root;
+  }
+  return d;
+}
+
+
+int isComplete(binTree* t){
+  if(t == NULL)
+	return 0;
+
+  Data* d = isComplete_aux(t);
+
+  return d->size;
+}

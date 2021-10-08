@@ -1,0 +1,53 @@
+a) Dato un grafo semplice non orientato, pesato, privo di archi paralleli e di auto anelli, possiamo definire le 
+   seguenti tipologie di shortest path :
+   - shortest path (SP) : dati due vertici u e v determinare il percorso più breve (se esiste) che li collega.
+   - single source shortest path (SSSP) : dato un vertice di partenza s, determinare i percorsi più brevi che
+     lo collegano ad ogni altro vertice del grafo.
+   - all pairs shortest path (APSP) : per ogni vertice u del grafo, determina i percorsi più brevi che lo
+     collegano ad ogni altro vertice del grafo.
+
+b) Per determinare l'albero dei cammini minimi radicati in A, visto che il grafo fornito ha degli archi con
+   peso negativo, dobbiamo utilizzare un algoritmo più robusto di quello di Dijkstra. L'algoritmo che andremo
+   ad utilizzare è chiamato algoritmo di Bellman-Ford, il quale effettua il rilassamento degli 
+archi del grafo |V| - 1 volte, dove
+   |V| è il numero di vertici del grafo. Questo modo di operare è dovuto al fatto, che in un iterazione l'algoritmo
+   potrebbe non determinare l'albero dei cammini minimi, poichè nella prossima iterazione potrebbe essere calcolato
+   un' altro albero con cammini minori del precedente, a causa dei pesi negativi degli archi. Tale algoritmo
+   è più lento dell'algoritmo di Dijkstra, ma è più versatile. Nel caso in cui sia presente un ciclo il cui
+   peso totale è negativo, allora l'algoritmo lo rileva restituendo un errore, ma non c'è modo di calcolare
+   l'albero dei cammini minimi, poichè ad ogni passaggio nel ciclo dei vertici il peso di un generico cammino minimo
+   diventerebbe ancora minore. Il costo di tale algoritmo è, quindi, pari a Theta(|V|*|E|), ove |V| ed |E|
+   sono rispettivamente il numero dei vertici e degli archi del grafo. Di seguito si riporta lo pseudocodice di 
+   tale algoritmo :
+   
+   Algorithm Bellman-Ford(G, source) :
+     for v ∈ G.vertices() do :
+       if(v != source) then :
+         dist[v] <- INF
+         pred[v] <- null
+       else :
+         dist[v] <- 0
+         pred <- empty
+
+     for i <- 0 to G.vertices() - 1 do :
+       for (u, v) ∈ G.edges() do :
+         if(dist[u] + w(u, v) < dist[v]) then :
+           dist[v] <- dist[u] + w(u, v)
+           pred[v] <- u
+     
+     //check if there's a negative weight cycle
+     for (u, v) ∈ G.edges() do :
+       if(dist[u] + w(u, v) < dist[v]) then :
+         printf("[ERROR] Negative weight cycle found !\n")
+         return
+     return dist, pred
+     
+c) L'albero dei cammini minimi qualora il grafo al punto (b) avesse il peso di tutti gli archi pari ad 1, può
+   essere determinato sfruttando una nota proprietà della visita in ampiezza di un grafo. Tale visita inizia
+   da un vertice s, è meno avventurosa della visita in profondità e suddivide i vertici in livelli. Il vertice s
+   si trova nel livello 0, e tale metodo andrà a visitare i vertici raggiungibili da s che si troveranno nel livello
+   1. In seguito, andrà a visitare i vertici raggiungibili da vertici raggiungibili da s, che si troveranno nel
+   livello 2, e così via. Perciò, se un generico vertice v si trova nel livello i, allora da distanza più breve
+   da s è proprio pari ad i. Un qualsiasi altro percorso che collega v ad s, avrà almeno i archi. In tal caso,
+   possiamo determinare l'albero dei cammini minimi radicati in A, in un tempo pari a Theta(n+m), ove n ed m
+   sono rispettivamente il numero dei vertici e degli archi del grafo.
