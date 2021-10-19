@@ -9,7 +9,10 @@ public class TestOrdinamento {
         }
 
         //ADD TESTS HERE for *Sort classes.
-        
+        Ordinamento[] mergeSort = new Ordinamento[]{new MergeSort()};
+        for (TipoInput inMergeSort : TipoInput.values()) {
+            BenchmarkSorting.test(mergeSort, 10000000, inMergeSort);
+        }
 
 
     }
