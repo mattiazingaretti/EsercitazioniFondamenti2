@@ -3,7 +3,7 @@
  */
 public class TestOrdinamento {
     public static void main(String[] args) {
-        /*
+        
         Ordinamento[] algoritmi = new Ordinamento[]{new OrdinamentoQuickSortDefaultJava()};
         for (TipoInput input : TipoInput.values()) {
             BenchmarkSorting.test(algoritmi, 10000000, input);
@@ -31,7 +31,7 @@ public class TestOrdinamento {
         for (TipoInput inSelectionSort : TipoInput.values()) {
             BenchmarkSorting.test(selectionSort, 100000,inSelectionSort);
         }
-        */
+        
         
         Ordinamento[] quickSort = new Ordinamento[]{new QuickSort()};
         for (TipoInput inQuickSort: TipoInput.values()) {
