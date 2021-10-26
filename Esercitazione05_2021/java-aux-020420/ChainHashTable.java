@@ -44,18 +44,16 @@ public class ChainHashTable extends AbstractHashTable {
 				}
 				elem = trabocco.pollFirst();
 			}
-			return -1;
-		}else{
-			return -1;
 		}
+		return -1;
 	}
 	
 	// Aggiorna il valore associato alla chiave k
 	// Restituisce il vecchio valore o -1 se la chiave non è presente
 	public int put(String k, int value) {
 		//ADD check on size of table.
-		System.out.println("AO : " + this.getCapacity() + "  : " +this.hashFunction(k));
-		LinkedList l = table[this.hashFunction(k)];
+		
+		LinkedList<Entry> l = table[this.hashFunction(k)];
 		int v = this.get(k);
 		if(v == -1 ){
 			Entry elem = new Entry(k , value);
@@ -82,11 +80,15 @@ public class ChainHashTable extends AbstractHashTable {
 	// Restituisce un oggetto Iterable contenente tutte le coppie presenti
 	// nella tabella hash
 	public Iterable<Entry> entrySet() {
-		/*Iterable<Entry> it = new LinkedList<Entry>().listIterator();
-		for(int i = 0; i < this.size() ; i++){
-			;
-		}*/
-		return null ;
+		LinkedList<Entry> it = new LinkedList<Entry>();
+		
+		for(int i = 0; i < this.getCapacity() ; i++){
+			if(table[i] != null){
+				System.out.println(table[i].toString());
+			}
+		}
+		
+		return it ;
 	}
 
 }

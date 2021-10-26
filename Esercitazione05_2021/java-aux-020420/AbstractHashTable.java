@@ -1,5 +1,6 @@
 import java.util.Random;
 import java.util.ArrayList;
+import java.util.*;
 
 public abstract class AbstractHashTable {
 	private int capacity; // dim. tabella
@@ -41,6 +42,7 @@ public abstract class AbstractHashTable {
 		b = gen.nextInt(prime);
 		createTable();
 	}
+
 	public AbstractHashTable(int cap, int p) {
 		this(cap, p, 0.5); // massimo fattore di carico predefinito
 	}
@@ -58,7 +60,10 @@ public abstract class AbstractHashTable {
 	// a cominciare dalle stringhe
 	protected int hashFunction(String k) { 
 		int hc = k.hashCode();
-		return 	(((int)a*hc + (int)b )% prime ) % capacity;
+
+		int hashCode = (int) (( a* (long) hc + b  ) % prime ) %  capacity;
+		if(hashCode < 0) hashCode *= -1;
+		return hashCode;
 	}
 	
 	// metodo che aggiorna la dimensione della tabella hash	(N)
@@ -108,13 +113,14 @@ public abstract class AbstractHashTable {
 	// Stampa una rappresentazione delle coppire presenti secondo
     // il formato [(k1, v1),(k2,v2), ... ,(kn, vn)]
 	public void print() {
-		ListIterator<Entry> it = this.entrySet();
 		System.out.print("[ ");
 
+		Iterator<Entry> it = this.entrySet().iterator();
 		while(it.hasNext()){
-			System.out.print(" ("+it.getKey()+", " +it.getValue() + " ) ");
-			it = it.next();
+			Entry e = it.next();
+			System.out.print(" ("+e.getKey()+ " "+e.getValue()+ ")");
 		}
+		
 		System.out.println(" ]");
 	}
 	
