@@ -63,7 +63,7 @@ public abstract class AbstractHashTable {
 	
 	// metodo che aggiorna la dimensione della tabella hash	(N)
 	protected void resize(int newCap) { 	
-		this.capacity *= 2;
+		this.capacity = newCap;
 		return;
 	}
 		
@@ -100,7 +100,7 @@ public abstract class AbstractHashTable {
 	// restituisce valore max. per il fattore di carico (si effettua resize se superato)
 	public double getMaxLambda() { 
 		if( size()/getCapacity() >= 0.75){
-			resize();
+			resize(2*getCapacity());
 		}
 		return 0.75;
 	}
@@ -108,7 +108,14 @@ public abstract class AbstractHashTable {
 	// Stampa una rappresentazione delle coppire presenti secondo
     // il formato [(k1, v1),(k2,v2), ... ,(kn, vn)]
 	public void print() {
-		System.out.println("[]");
+		ListIterator<Entry> it = this.entrySet();
+		System.out.print("[ ");
+
+		while(it.hasNext()){
+			System.out.print(" ("+it.getKey()+", " +it.getValue() + " ) ");
+			it = it.next();
+		}
+		System.out.println(" ]");
 	}
 	
 	// Metodi astratti da implementare nelle sottoclassi

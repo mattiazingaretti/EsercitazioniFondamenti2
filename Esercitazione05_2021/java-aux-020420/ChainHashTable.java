@@ -1,5 +1,6 @@
 import java.util.LinkedList;
 import java.util.ArrayList;
+import java.util.*;
 
 public class ChainHashTable extends AbstractHashTable {
 	// Un array di LinkedList per le liste di trabocco 
@@ -9,27 +10,26 @@ public class ChainHashTable extends AbstractHashTable {
 	// Costruttori
 	public ChainHashTable(int cap, int p, double lambda) {
 		super(cap, p, lambda);
-		createTable();
+		
 	}
 	public ChainHashTable(int cap, int p) {
 		super(cap, p); // massimo fattore di carico predefinito
-		createTable();
+		
 	}
 	public ChainHashTable(int cap) {
 		super(cap); // primo predefinito
-		createTable();
+		
 	}
 	public ChainHashTable() {
 		super(); // capacità predefinita
-		createTable();
 	}
 	
 	// Metodi non implementati in AbstractHashTable
 
 	// Inizializza una tabella hash vuota secondo i parametri passati al costruttore
 	protected void createTable() {
-		table = new LinkedList[this.getCapacity()];
-		return;
+		table = new LinkedList[getCapacity()];
+		return ;
 	}
 
 	// Restituisce il valore (intero) associato alla chiave k
@@ -54,15 +54,15 @@ public class ChainHashTable extends AbstractHashTable {
 	// Restituisce il vecchio valore o -1 se la chiave non è presente
 	public int put(String k, int value) {
 		//ADD check on size of table.
-		
+		System.out.println("AO : " + this.getCapacity() + "  : " +this.hashFunction(k));
 		LinkedList l = table[this.hashFunction(k)];
 		int v = this.get(k);
 		if(v == -1 ){
 			Entry elem = new Entry(k , value);
 			l = new LinkedList();
 			l.add(elem);
-			return -1;
 			this.incSize();
+			return -1;
 		}else{
 			int index = l.indexOf(new Entry(k , v));
 			l.set(index , new Entry(k , value));
@@ -75,14 +75,18 @@ public class ChainHashTable extends AbstractHashTable {
 	// Restituisce il vecchio valore o -1 se la chiave non è presente
 	public int remove(String k) {
 		this.decSize();
-		if()
+		
 		return -1;
 	}
 	
 	// Restituisce un oggetto Iterable contenente tutte le coppie presenti
 	// nella tabella hash
 	public Iterable<Entry> entrySet() {
-		return null;
+		/*Iterable<Entry> it = new LinkedList<Entry>().listIterator();
+		for(int i = 0; i < this.size() ; i++){
+			;
+		}*/
+		return null ;
 	}
 
 }
