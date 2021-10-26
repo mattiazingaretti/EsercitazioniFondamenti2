@@ -58,11 +58,12 @@ public abstract class AbstractHashTable {
 	// a cominciare dalle stringhe
 	protected int hashFunction(String k) { 
 		int hc = k.hashCode();
-		return 	((a*hc + b )% prime ) % capacity;
+		return 	(((int)a*hc + (int)b )% prime ) % capacity;
 	}
 	
 	// metodo che aggiorna la dimensione della tabella hash	(N)
 	protected void resize(int newCap) { 	
+		this.capacity *= 2;
 		return;
 	}
 		
@@ -70,12 +71,13 @@ public abstract class AbstractHashTable {
 	
 	// restituisce true se la tabella è vuota
 	public boolean isEmpty() { // restituisce true se tabella vuota
-		return false;
+		if(n <= 0) return true;
+		else return false;
 	}
 	
 	// restituisce il numero di chiavi presenti nella tabella
 	public int size() { 
-		return 0;
+		return n;
 	}
 	
 	// restituisce la capacità della tabella
@@ -85,17 +87,22 @@ public abstract class AbstractHashTable {
 	
 	// incrementa il numero n di chiavi presenti
 	public void incSize() { 
+		n++;
 		return;
 	}
 	
 	// decrementa il numero n di chiavi presenti
 	public void decSize() { 
+		n--;
 		return;
 	}
 	
 	// restituisce valore max. per il fattore di carico (si effettua resize se superato)
 	public double getMaxLambda() { 
-		return 0.0;
+		if( size()/getCapacity() >= 0.75){
+			resize();
+		}
+		return 0.75;
 	}
 	
 	// Stampa una rappresentazione delle coppire presenti secondo
