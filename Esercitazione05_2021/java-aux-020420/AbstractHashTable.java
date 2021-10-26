@@ -51,13 +51,14 @@ public abstract class AbstractHashTable {
 		this(5); // capacità predefinita
 	}
 	
-	// Metodi ausiliari comuni a tutte le classi
-	
+	// Metodi ausiliari comuni a tutte le classi.
+
 	// metodo che implementa la funzione hash (hash code + compressione)
 	// Si ricordi che ogni oggetto Java implementa hashcode, 
 	// a cominciare dalle stringhe
 	protected int hashFunction(String k) { 
-		return 	0;
+		int hc = k.hashCode();
+		return 	((a*hc + b )% prime ) % capacity;
 	}
 	
 	// metodo che aggiorna la dimensione della tabella hash	(N)
@@ -79,7 +80,7 @@ public abstract class AbstractHashTable {
 	
 	// restituisce la capacità della tabella
 	public int getCapacity() { 
-		return 0;
+		return this.capacity;
 	}
 	
 	// incrementa il numero n di chiavi presenti
