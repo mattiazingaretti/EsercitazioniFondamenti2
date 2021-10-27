@@ -39,7 +39,7 @@ public class ChainHashTable extends AbstractHashTable {
 		if( trabocco != null) {
 			Entry elem = trabocco.pollFirst();
 			while(elem != null){
-				if(elem.getKey() == k){
+				if(elem.getKey().equals(k) ){
 					return elem.getValue();
 				}
 				elem = trabocco.pollFirst();
@@ -59,11 +59,22 @@ public class ChainHashTable extends AbstractHashTable {
 			Entry elem = new Entry(k , value);
 			l = new LinkedList();
 			l.add(elem);
+			table[hashFunction(k)] = l;
 			this.incSize();
 			return -1;
 		}else{
-			int index = l.indexOf(new Entry(k , v));
-			l.set(index , new Entry(k , value));
+			if(l != null){
+				Entry e = l.pollFirst();
+				int idx = 0;
+				while(e != null){
+					if(e.getValue() == v){
+						l.set(idx , new Entry(k , value));
+					}
+					e = l.pollFirst();
+					idx += 1;
+				}
+			}
+			table[hashFunction(k)] = l;
 			return v;
 		}
 	}
@@ -87,10 +98,22 @@ public class ChainHashTable extends AbstractHashTable {
 				System.out.println(table[i].toString());
 			}
 		}
-		
 		return it ;
 	}
 
+	//Util DEBUG
+	/*
+	public void printTable(){
+		for(int i =0 ; i < this.getCapacity() ; i++){
+			if(table[i] != null){
+				System.out.println(table[i]);
+			}else{
+				System.out.println("null "+ i);
+			}
+		}
+		return;
+	}
+*/
 }
 
 
