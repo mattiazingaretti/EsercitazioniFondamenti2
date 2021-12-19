@@ -164,6 +164,10 @@ class GraphEdge{
 	public int getEdgeKey() {
 		return this.key;
 	}
+
+	public String toString(){
+		return new String( "( "+n1.key + " ," + n1.label +") -> ("+ n2.key + " , " + n2.label + " )");
+	}
 }
 
 class GraphNode{
@@ -183,5 +187,9 @@ class GraphNode{
 	*/
 	public String getNodeLabel() {
 		return this.label;
+	}
+
+	public String toString(){
+		return new String("( " + key + ", " +label + ")");
 	}
 }
