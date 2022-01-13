@@ -17,13 +17,6 @@ class Point{
 	public void setY(double y) {
 		this.y = y;
 	}	
-
-	public boolean equals(Object o){
-		if(o == null) return false;
-		if(o.getClass() != this.getClass()) return false;
-		Point t = (Point) o;
-		return t.x == this.x && t.y == this.y;
-	}
 }
 
 public class GraphServices {
@@ -68,40 +61,21 @@ public class GraphServices {
 	 * x ed y.
 	*/
 	public static Graph makeGraph(Point[] points){
-		Graph g = new Graph(points.length);
-		double[][] mat = g.getMat();
-
-		int i = 0, totEdges = 0;
-		for(Point p1 : points){
-			int j=0;
-			for(Point p2: points){
-				double dist = dist(p1, p2); //IF P2 == P1 dist(p1 , p2) =0 ;
-				mat[i][j] = dist;
-				if(dist > 0) totEdges++;
-				j++;
-			}
-			i++;
-		}
-		g.setnEdges(totEdges/2);
-		g.setMat(mat);
-		return g;
+		/*DA IMPLEMENTARE*/
+		return null;
 	}
 	
 	
-
-
-
-
 	/*
 	* Dato un grafo g, la funzione ritorna un nuovo grafo g', con gli archi che rappresentano
 	* un albero ricoprente che descrive la cablatura da impiegare per l'interconnesione
 	* di tutti i punti, minimizzando la quantita' di cavo impiegato. 
 	*/
 	public static Graph getBestConnections(Graph g) {
-		//MST problem
-
+		/*DA IMPLEMENTARE*/
 		return null;
 	}
+	
 	
 	/*
 	 * Dato un grafo ed un suo nodo v, la funzione ritorna l'altezza dell'albero
@@ -109,7 +83,6 @@ public class GraphServices {
 	*/
 	public static int getTreeHeight(Graph h, int v) {
 		/*DA IMPLEMENTARE*/
-
 		return 0;
 	}
 }
