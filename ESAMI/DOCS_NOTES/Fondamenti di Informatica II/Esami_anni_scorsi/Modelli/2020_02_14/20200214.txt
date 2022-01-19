@@ -1,0 +1,17 @@
+1) La notazione O-grande serve per determinare un upper bound del costo asintotico di un algoritmo o semplicemente di una porzione di codice. 
+   f(x) appartiene a O(g(x)) se f(x)<=cg(x) per ogni x>=x0 e c>0 costante
+
+2) NULL
+
+3) T(n) = c + T(n-1) + T(n-2).
+   T(4) = c + T(3) + T(2) = 2c + T(2) + T(1) + T(1) + T(0) = 3c + T(1) + T(0) + T(1) + T(1) + T(0) = 3 + 1 + 1 + 1 + 1 + 1 = 8
+   T(n) = 	NULL
+
+4) NULL
+
+5) Un problema decisionale si definisce decidibile se esiste un algoritmo che per ogni istanza del problema risponde correttamente vero o falso.  NULL
+
+6) L'analizzatore sintattico, o parser, è un processo che analizza dei dati in input per determinare la correttezza della struttura grazie ad una data grammatica. 
+   In particolare il l'analizzaore sintattico top-down prende in input una stringa da analizzare e tramite la grammatica data costruisce dei parse-tree dove cerca di 
+   ricostruire la sequenza di produzioni che portano alla stringa data in input. I possibili risultati possono essere uno o più gruppi diversi di produzioni, 
+   nel caso di una grammatica ambigua. Un possibile algoritmo per l'analisi top-down è il parser LL che 

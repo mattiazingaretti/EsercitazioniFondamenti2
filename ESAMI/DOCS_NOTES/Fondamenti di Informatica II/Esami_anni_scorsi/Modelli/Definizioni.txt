@@ -1,0 +1,50 @@
+Definizione Classe P
+La classe P rappresenta l'insieme dei linguaggi L tale che verificano che una stringa x appartiene o meno a L con una Macchina di Turing Deterministica in tempo polinomiale.
+
+Definizione 1 Classe NP
+La classe NP rappresenta l'insieme dei linguaggi L tale che si può controllare che una stringa x appartiene o meno a L con una MdT non Deterministica in tempo polinomiale.
+
+Definizione 2 Classe NP
+La classe NP rappresenta l'insieme dei linguaggi L tale che, data una stringa x appartenente a L, un certificato c(x) con lunghezza |c(x)| al più polinomiale, si può verificare che x appartiene a L attraverso una Mdt D, che riceve in input x e c(x), in tempo polinomiale.
+
+Confronto definizioni classi NP
+La prima definizione fa riferimento diretto ad una Mdt ND, mentre la seconda evidenzia che la verifica di una soluzione data è più semplice rispetto al calcolo della stessa. Tuttavia le definizioni sono equivalenti, dal momento che il certificato determina le decisioni non deterministiche della Mdt ND. 
+
+
+Gerarchia di Chomsky
+Tipo 0: Contiene tutti i tipi i tipi di linguaggi, e la caratteristica principale è che contiene qualsiasi tipo di epsilon produzione, non solo nell'assioma. Viene riconosciuto da una MdT.
+Tipo 1: Come il tipo 0 ma non ammette le epsilon-produzioni, viene riconosciuta da una MdT in tempo lineare.
+Tipo 2: La caratteristica principale è che è contex-free, cioè non dipende dalla parte dal contesto. La parte sinista della produzione contiene soltanto un non terminale. Viene riconosciuta da un automa a pila.
+Tipo 3: Le produzione della tipo 3 hanno nella parte sinistra un non terminale e nella parte destra 1 terminale e al più 1 non terminale. Viene riconosciuto da un automa a stati finiti, dove gli ASFD hanno lo stesso potere computazionale dei ASFND 
+
+Dati due problemi P e Q, come posso dimostrare che P è non più difficile di Q?
+Per dimostrare che il problema P non è più difficile di Q, bisogna fare la riduzione P<=pQ. Per fare ciò bisogna mappare ogni istanza di P in Q e la soluzione Q per l'istanza deve essere soluzione in P.
+
+Con riferimento al problema SAT con formula booleana in CNF, soddisfacibilità classe NP
+Il problema appartiene a NP, perchè basta osservare che per n varibili ci sono 2^n interpretazioni. Per controllare tutte le interpretazioni in tempo polinomiale serve una MdT ND.
+Per dimostrare che 4-SAT è NP bisogna mostrare che il lowerbound del problema non appartiene a P, ma esendo 4-SAT un caso particolare di SAT, anch'esso è NP.
+
+Macchina di Turing a 2 nastri vs singolo
+La MdT a due nastri è formata da due nastri, una unità di controllo che con due testine di lettura e scrittura leggono e scrivono sul nastro e si possono spostare di una posizione sia a sx, dx o immobile.
+La MdT a due nastri in potenza di calcolo e di spazio è uguale alla MdT a singolo nastro. Ma in termini di tempo ha un costo inferiore, dato che pre simulare una MdT multinastro in una a singolo nastro bisogna usare un algoritmo che ha costo polinomiale e bisogna usare un'alfabeto che ha costo esponenziale.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

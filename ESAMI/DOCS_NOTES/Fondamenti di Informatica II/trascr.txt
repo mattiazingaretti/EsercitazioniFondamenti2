@@ -1,0 +1,6856 @@
+00:10
+[Musica]
+02:20
+scusate voi che siete già connessi
+02:22
+riuscita a leggere quello che scrivo con
+02:25
+la penna sì sì prof
+02:31
+grazie
+02:46
+[Musica]
+10:22
+buonasera sentite si velo scuro
+10:27
+insomma cerco di tipico in realtà il
+10:31
+cielo oggi sarà tenuta dal professor
+10:34
+alessandro giuseppe però volevo
+10:36
+solamente pervenire un attimo nel caso
+10:39
+qualcuno abbia qualche domanda sulla
+10:43
+logistica dell'esame che lì è venuta nel
+10:45
+frattempo diciamo così vi sono sono qui
+10:49
+che mai
+10:51
+ponete meno o anche per email
+10:55
+ribadisco il fatto che io tenderei visto
+10:58
+da 120 prenotati a fare l'esame per la
+11:04
+doria moto però se qualcuno avesse
+11:06
+qualche esigenza particolare di farlo in
+11:08
+presenza se mi scrivono email
+11:10
+cercherò di farlo lo accontentiamo
+11:15
+diciamo così altrimenti per default
+11:17
+assumo che si faccia come i precedenti
+11:22
+appelli pil esame da remoto una solida
+11:27
+piattaforma extra 1 dicembre molto più
+11:31
+sicuro perché anche una capienza che
+11:35
+vede che c'è non si riuscirebbe a
+11:38
+garantire le condizioni di sicurezza
+11:40
+anche con la capienza ridotta delle aule
+11:43
+c'è una carenza di di aule ristrutturata
+11:50
+non ci sono domande su questi aspetti
+11:53
+logistici che dev'essere io l'avevo
+11:54
+detto
+11:55
+vi ricordate nelle ultime elezioni
+12:00
+passerei era la parola ad alessandro
+12:04
+giuseppe ricordandovi che mi ha ormai
+12:06
+ormai questa cosa avevo detto che era la
+12:09
+domanda teorica del primo appello
+12:12
+verterà diciamo su queste applicazioni
+12:16
+dell'automatica e tecniche innovative
+12:21
+tipo modem per dischi controllo reti
+12:24
+neurali forse tre anni ovviamente
+12:26
+ad altissimo livello e inventerò
+12:30
+qualcosa nella domanda di non scrivere
+12:32
+nello spazio di una pagina i concetti
+12:34
+principali e qualche cosa di questo
+12:37
+genere e quindi mi raccomando di stare
+12:39
+attenti anche perché sono veramente
+12:41
+molto interessante vedere tutto quello
+12:43
+che ci si può fare con con automatica
+12:47
+io spero quindi di vederti vedervi in
+12:51
+presenza va al al corso di laurea di
+12:54
+contro al gb l'ing
+12:56
+ok questo è tutto alessandro eh sì
+13:00
+grazie professore allora la lezione di
+13:03
+oggi iniziamo con il seminario facciamo
+13:07
+questo sempre seminario sulle
+13:09
+applicazioni dell'automatica e poi
+13:11
+diciamo o circa un'oretta insomma quello
+13:15
+che che avanza del sull'orario facciamo
+13:18
+qualche esercizio di esame su sulla
+13:20
+parte che abbiamo visto l'altra volta in
+13:22
+particolare su sul margine di fase il
+13:25
+margine il margine di guadagno perché
+13:27
+quelli sulle reti compensatrice li
+13:30
+abbiamo già visti come come sempre
+13:33
+ricaricherò poi gli esercizi
+13:36
+ieri vi ho caricato le dispense teoriche
+13:40
+che vi mancavano quel breve estratto di
+13:43
+cui avevamo parlato quindi vi mancano
+13:47
+giusto questi ultimi esercizi che
+13:49
+vediamo vediamo più tardi
+13:51
+allora questo seminario ha l'obiettivo
+13:55
+di far vedere un po di applicazioni che
+14:00
+l'automatica trova e in particolare è
+14:04
+stato costruito sulla base degli studi
+14:08
+che ho avuto modo di fare nel nel corso
+14:11
+del del dottorato che praticamente ho
+14:16
+completato ormai poco più di un anno fa
+14:19
+quindi è abbastanza personale però spero
+14:24
+vi possa dare qualche qualche spunto sia
+14:29
+per the sun e ovviamente che
+14:31
+eventualmente qualche spunto di
+14:33
+riflessione per
+14:35
+decide degli esami facoltativi all
+14:37
+indirizzo per il master e così via per
+14:41
+definire quella che poi sarà la vostra
+14:43
+carriera
+14:45
+allora se si parla di di automatica
+14:47
+soprattutto in sapienza ma non solo
+14:50
+ovviamente bisogna nominare il professor
+14:54
+antonio ruberti a cui è dedicato il di
+14:57
+ag
+14:57
+adesso voi avete fatto più di un anno
+15:01
+ormai in teledidattica però il di ag di
+15:05
+fatto è il dipartimento di ingegneria
+15:08
+informatica automatica e gestionale
+15:11
+attorno al quale gran parte delle lauree
+15:14
+che che sceglie che sceglierete insomma
+15:16
+che sceglierà la gran parte di voi ruota
+15:19
+perché sia il canale di informatica che
+15:23
+di automatica insomma ha sbocchi
+15:25
+naturali nelle laurea che sono afferenti
+15:27
+al nostro dipartimento l'automatica
+15:32
+venne definita da da ruberti come la
+15:35
+tecnologia nascosta la tecnologia
+15:37
+nascosta per eccellenza questo perché
+15:41
+perché quando noi diciamo automatica
+15:44
+pensiamo tipicamente è un robot che
+15:47
+cos'è l'automatica la risposta tipica
+15:49
+che riceviamo che addirittura possiamo
+15:55
+anche dire noi per farci capire è legata
+15:58
+all'automatica industriale
+15:59
+all'automazione industriale quindi i
+16:01
+robot industriali che lavorano lavorano
+16:05
+metallo lavorano in un processo
+16:07
+industriale in realtà l'automatica è una
+16:11
+scienza molto pervasiva perché è una
+16:15
+scienza che entra nell'ambito di tante
+16:19
+tecnologie diverse al punto tale che
+16:23
+tantissime tecnologie hanno alla loro
+16:28
+base proprio come fondamenta alcuni
+16:31
+risultati dell'automazione
+16:34
+e inoltre l'automatica o di giorno sta
+16:40
+diventando anche e sempre di più una
+16:44
+scienza una tecnologia se preferite
+16:49
+importante non solo per la sua
+16:51
+distribuzione capillare ma anche perché
+16:53
+il mondo si sta evolvendo verso il mondo
+16:57
+e la società si stanno evolvendo verso
+16:59
+una direzione in cui tutto quanto sarà
+17:02
+automatizzato in un'ottica che
+17:05
+oggigiorno viene definita in una visione
+17:09
+di intelligenza artificiale che però
+17:12
+ovviamente ha le sue basi
+17:15
+dietro il concetto di automazione per
+17:18
+proprio fuori dall industria come vi
+17:24
+dicevo l'automatica ha trovato
+17:27
+grandissime applicazioni tra le
+17:30
+tradizionali che possiamo pensare ad
+17:32
+esempio alla spazio o alle energetico le
+17:36
+fonti rinnovabili in particolare hanno
+17:38
+dato una grandissima spinta verso
+17:42
+l'integrazione di tecnologie legate
+17:45
+all'automazione di rete nei loro sistemi
+17:50
+troviamo grandissimi risultati
+17:53
+dell'automazione anche in domini non
+17:57
+proprio diciamo intuitivi non nei
+18:01
+classici domini come ad esempio il
+18:03
+mercato finanziario il cui funzionamento
+18:07
+di giorno si basa su sistemi di scambio
+18:13
+automatizzati che dietro hanno quelle
+18:15
+che di fatto sono nient'altro che leggi
+18:18
+di controllo probabilistiche la
+18:21
+cybersecurity che è una branca del
+18:24
+computer science anche a tantissimi
+18:28
+elementi incubi contatto con
+18:31
+l'automazione ovviamente va bè
+18:34
+l'aerospazio che però possiamo includere
+18:37
+i nei nei domini classici ma persino
+18:41
+possiamo trovare importanti contributi
+18:43
+dell'automazione nella fotografia
+18:47
+e nella computer vision in generale sia
+18:50
+da un punto di vista degli attuatori
+18:53
+veri e propri per l'auto focus per
+18:57
+permettere di mettere a fuoco corpi
+19:00
+lontani nello spazio tutte queste
+19:04
+tematiche legate al movimento delle
+19:06
+lenti quindi un'automatica che tocca da
+19:10
+un punto di vista degli ottavi un
+19:12
+sistema fisico sia per quanto riguarda
+19:14
+anche alcuni approcci all'analisi dei
+19:22
+dati raccolti tramite strumenti di
+19:25
+computer vision ovviamente vabbè una
+19:29
+delle vetture in cui l'industria sta
+19:33
+venendo colpita maggiormente la ricarica
+19:37
+l e sono i veicoli elettrici in
+19:40
+particolare per l'automazione sono
+19:42
+importanti tutte le tematiche legate
+19:44
+alla guida autonoma lo dice il nome
+19:46
+stesso ma anche problematiche relative
+19:50
+alla connessione dei veicoli elettrici
+19:52
+con la rete elettrica e uno insomma
+19:57
+delle applicazioni principe nell'ambito
+20:01
+delle smart grid è quella della ricarica
+20:03
+intelligente
+20:05
+di fatto quando sentite intelligente una
+20:08
+tecnologia intelligente molto spesso
+20:12
+questo intelligente in realtà ha delle
+20:16
+forti componenti legate all'automazione
+20:19
+di qualcosa perché donare l'intelligenza
+20:22
+a un macchinario di fatto e permettergli
+20:25
+di fare delle cose da solo
+20:27
+e questa è di fatto l'idea proprio alla
+20:30
+base dell'automazione
+20:34
+tutto quanto quello che ruota attorno
+20:36
+alla automatica ormai non dovrebbe esser
+20:39
+nuovo per voi ruota attorno ad un
+20:43
+semplice almeno concettualmente schema
+20:46
+di controllo basato sul feedback
+20:49
+quindi come avete visto abbondantemente
+20:52
+nel corso c'è un controllore che
+20:56
+ovviamente non è non è necessario sia un
+21:00
+controllore come quelli che avete visto
+21:02
+a questo corso è dotato di di equazioni
+21:07
+differenziali o meno può essere anche un
+21:11
+semplicemente un programma che
+21:13
+funzionano in un determinato modo
+21:16
+ma oltre al controllore ci sono altri
+21:20
+elementi dove c'è dell'intelligenza
+21:23
+adesso li nominiamo e la combinazione di
+21:27
+tutte queste intelligenze che portiamo
+21:30
+su al nostro sistema ha come obiettivo
+21:35
+un funzionamento migliore e autonomo se
+21:39
+vogliamo automatizzato del processo che
+21:44
+cos'è il processo il processo può essere
+21:47
+un sistema fisico ma anche un sistema
+21:49
+digitale per cui abbiamo un interesse
+21:53
+ovvero vogliamo che si comporti in un
+21:56
+determinato modo per osservare il
+21:59
+processo
+22:00
+ovviamente servono dei sensori che
+22:03
+possono essere dei dispositivi ma
+22:05
+possono essere anche di fatto dei
+22:07
+sensori software quindi strumenti che ci
+22:10
+permettono la lettura di alcune
+22:12
+caratteristiche del comportamento del
+22:14
+processo ma questi sensori oggi giorno
+22:19
+vengono utilizzati non come fonte di
+22:25
+dati da dare direttamente al controllore
+22:27
+ma come fonte di un feedback che viene
+22:31
+poi analizzato da un'entità intelligente
+22:34
+e questo processo di analisi delle
+22:38
+letture dei sensori è il processing dei
+22:41
+dati che è alla base del di tantissime
+22:46
+branche della computer science
+22:48
+praticamente la computer vision che è
+22:51
+una delle branche più importanti che
+22:55
+adesso sta prendendo anche il nome di
+22:57
+image computing che è legato tutta
+23:00
+l'analisi delle immagini ma troviamo qua
+23:05
+dentro anche tematiche più vicine al
+23:08
+mondo dei controlli come il problema del
+23:10
+del filtraggio tutte queste tecnologie
+23:13
+per l'analisi dei dati permettono di
+23:18
+generare un feedback ricco un feedback
+23:21
+eterogeneo vogliamo chiamarlo che
+23:30
+permette di fornire al nostro
+23:34
+controllore una visione di insieme
+23:37
+oppure una parola che piace tanto nei
+23:40
+progetti nei programmi di sviluppo e
+23:42
+olistica del nostro processo quando
+23:47
+abbiamo una visione d'insieme del
+23:48
+funzionamento del nostro processo quindi
+23:51
+quando possiamo sapere sotto tanti punti
+23:54
+di vista cosa sta accadendo in quello
+23:57
+che stiamo controllando possiamo
+23:59
+sintetizzare una legge di controllo
+24:02
+molto anche molto elaborata che combina
+24:07
+magari risultati legati al delle
+24:11
+proprietà del sistema quali possono
+24:14
+essere ad esempio la stabilità sintetica
+24:16
+possono essere il tracking di alcune
+24:20
+reference con proprietà che sono legate
+24:24
+magari al funzionamento economico oppure
+24:26
+a degli impatti anche strani anche ad
+24:30
+esempio gli impatti sociali che un
+24:32
+determinato processo può avere che
+24:34
+possono essere utilizzati ad esempio per
+24:36
+generare dei livelli di set point per
+24:40
+cui poi il nostro controllore di più
+24:44
+basso livello utilizzerà come come
+24:49
+reference per il nostro processo più più
+24:52
+fisico magari
+24:54
+tutto questo per dire che dietro
+24:56
+un'apparente semplicità di questo schema
+24:59
+a blocchi grassi e no 44 blocchetti
+25:04
+funzionalmente molto semplice da
+25:06
+spiegare
+25:08
+possiamo utilizzarlo possiamo utilizzare
+25:11
+questo schema anche per catturare delle
+25:14
+logiche di funzionamento molto molto
+25:16
+complesse e quindi proprio perché tutta
+25:20
+l'automazione si basa su un concetto
+25:22
+così semplice ma al tempo stesso così
+25:25
+rappresentativo con una capacità di
+25:27
+rappresentazione così elevata
+25:30
+ovviamente l'automatica può essere
+25:33
+applicata in in tanti domini questo è un
+25:38
+video che dovrebbe partire levo l'audio
+25:43
+questo qua è un esempio di uno dei più
+25:47
+recenti e avanzati sistemi per la
+25:50
+camminata autonoma proprio perché come
+25:53
+vi dicevo la robotica forse uno degli
+25:55
+esempi più classici ma assolutamente non
+25:58
+è l'unico campo dell'automazione e qui
+26:03
+vediamo come una serie di controllori in
+26:09
+gerarchici quindi una serie di
+26:10
+controllore di loop di controllo
+26:12
+innestati è in grado di risolvere un
+26:16
+problema altamente erabor altamente
+26:20
+complesse come quello della camminata ad
+26:23
+esempio noi qua vediamo il robot che in
+26:25
+grado di vedere un tronco davanti a lui
+26:28
+vedere i gradini davanti a lui
+26:31
+quindi ha degli elementi divisione
+26:34
+questi elementi divisione quindi di
+26:37
+analisi delle immagini forniscono
+26:40
+un'informazione che può essere per la
+26:43
+ricostruzione di alcune caratteristiche
+26:44
+su questi ostacoli davanti a lui
+26:47
+in particolare la loro altezza la loro
+26:49
+posizione con questa informazione
+26:53
+il robot è in grado di immaginare come
+26:56
+si deve muovere in avanti nel tempo
+26:59
+ovvero immagina che tipo di salto deve
+27:02
+fare e questo è un problema legato a una
+27:06
+proiezione nel futuro
+27:08
+un problema predittivo e per fare una
+27:10
+predizione gli serve un modello di se
+27:12
+stesso perché deve sapere come si
+27:13
+muoverà come se anzi quali sono i
+27:16
+movimenti possibili che farà e sulla
+27:20
+base di questo camminate in avanti che
+27:22
+si è tra virgolette immaginato alcuni
+27:25
+controllori dedicati al movimento dei
+27:28
+giunti delle ginocchia delle caviglie e
+27:30
+così via
+27:32
+a crono poi una legge di controllo per
+27:34
+il moto per proprio quindi anche in una
+27:38
+cosa che all'apparenza è banale come un
+27:41
+qualcosa che cammina vediamo come ci
+27:44
+siano in realtà almeno tre livelli di
+27:48
+loop di controllo io ovviamente ho
+27:50
+semplificato il look di controllo sono
+27:51
+ben più di tre però vi può dare un'idea
+27:55
+di come dietro anche a processi
+27:59
+relativamente comprensibili per
+28:01
+vivamente semplici alme no da osservare
+28:05
+ci siano logiche di controllo
+28:08
+discretamente complicate che sfruttano
+28:12
+informazioni quanto più eterogenee
+28:14
+possibile sempre rimanendo nell'ambito
+28:18
+della robotica in particolare della
+28:21
+boston dynamics che è una delle delle
+28:24
+compagnie più promettenti dal punto di
+28:27
+vista della ricerca possiamo vedere
+28:30
+altre alcune caratteristiche dei
+28:32
+controllori che poi per adesso avete
+28:34
+forse solo sentito nominare perché non
+28:37
+fanno parte del programma dei corsi che
+28:41
+avete affrontato fino ad adesso e in
+28:43
+particolare questo questo video che fa
+28:46
+anche a tratti un po ridere è dedicato a
+28:50
+mostrare quali sono i comportamenti dei
+28:53
+robot se sottoposti a disturbi esterni
+28:58
+che possono essere calci possono essere
+29:02
+ostacoli e diciamo problematiche che
+29:06
+vanno a modificare il loro comportamento
+29:08
+ideale quando ci si discosta da un
+29:12
+comportamento ideale ovviamente
+29:16
+di feedback diventa importante perché in
+29:20
+condizioni puramente ipotetiche
+29:23
+puramente ideali in teoria potremmo
+29:25
+accontentarci di un di un sistema di
+29:28
+controllo open loop
+29:30
+tuttavia il feedback proprio come come
+29:33
+vi dicevo non serve solo a compensare
+29:37
+errori di modellazione compensare
+29:41
+piccoli disturbi può servire anche a
+29:43
+compensare significative variazioni del
+29:47
+sistema o dell'ambiente e questa
+29:52
+quest'ambito insomma è legato a tutte le
+29:55
+tematiche che prendono il nome di
+29:57
+controllo robusto perché è un robusto è
+30:02
+un termine che indica il la per la
+30:07
+capacità di un sistema di affrontare
+30:11
+delle incertezze che ci sono tipicamente
+30:14
+all'interno del del modello utilizzato
+30:17
+per disegnare il controllore andando
+30:26
+all'obiettivo della presentazione di
+30:29
+oggi
+30:29
+scusate saltata una slide vedremo come
+30:33
+vi ho detto una serie di lavori che
+30:35
+avevo avuto modo di affrontare durante
+30:39
+il dottorato in particolare partiremo da
+30:42
+una breve descrizione di quelli che sono
+30:44
+i sistemi cyber fisici poi lato
+30:48
+applicativo faremo un esempio di una
+30:50
+smart con quindi di un sistema e
+30:54
+particolare per il riscaldamento e la
+30:57
+gestione dei carichi elettrici in una
+31:00
+casa intelligente quindi all'interno di
+31:03
+un'ottica smart grid parleremo
+31:06
+brevemente del del progetto athena che
+31:10
+era un progetto dedicato al controllo
+31:12
+della rete elettrica quindi vedremo
+31:15
+tre esempi di automatica applicata a
+31:19
+power systems are di elettrica
+31:23
+vedremo un paio di esempi legati al
+31:26
+mondo dell'aerospace
+31:28
+e poi qualcosa dal mondo ai siti ma
+31:33
+anche un esempio di sistema di controllo
+31:38
+per un processo medicale e in
+31:40
+particolare il vedremo il pancreas
+31:43
+artificiale che è un dispositivo che
+31:47
+serve a che viene dato alle persone
+31:51
+diabetiche per gestire loro il loro
+31:54
+livello insulinico e ed è una delle
+32:00
+applicazioni più belle dell'automatica
+32:05
+poi a livello almeno presentativo
+32:09
+finiremo il seminario con un brevissimo
+32:13
+excursus di come il deep learning che è
+32:18
+una delle tematiche forse più popolari
+32:21
+al momento attuale nella ricerca della
+32:23
+computer science entra nell'automazione
+32:27
+quindi come il diplay earning può essere
+32:29
+usato da sistemi di controllo perché poi
+32:33
+su questo significa combinare il deep
+32:36
+learning con l'automatica e vedremo un
+32:41
+paio di esempi di sistemi di controllo
+32:44
+basati sul di player nick allora
+32:48
+iniziamo dai sistemi server fisici e i
+32:53
+sistemi cyber fisici sono tutti i
+32:56
+sistemi in cui c'è una fortissima forte
+32:58
+interazione tra a un processo fisico il
+33:00
+processo informatico
+33:02
+quindi di fatto sono quelli che spesso e
+33:06
+volentieri possono essere chiamati anche
+33:09
+sistemi complessi un processo fisico
+33:11
+vuol dire che c'è dell'hardware un
+33:14
+qualcosa che evolve nella realtà un
+33:17
+processo informatico è un dominanza il
+33:20
+dominio informatico del processo è tutto
+33:22
+quello che è legato alla logica
+33:26
+all'informazioni e anche come vedremo
+33:30
+alla sicurezza non esiste una vera
+33:34
+definizione formale di cyber physical
+33:36
+system però bene o male tutte quante le
+33:41
+definizioni
+33:42
+potete trovare sono d'accordo
+33:44
+nell'identificare le cosiddette 3c un
+33:48
+sistema cyber fisico è tale se ha
+33:50
+proprietà di calcolo proprietà di
+33:52
+comunicazione proprietà di controllo
+33:55
+comunicazione potete trovare anche
+33:58
+connessione stiamo schiavo lì come
+34:01
+significato però sostanzialmente quindi
+34:04
+un sistema cyber fisico è un sistema
+34:08
+intelligente connesso e calcolo
+34:16
+significa che è autonomo nel senso che è
+34:18
+in grado di prendere le decisioni sul
+34:21
+suo funzionamento
+34:23
+almeno parzialmente in maniera autonoma
+34:26
+quindi queste diciamo sono le tre
+34:30
+proprietà chiave di un sistema cyber
+34:33
+fisico ci sono tanti esempi uno dei più
+34:39
+classici è uno spacecraft quindi un un
+34:43
+dispositivo che è nello spazio può
+34:45
+essere un satellite o può essere uno un
+34:49
+sistema che sta viaggiando verso altri
+34:52
+pianeti
+34:53
+oppure al trial presenti troviamo la
+34:57
+smart grid tutte le sue componenti
+34:59
+quindi i veicoli elettrici intelligenti
+35:04
+case intelligenti e va beh vedremo
+35:10
+qualche altro esempio di sistema
+35:12
+energetico
+35:13
+il sistema server fisico energetico ma
+35:18
+anche i sistemi di trasporto che
+35:21
+oggigiorno stanno evolvendo anche loro
+35:24
+verso una direzione in cui ci sono dei
+35:27
+gradi di controllo e quindi c'è un
+35:30
+contributo dell'automazione anche su di
+35:33
+essi e poi vabbè ovviamente per
+35:36
+completezza anche ovviamente i robot tre
+35:39
+impiegati nelle nelle catene di
+35:41
+montaggio in un'ottica che viene
+35:44
+chiamata industria 4.0 che va beh tra
+35:48
+breve sarà rimpiazzata da l'industria 5
+35:52
+punti
+35:52
+zero o come desiderando di chiamarla che
+35:56
+comunque ben rende i robot dei sistemi
+36:01
+non più quasi autonomi nel senso non più
+36:06
+dei sistemi che ricevono un comando e lo
+36:09
+seguono ripetiti in maniera ripetuta
+36:13
+come se fossero di fatto dei rimpiazzi
+36:16
+per gli operai ma nelle fabbriche
+36:19
+intelligenti cioè tutta una cura verso
+36:22
+la riconfigurazione e la flessibilità
+36:25
+del manifacturing che sarebbero
+36:28
+impossibili senza schemi di controllo
+36:30
+più complessi e pensati per controllare
+36:35
+anche la parte informatica del del
+36:42
+processo quindi controllare un sistema
+36:45
+cyber fisico significa controllare non
+36:48
+solo la componente hardware ma anche la
+36:52
+componente che è nel dominio software
+36:56
+quali sono i requisiti tipici per un
+36:59
+buon controllo di un sistema cyber
+37:01
+fisico chimicamente si parla
+37:04
+dell'efficienza ovvero noi vogliamo che
+37:07
+il nostro sistema funzioni in una
+37:10
+maniera passatemi il termine
+37:13
+economicamente ottima e la sicurezza
+37:18
+noi vogliamo l'assoluta sicurezza nel
+37:21
+funzionamento del nostro sistema è ok
+37:26
+pensavo di avere una sliding più scusate
+37:28
+sulla sicurezza
+37:30
+vorrei spendere due parole perché la
+37:34
+sicurezza è ovviamente importantissima
+37:36
+quando abbiamo a che fare con qualunque
+37:38
+sistema che a un'interazione con l'uomo
+37:41
+o qualunque sistema in cui ci sono degli
+37:46
+interessi economici sensibili qualunque
+37:51
+qualunque sistema avere un'interazione
+37:53
+con l'uomo deve essere sicuro da un
+37:55
+punto di vista diciamo fisico per quanto
+37:59
+riguarda ad esempio i contatti oppure
+38:02
+per quanto riguarda
+38:05
+i margini della stabilità del sistema
+38:08
+stesso
+38:09
+io non posso rischiare che una catena di
+38:12
+montaggio su cui sono presenti degli
+38:14
+operai possa ad esempio alzate delle
+38:18
+temperature in una maniera troppo rapido
+38:22
+oppure troppo vicina a una soglia di
+38:25
+sicurezza perché ovviamente non posso
+38:28
+mettere in pericolo la vita o la salute
+38:31
+degli uomini che interagiscono con con
+38:34
+il mio sistema non solo però lato fisico
+38:38
+ma anche lato software lato ai siti
+38:42
+perché se ad esempio questo sistema è un
+38:47
+pancreas artificiale quindi un qualcosa
+38:49
+che legge delle informazioni che sono
+38:51
+legate al contenuto del sangue del mio
+38:54
+paziente
+38:55
+io non posso rischiare che queste
+38:57
+informazioni possano essere rubate da
+39:03
+criminali non posso rischiare quindi di
+39:06
+compromettere la privacy del mio
+39:08
+paziente non posso rischiare che
+39:10
+l'intelligenza del mio controllore possa
+39:13
+essere modificata da un qualcuno che
+39:15
+magari vuole assassinare il mio paziente
+39:19
+quindi quando parliamo di sicurezza nei
+39:24
+sistemi server fisici
+39:26
+dobbiamo considerare sia la sicurezza
+39:28
+fisica che la cybersecurity la sicurezza
+39:32
+legata alla gestione delle informazioni
+39:34
+e in queste informazioni è importante
+39:39
+anche includere l'intelligenza stessa
+39:42
+quindi la logica di controllo del mio
+39:44
+dispositivo ad esempio pochi giorni fa è
+39:49
+capitato un cyber attacco su larga scala
+39:54
+negli stati uniti qualcuno di voi
+39:56
+probabilmente a letto c'è stato un
+39:59
+attacco informatico a un sistema sarebbe
+40:01
+fisico critico tra parentesi era un
+40:04
+infrastruttura critica un olio dotto
+40:06
+molto importante per gli stati uniti
+40:09
+al punto che alcune alcuni stati hanno
+40:12
+problemi adesso da ad accedere alla
+40:15
+benzina
+40:17
+come hanno fatto bene di fatto hanno
+40:20
+sopra scritto tra le altre cose insomma
+40:23
+ovviamente era un cyber attacco su
+40:25
+grandissima scala ma sopra scritto le
+40:28
+logiche di funzionamento di alcuni
+40:30
+attuatori di fatto bloccando il flusso
+40:32
+di petrolio
+40:34
+questo è un esempio così dalla dalla
+40:38
+cronaca ma tantissimi cyber attacchi che
+40:41
+sono venuti anche nei confronti dei
+40:42
+centrali nucleari miravano a danneggiare
+40:49
+la logica di controllo stessa perché una
+40:52
+volta che sostituiamo a un controllore
+40:55
+facciamo la semplice un controllore
+40:57
+stabilizzante un controllore
+41:00
+destabilizzante
+41:02
+ovviamente i danni che posso causare
+41:04
+sono enormi e questo lo posso lo posso
+41:08
+fare sia modificando la logica che
+41:11
+ovviamente modificando le informazioni
+41:14
+che il mio controllore ha quindi le
+41:17
+informazioni disponibili al mio
+41:19
+controllore
+41:20
+se io prendo dello schema di di
+41:24
+controllo classico dalla controreazione
+41:28
+ad esempio se io attacco
+41:31
+il feedback vero e proprio posso fare in
+41:34
+modo che il mio controllore stia vedendo
+41:38
+non il feedback reale quindi non davvero
+41:42
+come sta evolvendo il mio sistema ma
+41:44
+magari sta vedendo una situazione di
+41:46
+emergenza alla quale lui può iniziare a
+41:49
+rispondere ma rispondere a un feedback
+41:51
+diverso da quello reale implica che il
+41:54
+mio controllore di fatto sta
+41:56
+controllando un sistema che non esiste e
+41:59
+questo potrebbe significare incidenti
+42:02
+potrebbe semplice significare
+42:04
+destabilizzazione e così via
+42:08
+quindi l'integrità delle informazioni in
+42:11
+senso assoluto è molto importante quando
+42:14
+si studia un cyber physical system
+42:19
+partiamo dal primo esempio forse è più
+42:23
+semplice che però ci permette di capire
+42:25
+bene il concetto di controllo efficiente
+42:29
+cioè il controllare un sistema
+42:31
+ma in una maniera in cui essa operi in
+42:35
+maniera efficiente perché perché la
+42:37
+smart home ovviamente ha come obiettivo
+42:41
+del funzionamento
+42:42
+l'obiettivo primario è la riduzione
+42:44
+della bolletta è quanto di più immediato
+42:49
+ci sia ovvero voglio di fatto limitare i
+42:54
+costi che nel caso della smart home sono
+42:57
+di fatto degli euro quindi molto
+43:00
+intuitivi in più
+43:02
+ovviamente quando penso a una smart home
+43:07
+penso anche un qualcosa che offre del
+43:09
+confort all'utente perso qualcosa che lo
+43:13
+aiuti e quindi non solo sono interessato
+43:16
+a risparmiare lato lato bolletta più
+43:19
+quel lato energetico sono anche
+43:22
+interessato a creare un sistema di
+43:23
+controllo in grado di soddisfare tutte
+43:25
+le richieste utente che decida di
+43:30
+inserire ad esempio posso posso correre
+43:35
+dei requisiti sulla ricarica della mia
+43:37
+macchina che deve essere ca pronta a
+43:39
+partire ogni mattina alle 7 quando vado
+43:41
+al lavoro oppure sul ciclo di lavaggio
+43:45
+dei miei elettrodomestici intelligenti
+43:48
+sulla temperatura del mio frigo e così
+43:51
+via
+43:52
+ovviamente anche sulla temperatura delle
+43:54
+mie stanze che una delle voci più
+43:57
+energivore nel bilancio di di una casa
+44:02
+di conseguenza da un bel po insomma
+44:07
+l'industria sta proponendo sistemi di
+44:10
+domotica intelligente sempre più
+44:12
+integrati sempre più in grado di
+44:14
+controllare tutti i dispositivi di casa
+44:17
+e in particolare i più promettenti da un
+44:22
+punto di vista dell'impatto ambientale
+44:25
+energetico ed economico sono i sistemi
+44:28
+di controllo per le smart home che
+44:31
+integrano un piccolo storage energetico
+44:35
+o storage elettrico quindi di fatto una
+44:37
+batteria
+44:39
+tesla stessa la società beh ormai
+44:43
+famosissima che produce i veicoli
+44:45
+elettrici vende una soluzione con
+44:50
+batterie do la loro tecnologia per le
+44:53
+case quindi le batterie domestiche
+44:57
+stanno diventando un qualcosa di molto
+44:59
+diffuso e in due parole
+45:04
+vediamo come introdurre una batteria
+45:06
+possa avere delle implicazioni su il
+45:11
+funzionamento per proprio comunque per
+45:14
+descrivere questo schema di controllo
+45:18
+in questo studio eravamo interessati a
+45:21
+controllare come già detto il
+45:23
+riscaldamento e la reazione delle unità
+45:26
+abitative
+45:27
+questo schema di controllo era livello
+45:30
+condominiale quindi prevedevamo di
+45:33
+controllare nei singoli appartamenti
+45:35
+alcune cose ma a livello di condominio
+45:38
+altre quindi tutto quello che è legato
+45:42
+al riscaldamento
+45:44
+tutto quello che è legato a gli
+45:47
+elettrodomestici intelligenti e
+45:49
+all'illuminazione comune e inoltre
+45:54
+ovviamente come vi ho detto
+45:56
+i veicoli elettrici perché il condominio
+45:59
+in questione aveva una serie di
+46:01
+colonnina qual è il problema che se io
+46:05
+non efficiente l'utilizzo di questi
+46:10
+dispositivi
+46:11
+quindi se io semplicemente accendo il
+46:14
+riscaldamento quando mi pare senza
+46:17
+seguire una logica
+46:19
+magari io potrei non ottimizzare il mio
+46:23
+comfort
+46:24
+ovvero non ottenere le temperature che
+46:27
+desidero quando effettivamente mi
+46:29
+servono quando effettivamente sono a
+46:31
+casa ma al tempo stesso potrei sprecare
+46:33
+un sacco di energia e sprecare energia
+46:35
+significa sprecare soldi se se l'entità
+46:39
+cosa per gli elettrodomestici
+46:40
+intelligenti se io semplicemente
+46:43
+riaccendo premendo un pulsante e così fa
+46:46
+tutto il condominio
+46:47
+il picco energetico richiesto quindi il
+46:51
+picco in potenza che richiedono la rete
+46:53
+è molto elevato e quando c'è un piccole
+46:55
+lato
+46:56
+c'è tanta domanda è se la domanda sale
+46:59
+di conseguenza sale anche il prezzo per
+47:02
+semplice relazione domanda offerta
+47:05
+ovvero il gestore elettrico ha tutto
+47:09
+l'interesse di penalizzare degli spike
+47:12
+di domanda possono sembrare piccole cose
+47:16
+ma ad esempio in inghilterra anni fa
+47:20
+ormai c'era un problema una determinata
+47:24
+ora in cui tutti quanti mettevano
+47:27
+attivavano un bollitore elettrico tutti
+47:30
+i cittadini di londra sostanzialmente al
+47:33
+punto tale che alcune centrali andavano
+47:36
+sovradimensionato per gestire quel picco
+47:38
+di potenza quindi capire che anche se
+47:43
+sembrano piccole cose ovviamente la
+47:48
+combinazione di tante piccole cose può
+47:50
+avere impatti economici molto elevati
+47:53
+dunque se l'interesse dell'utente
+47:56
+ricevere i panni puliti
+47:58
+non so la mattina alla sera quando ha un
+48:01
+modo di gestirle si possono programmare
+48:05
+gli elettrodomestici intelligenti per
+48:08
+accendersi quando quando l'energia costa
+48:11
+meno e quand'è che l'energia costa meno
+48:15
+beh quando complessivamente cioè meno
+48:17
+domanda oppure quando c'è tanta offerta
+48:21
+questa tanta offerta variabile può
+48:25
+essere questa tanta offerta può essere
+48:27
+né nelle tre zone temporali nei periodi
+48:32
+in cui ad esempio c'è una forte
+48:35
+produzione dalle fonti rinnovabili
+48:36
+quindi quando c'è un picco dell'energia
+48:39
+rinnovabile ed è ad esempio dei miei
+48:41
+pannelli solari o tutto un interesse
+48:46
+quindi di utilizzare al massimo
+48:48
+l'energia solare in casa e non venderla
+48:52
+l'operatore perché ovviamente così
+48:55
+risparmio tutta una serie di cose
+48:58
+a che serve allora lo storage elettrico
+49:01
+bello storage elettrico ci permette di
+49:03
+spostare tra virgolette l'energia nel
+49:07
+futuro ovvero
+49:09
+magazine aree energia quando c'è un
+49:12
+eccesso di produzione quando produco più
+49:14
+di quello che consumo così da
+49:17
+utilizzarla dopo a bassissimo costo per
+49:21
+soddisfare picchi di domanda che non
+49:25
+posso comunque spostare più di tanto
+49:27
+ad esempio bollitore o il riscaldamento
+49:32
+e così via
+49:34
+dunque questo sistema di controllo che
+49:37
+ha sviluppato con l'anpi si perché era
+49:41
+basato su un modello avesse visto
+49:43
+probabilmente qualche cena col
+49:45
+professore comunque relativamente non è
+49:48
+non è più di tanto importante per capire
+49:51
+questo schema
+49:52
+stavo dicendo questo schema di controllo
+49:55
+per smart house gestiva di fatto decine
+49:59
+e decine di dispositivi che loro stessi
+50:03
+oggigiorno sono chiamati intelligenti
+50:06
+era quindi un controllore di alto
+50:08
+livello per una serie di controllori a
+50:11
+livello più basso più vicini poi
+50:15
+all'utente
+50:18
+questo è un grafico sul surriscaldamento
+50:22
+qua a sinistra
+50:24
+vedete i profili di riscaldamento le
+50:29
+pareti e pavimento acqua né nei tubi e
+50:33
+così via
+50:34
+nel caso in cui il controllore è
+50:38
+semplice un controllore assai ovvero fa
+50:41
+freddo
+50:43
+apro fa caldo spengo quindi un
+50:45
+controllore tipico come quelli che ci
+50:47
+sono oggi giorno nel mercato anche nelle
+50:49
+soluzioni smart home più basilari mentre
+50:53
+a destra
+50:53
+vediamo il comportamento per quanto
+50:57
+riguarda il riscaldamento controllato
+51:01
+dal dal nostro sistema che integrava il
+51:04
+dominio termico col dominio elettrico e
+51:08
+vabbè dal grafico delle temperature si
+51:11
+nota subito che i tubi sono movimentati
+51:16
+molto meno sono le linee blu e
+51:19
+movimentando molto meno le valvole
+51:21
+il fatto quindi i nostri attuatori
+51:24
+ovviamente ne allunghiamo la vita ma
+51:28
+alla fine anche se il profilo di comfort
+51:32
+che questo tracking che vedete qua sotto
+51:34
+è simile in entrambi i casi vediamo lato
+51:39
+lato energetico quindi dal punto di
+51:43
+vista della potenza assorbita dalla rete
+51:45
+che l'integrale della curva controllata
+51:49
+rispetto alla curva controllata con il
+51:51
+controllore e basico è
+51:53
+significativamente più basso e in più i
+51:56
+picchi sono anche molto più bassi perché
+51:58
+qua sono 50 kilowatt contro 20 questo ha
+52:04
+significativi impatti economici con
+52:06
+impatti sul sul comfort praticamente
+52:09
+nulli e mi pare si parlasse si attorno
+52:14
+al 20 per cento per quanto riguarda
+52:16
+l'energia consumata quindi un risparmio
+52:20
+in bolletta significativo e addirittura
+52:23
+un 55 riguardo al picco e visto che i
+52:26
+sistemi sono dimensionati sul picco
+52:29
+capite che una riduzione così marcata
+52:32
+del picco implica una spesa molto più
+52:36
+bassa per tutti quanti i dispositivi
+52:38
+hardware e in particolare i cavi di rame
+52:41
+il tipo di contatore e così via
+52:45
+se siete interessati a dare una lettura
+52:49
+a questo studio questo riferimento e
+52:53
+dalla rete sapienza potete usare il
+52:55
+proxy il proxy sapienza che ce ne sono
+53:03
+vari varie versioni uno si chiama bicsi
+53:06
+è abbastanza comodo forse più semplice
+53:09
+da usare
+53:09
+comunque vada ce ne sono varie c'è anche
+53:12
+una vpn se siete più più abituati a
+53:16
+quella tipo di tecnologia e no questo è
+53:19
+stato pubblicato quindi vabbè avete il
+53:23
+riferimento e potete potete potete
+53:27
+leggerlo c'era la formulazione completa
+53:30
+del controllore
+53:31
+rendervi conto di che cosa è insomma un
+53:34
+controllore complesso da un duo dando
+53:37
+un'occhiata lì per quanto arrivo da la
+53:41
+parte c'era una domanda mi sento no
+53:45
+volevo sono quindi praticamente quello
+53:50
+che fa il mps controller è quello è una
+53:54
+specie di come si aggiornasse istante
+53:58
+per istante una priorità di
+53:59
+distribuzione dell'energia giugno di
+54:01
+fatto si esatto nel senso sapendo che
+54:05
+c'è il requisito di finire un ciclo di
+54:08
+un di un dispositivo per una determinata
+54:11
+ora posso farlo prima posso farlo dopo
+54:14
+però perché perché meno determinato
+54:19
+tempo mi può convenire investire la
+54:21
+potenza che ho da una parte piuttosto
+54:23
+che un'altra quindi di fatto come come
+54:26
+diceva lei quello che questo controllore
+54:29
+fa e decidere dove mettere il l'energia
+54:34
+che ha disponibile di fatto quindi chi
+54:36
+prioritizzare né ovviamente se uno fa
+54:39
+l'integrale viene un qualcosa di simile
+54:44
+il risparmio è legato principalmente al
+54:47
+risparmio termico perché stiamo
+54:49
+sprecando energia se risparmiamo quando
+54:51
+la casa se riscaldiamo quando la casa
+54:53
+non è occupata però semplicemente
+54:56
+spostando la stessa quantità di energia
+54:59
+possiamo ridurre picco e ridurre il
+55:02
+picco significa risparmiare tanti soldi
+55:04
+però ad esempio cioè come fa a capire se
+55:07
+la macchina i servi in un breve tempo
+55:09
+oppure se può magari caricarla più
+55:12
+lentamente e dare più energia la cavia
+55:14
+questo questo tipo di controllore
+55:18
+richiede una interazione con l'utente
+55:20
+quindi quando io parcheggio questo
+55:24
+adesso in italia non è ancora così
+55:26
+diffuso però alcune soluzioni già
+55:28
+c'hanno delle colonnine che permettono
+55:30
+di dialogare con la macchina e io in
+55:33
+macchina inserisco l'orario per cui
+55:35
+voglio la macchina carica e questo è
+55:39
+molto molto significativo perché la
+55:41
+richiesta di un'automobile pari a circa
+55:44
+3 4 volte
+55:45
+la di un appartamento quindi direi
+55:48
+guarda io la macchina la voglio trovare
+55:50
+domani mattina carico oppure la voglio
+55:52
+trovare tra due ore permette al mio
+55:55
+controllore di gestire molto
+55:57
+diversamente la domanda di carico e
+56:01
+considerate poi che in attacco della
+56:04
+colonnina al distributore a implica dei
+56:08
+costi molto elevati che si ammortizzano
+56:11
+in 56 anni addirittura e se io riesco a
+56:16
+con un sistema di questa natura a
+56:19
+sottodimensionare la colonnina il
+56:22
+distributore elettrico probabilmente me
+56:25
+la regala anche alla colonnina perché mi
+56:28
+permetto insomma di installare un
+56:30
+dispositivo che non ammortizza in 5 6
+56:32
+anni ma che magari ammortizza in un anno
+56:34
+e mezzo e quindi ci sono ci sono
+56:38
+interessi anche questa natura quello che
+56:42
+diceva lei un sistema che diciamo stima
+56:45
+le abitudini del mio utente quindi più o
+56:48
+meno sa che io voglio la macchina sempre
+56:52
+pronta alle 7 quindi me la fa trovare
+56:54
+alle 7 è un sistema che non richiede
+56:57
+interazione con l'utente
+56:59
+ovviamente ha dei limiti perché può
+57:01
+sbagliare perché noi non siamo
+57:02
+assolutamente deterministici ma vedremo
+57:06
+un sistema di questo tipo nel nel
+57:08
+pancreas artificiale che ha diciamo
+57:13
+tipicamente 2 funzionamenti uno autonomo
+57:17
+che stima da solo
+57:19
+l'utente che farà e uno correttivo dove
+57:22
+l'utente dice ad esempio io sto per
+57:24
+mangiare la merenda che tipicamente non
+57:26
+prendo quindi tu non ti aspetti però lo
+57:29
+sto per fare quindi tiene in conto è
+57:32
+ovviamente si potrebbe implementare un
+57:35
+sistema di questo tipo anche per smart
+57:37
+house ovvero una casa che normalmente
+57:39
+funziona sulle abitudini statistiche
+57:42
+apprese diciamo che proprio utilizzatore
+57:45
+che però si adatta a delle variazioni
+57:48
+che gli possono essere consigliati o
+57:51
+richieste dall'utente stesso in
+57:57
+sì quindi c'era un automatismo in questo
+58:01
+sistema ovviamente ma c'era anche la ri
+58:04
+la necessità di alcune specifiche utente
+58:08
+per raggiungere una un'efficacia è un
+58:11
+efficienza ancor superiore ok
+58:16
+venendo ai power systems quindi restando
+58:20
+in ambito smart grid vediamo lato rete
+58:23
+quali possono essere i contributi
+58:25
+dell'automazione e i prossimi tre lavori
+58:29
+mi pare se ricordo bene sono stati
+58:31
+sviluppati nell'ambito di un progetto di
+58:33
+ricerca finanziato che era il progetto
+58:35
+athena questo il sito se volete andare a
+58:38
+curiosare un po i risultati che abbiamo
+58:41
+fatto lì e che era dedicato al controllo
+58:46
+sicuro dei sistemi server fisici e in
+58:49
+particolare della rete elettrica
+58:51
+questa era la slide che mi aspettavo
+58:53
+prima sull'efficienza della sicurezza
+58:56
+quindi vabbè la posso saltare perché vi
+58:58
+ho già raccontato e comunque come vi
+59:02
+dicevo quando si parla di controllo di
+59:06
+cyber fisici si parla di sicurezza
+59:08
+fisica e anche informatica quindi
+59:12
+cybersecurity and physical security
+59:15
+parole alternative ma più o meno
+59:18
+equivalenti sono security and privacy e
+59:21
+scusate e safety safety è una parola che
+59:25
+tipicamente viene usata per la sicurezza
+59:27
+fisica quindi per il controllo
+59:31
+diciamo della componente fisica del del
+59:35
+nostro processo in modo tale da evitare
+59:37
+esplosioni evitare ferite e quant'altro
+59:41
+security spesso intende il dominio ai
+59:43
+siti anche se security in senso lato
+59:47
+include la safety quindi non sono
+59:49
+distinzioni così formali però quello che
+59:52
+è legato ai dati sicuramente security
+59:55
+come lo vede legato all'hardware alle
+59:58
+variabili fisiche può essere chiamato
+60:01
+anche safety c'è chi dice che safety è
+60:04
+quando c'è un essere umano di mezzo
+60:07
+quindi un'esplosione in una fabbrica che
+60:09
+non ha operai
+60:11
+security non è safety però diciamo
+60:14
+questa distinzione fisica cyber forse la
+60:19
+più intuitiva
+60:22
+allora il progetto athena come vi dicevo
+60:26
+controllo della rete elettrica vista
+60:29
+come sistema cybersecurity era un
+60:33
+progetto europeo quindi aveva un
+60:34
+consorzio di aziende centri di ricerca
+60:38
+eravamo parecchio una decina di partner
+60:42
+e vabbè libia che era coinvolto tramite
+60:47
+principalmente il gruppo del professor
+60:49
+delle piscoli con l'interazione anche
+60:53
+con altri ricercatori di informatica
+60:57
+veniamo però alla prima applicazione
+60:59
+dell'automazione di rete quindi alla
+61:02
+prima smart grid e parliamo del problema
+61:06
+della riconfigurazione dinamica della
+61:08
+rete di distribuzione elettrica
+61:10
+l'obiettivo di questo controllore era
+61:14
+quello di riconfigurare la parola chiave
+61:17
+riconfigurare ovviamente la rete di
+61:20
+distribuzione quindi di media tensione
+61:22
+al fine di ottenere la massimizzazione
+61:25
+dell'uso delle rinnovabili quindi in
+61:28
+maniera simile a quella della smart
+61:30
+della smart home che abbiamo visto prima
+61:32
+perché ovviamente utilizzare al meglio
+61:35
+le rinnovabili implica utilizzare meno
+61:38
+le centrali e quindi implica risparmiare
+61:41
+parecchi soldi ma al tempo stesso
+61:44
+volevamo anche ridurre il rischio di
+61:46
+guasto e quindi migliorare in un certo
+61:50
+senso la sicurezza della rete
+61:53
+se la vediamo come la sicurezza
+61:55
+dell'erogazione del servizio del
+61:57
+servizio elettrico e inoltre volevamo
+62:00
+minimizzare le perdite di rete le
+62:03
+perdite di rete sono tutte quante le
+62:05
+dispersioni termiche non di di potenza e
+62:10
+quindi ancora una volta sono
+62:13
+direttamente i termini legati al
+62:18
+risparmio economico
+62:21
+questo è lo scenario che abbiamo
+62:24
+considerato e di fatto questo è il
+62:25
+nostro processo perché è perché il
+62:28
+nostro sistema non era nient'altro che
+62:30
+una rete elettrica
+62:31
+questi qua sono i bassi quindi potete
+62:35
+immaginare delle cabine secondarie in
+62:39
+questo caso questa è l'interfaccia con
+62:42
+la rete dall'alta tensione quindi qua
+62:44
+sopra ci abbiamo l'alta tensione e
+62:49
+quaggiù
+62:50
+siamo in media la bassa tensione
+62:54
+1 la qui dove a queste cabine sono
+62:57
+connesse poi le varie case quindi quello
+63:02
+che stiamo controllando prende il nome
+63:04
+di rete di distribuzione che è la rete
+63:07
+in media tensione per capire questa
+63:11
+potrebbe essere un tipo un quartiere di
+63:14
+roma un qualcosa del genere come
+63:16
+dimensione
+63:18
+ora che avevamo a parte le varie cabine
+63:20
+avevamo la presenza di varie fonti
+63:23
+rinnovabili che vedete qui avevamo poi
+63:28
+degli storage di media tensione che sono
+63:30
+delle grandi batterie di un paio di non
+63:34
+vorrei dire non mi ricordo abbastanza
+63:36
+bene un paio di megawatt di potenza e 2
+63:40
+megawattora di energia quindi
+63:43
+dispositivi molto grandi anche molto
+63:45
+costosi che però stanno avvenendo
+63:47
+sperimentati in particolare per ora
+63:50
+nelle isole almeno in italia però in
+63:53
+germania stanno già trovando
+63:54
+applicazione per quanto riguarda
+63:56
+l'efficientamento dei consumi e questi
+64:01
+link che vedete qui non sono nient'altro
+64:03
+che poi cavi di rame che collegano i
+64:05
+vari basse
+64:09
+qui nelle varie cabine scusate ok quindi
+64:12
+qual è il nostro grado di controllo noi
+64:15
+dobbiamo sempre identificare cos'è che
+64:17
+possiamo controllare nel senso cosa
+64:20
+possiamo utilizzare per ottenere il
+64:22
+nostro obiettivo beh tutti questi cavi
+64:25
+di fatto sono equipaggiati con degli
+64:28
+interruttori
+64:30
+questo perché perché questi cavi
+64:34
+se voi li vedete con la linea diciamo
+64:36
+continua vuol dire che gli interruttori
+64:37
+sono chiusi e quindi il cavo ecco il
+64:40
+cavo prevede il passaggio di venere di
+64:43
+elettricità
+64:44
+se li vedete tratteggiati sono relativi
+64:49
+a ca sa di cui interruttori sono aperti
+64:52
+se ci fate caso questa rete di fatto è
+64:55
+ridondante non è semplicemente connessa
+64:58
+perché se io levo questo questo cavo qui
+65:03
+chiudendo gli interruttori di questo di
+65:06
+fatto
+65:06
+posso comunque portare l'elettricità e
+65:09
+quindi l'energia a b5 questo questo
+65:14
+motivo per cui ci sono dei link
+65:16
+apparentemente di conte ridondanti per
+65:18
+quanto riguarda la connessione è
+65:20
+ovviamente legato ai guasti se c'è un
+65:23
+guasto a questo questo collegamento io
+65:26
+non posso perdere totalmente la
+65:30
+possibilità di portare energia b5
+65:32
+però quando sono in esercizio
+65:36
+quindi mentre utilizzo il mio sistema
+65:39
+io voglio che la rete sia radiale questo
+65:43
+è un requisito tipico di tutti quanti
+65:47
+power systems di distribuzione perché in
+65:52
+alta tensione invece questo requisito di
+65:54
+radiali ta non c'è e va beh più o meno
+65:57
+ve l'ho disegnato se ci fate caso io ho
+66:00
+disegnato solo degli alberi di fatto
+66:03
+quindi delle cose radiali non ci sono
+66:05
+cicli in questo che ho disegnato
+66:06
+ricalcando le linee le linee complete
+66:11
+l'assenza di cicli a dei motivi dei
+66:14
+motivi elettrici e quindi è un requisito
+66:19
+d'esercizio sostanzialmente il mio
+66:21
+controllore dovrà garantire che la rete
+66:25
+sia sempre operato in maniera radiale
+66:28
+tornando a quali sono i gradi di
+66:30
+controllo come vi dicevo sono gli
+66:31
+interruttori ovvero io posso dotare gli
+66:34
+interruttori di una loro intelligenza di
+66:37
+una loro logica magari coordinata quindi
+66:40
+che
+66:40
+da un controllore che guarda tutta
+66:42
+un'area e in questo caso un'area di
+66:45
+circa un quartiere e controllare questi
+66:50
+interruttori quindi la loro apertura e
+66:52
+chiusura mi permette di cambiare la
+66:54
+topologia della rete elettrica
+66:57
+perché dovrei voler cambiare la
+66:59
+topologia perché a seconda della
+67:02
+tipologia in uso cambiano i cavi in uso
+67:06
+se cambiano i cavi in uso cambiano tutte
+67:09
+quante le impedenze cambiandole
+67:12
+impedenze possono cambiare di fatto le
+67:15
+perdite e inoltre cambiare la struttura
+67:19
+topologia a seconda dei profili di
+67:22
+domanda e produzione che o sui vari nodi
+67:26
+mi permette di far fluire l'elettricità
+67:30
+in maniera diversa e quindi posso di
+67:33
+fatto risparmiare potenza risparmiare
+67:37
+energia
+67:39
+se ad esempio faccio in modo che questa
+67:43
+fonte rinnovabile non sia connessa a
+67:45
+questo albero qui quindi a questo nodo
+67:48
+perché magari in quel periodo non ho
+67:50
+richiesto su questo nodo ma preferisco
+67:53
+connetterla qui perché questo nodo
+67:56
+richiede tanta potenza che altrimenti
+67:58
+dovrebbe prendere dall alta tensione
+68:00
+percorrendo tutta questa strada più
+68:04
+strada percorre ovviamente più sono le
+68:06
+perdite per mere questioni elettriche
+68:09
+quindi adattare una topologia alla
+68:14
+produzione delle fonti rinnovabili ma
+68:16
+anche al carico e così via
+68:19
+è un qualcosa che mi permette
+68:21
+direttamente di risparmiare denaro
+68:23
+quindi questa è uno smart power systems
+68:28
+power systems che prende un feedback che
+68:32
+è l'andamento della domanda e
+68:33
+dell'offerta e si riconfigura in
+68:37
+risposta al feedback
+68:39
+quindi è un sistema di controllo vero e
+68:41
+proprio questo è vabbè il risultato di
+68:47
+una simulazione
+68:49
+come vediamo per vari orari ci sono bar
+68:53
+configurazioni tutte radiali perché
+68:57
+perché il sistema di controllo che
+68:59
+avevamo disegnato qua aveva anche la
+69:03
+gestione esplicita di alcuni vincoli i
+69:06
+vincoli nel controllo sono di fatto
+69:08
+delle condizioni che noi imponiamo che
+69:11
+limitano il funzionamento di
+69:16
+funzionamento scusate limitano i gradi
+69:18
+di libertà che ha il mio controllore non
+69:22
+tutti i controllori possono gestire i
+69:25
+vincoli in maniera in maniera esatta e
+69:30
+mpc in questo caso si chiamava economica
+69:34
+anche se quindi e mpc ha tra le varie
+69:39
+caratteristiche la gestione esplicita
+69:42
+dei vincoli quindi per questo problema
+69:46
+era una scelta naturale quello che vabbè
+69:51
+volevo dirvi su questo esempio perché mi
+69:53
+sono dimenticato è anche la presenza di
+69:57
+queste batterie e nobel o nominate però
+70:00
+ovviamente il ruolo delle batterie in
+70:03
+questo questo problema è ancora una
+70:06
+volta quello di assorbire potenza quando
+70:09
+ce n'è in eccesso per poi utilizzarla
+70:12
+quando invece c'è un eccesso di domanda
+70:14
+e di fatto quindi questi possono
+70:18
+comportarsi come dei carichi o dei
+70:21
+generatori praticamente on demand a
+70:25
+seconda del di coop di come si
+70:28
+comportano gli altri quindi quando cioè
+70:30
+quando i loro vicini si comportano come
+70:35
+dei carichi molto grandi
+70:37
+magari io sono interessato a connetterli
+70:41
+allo storage è piuttosto che alla fonte
+70:44
+energetica più più vicina per semplici
+70:47
+questioni elettriche che nel complesso
+70:51
+mi permettono di minimizzare le perdite
+70:53
+o quindi si va ad esempio b4 nella slide
+70:59
+precedente ci fatto che c'è il simbolo
+71:02
+dell'energia
+71:03
+rinnovabile vuol dire che può prenderla
+71:05
+anche solo da lì senza passare per
+71:07
+l'alta tensione
+71:08
+sì esatto solo che b 4
+71:12
+nel caso specifico db4 credo non ci sia
+71:15
+un carico se ciò è molto piccolo
+71:18
+quindi b4 magari autonomo però se è
+71:21
+disegnato vuol dire che è in grado di
+71:22
+produrre energia anche per gli altri
+71:25
+ovviamente non è infinita la potenza che
+71:29
+può erogare e è legata al sole no e
+71:33
+anche ovviamente al numero di impianti
+71:36
+che ha quindi la connessione con l'alta
+71:39
+tensione è necessaria perché nel momento
+71:42
+in cui io vado ad attaccare a b4 un
+71:44
+carico più grande di quello che è la
+71:47
+produzione in b 4 b 4 stesso deve
+71:51
+accedere all'alta tensione per poter
+71:54
+reggere la rete che ha attaccato a lui
+72:01
+stessa identica cosa ovviamente anche mi
+72:03
+pare per b3 si sta qui che allo storage
+72:06
+vicino all'altra canzone
+72:10
+ovviamente gli storage possono
+72:12
+immagazzinare qualunque tipo di energia
+72:15
+sia che venga dall'alta tensione che che
+72:17
+venga dalle rinnovabili però la cosa più
+72:20
+utile tipicamente immagazzinare quella
+72:23
+delle rinnovabili
+72:24
+però proprio perché il prezzo
+72:27
+dell'energia fluttua a seconda anche
+72:29
+dell'andamento delle varie centrali
+72:32
+all'allenamento su scala nazionale della
+72:34
+domanda e dell'offerta
+72:36
+potrebbe essere interessante anche in
+72:38
+un'ottica di risparmio su larga scala
+72:41
+immagazzinare negli storage tutta
+72:44
+l'energia quando il prezzo di mercato
+72:47
+dall'altra la tensione è particolarmente
+72:50
+basso quindi li stavo dicendo questo
+72:53
+controllore non comunque non gestisce
+72:56
+solo gli interruttori ma gestisce anche
+72:59
+i profili di assorbimento il rilascio
+73:02
+dell'energia degli storage che ho
+73:05
+disposto lungo
+73:07
+lungo la mia rete di distribuzione
+73:13
+questo qui è un grafico dove possiamo
+73:15
+vedere su sulle perdite di rete che sono
+73:19
+queste gli effetti della
+73:20
+riconfigurazione combinata alla presenza
+73:23
+degli storage tratteggiato ci abbiamo
+73:27
+una configurazione a fissa diciamo con
+73:31
+la topologia fissa c'è stata una volta
+73:34
+al giorno in nero invece vediamo
+73:38
+l'andamento delle perdite è quando
+73:41
+controllato da una topologia che
+73:43
+cambiano tipologia che seguì cia e
+73:45
+questo lo vedete in queste piccole punti
+73:49
+quasi singolari insomma dove c'è un
+73:53
+cambio di di andamento e ovviamente a
+73:58
+parte la riconfigurazione anche alla
+74:01
+presenza degli storage che in maniera
+74:03
+combinata questo è il profilo di
+74:05
+emissione assorbimento degli storage
+74:08
+impattano comunque su sulle perdite
+74:12
+la domanda l'ha utente era identica
+74:15
+anche profili di produzione quindi tutto
+74:18
+questo risparmio che se fate l'integrale
+74:20
+non è esattamente pochissimo è legato
+74:23
+semplicemente ad aver portato un
+74:25
+controllo quindi un intelligenza in
+74:28
+dispositivi che normalmente non hanno
+74:32
+una logica di funzionamento bastata su
+74:34
+feedback quindi relativamente con un
+74:39
+investimento piccolo perché legato
+74:41
+principalmente solo l'intelligenza in
+74:44
+essere
+74:45
+riusciamo a risparmiare concretamente
+74:47
+del denaro dopodiché abbiamo fatto
+74:52
+un'altra simulazione legata alla
+74:55
+riconfigurazione in risposta a il
+74:58
+rischio il rischio di mal funzionamento
+75:01
+ora athena prevedeva tra i vari partner
+75:05
+per la rete elettrica israeliana che
+75:07
+erano per ovvi motivi molto interessati
+75:10
+alla minimizzazione della probabilità di
+75:14
+interruzione delle
+75:15
+energia a seguito di rischi legati a
+75:19
+cyber attacchi o anche ad attacchi
+75:22
+fisici ovvero una cabina oppure una
+75:26
+linea potrebbe essere soggetto a un
+75:28
+rischio che può essere legato ad un
+75:31
+intrusione di un estraneo o rilevato da
+75:34
+una telecamera potrebbero essere
+75:36
+allagate potrebbero accadere tante varie
+75:39
+cose che compromettono il livello di
+75:42
+operatività della cabina o del link in
+75:45
+questione e quindi io potrei essere
+75:47
+interessato a non utilizzare un
+75:49
+determinato link o a evitare di
+75:53
+connettere tante tante cabine a una
+75:56
+cabina che è particolarmente a rischio
+75:58
+perché se questa dovesse cadere tutte le
+76:01
+cabine ad essa connesse per questioni di
+76:04
+dire di alita sarebbero perse e dovremmo
+76:06
+poi partire dal da zero terry
+76:10
+connetterle ad altre interrompendo anche
+76:13
+il servizio e va beh gli effetti della
+76:17
+riconfigurazione sono molto simili
+76:19
+ovviamente configurazione fissa non
+76:21
+basato su sip che il rischio non è
+76:23
+assolutamente minimizzato che questo qui
+76:25
+tratteggiato cambiando la topologia
+76:28
+invece vediamo che sostanzialmente il
+76:31
+sistema in grado di rispondere a
+76:33
+attacchi anche di questa natura
+76:38
+semplicemente cambiando le le sue
+76:40
+logiche di funzionamento
+76:42
+e va beh nel complesso non mi ricordo
+76:45
+quanto si risparmiava da un punto di
+76:48
+vista energetico o da un punto di vista
+76:49
+di rischio
+76:51
+comunque questo vela giorno l'articolo è
+76:54
+uscito da un po vi metto il riferimento
+76:56
+bibliografico correlativo se volete
+76:59
+dargli un'occhiata
+77:03
+venendo invece a un discorso in alta
+77:06
+tensione
+77:07
+un'altra parola molto importante per
+77:10
+quanto riguarda l'industria energetica
+77:12
+oggigiorno è quella del virtual power
+77:15
+plant il virtual power plant è un
+77:19
+è un concetto di smart power systems
+77:22
+secondo cui io posso creare una sorta di
+77:26
+centrale energetica virtuale significa
+77:30
+questo virtual power plant utilizzando
+77:33
+in maniera combinata quindi tra
+77:35
+virgolette sincronizzata tante fonti
+77:37
+rinnovabili distribuite
+77:40
+quando si dice utilizzando in maniera
+77:42
+coordinata sincronizzata tutti termine
+77:45
+di questa natura in maniera congiunta
+77:47
+tutte cose simili data si intende che
+77:50
+dietro c'è una logica di controllo 15
+77:52
+un'automazione l'automazione in questo
+77:56
+caso è legata a sincronizzare
+78:01
+l'emissione delle l'emissione con
+78:06
+l'assorbimento di queste fonti
+78:07
+rinnovabili di pasquato assorbimento
+78:10
+perché ancora una volta abbiamo degli
+78:12
+storage come fonte rinnovabile avevamo
+78:15
+delle turbine eoliche e qui in questo
+78:19
+studio siamo in trasmissione quindi in
+78:21
+alta tensione quindi colleghiamo di
+78:24
+fatto dei generatori dei power plant di
+78:29
+varia natura
+78:33
+l'obiettivo era quello di efficientare
+78:36
+di fatto il sistema quindi ancora una
+78:40
+volta a minimizzare le perdite e
+78:42
+sfruttare al meglio le olico in questo
+78:44
+caso ma anche quello di ridurre al
+78:48
+minimo l'impiego dei generatori
+78:50
+inquinanti quindi questa è una tematica
+78:52
+che per imposizioni dei vari governi
+78:55
+enti sovranazionali è importantissima ma
+79:02
+di fatto è uno anche dei delle forze che
+79:06
+stanno spingendo un evoluzione sempre
+79:09
+più green sempre più avanzata anche nel
+79:12
+dominio dei power systems che possono
+79:14
+sembrare proprio una prima analisi dei
+79:17
+domini molto statici invece come come
+79:21
+spero insomma di trasmettervi sono
+79:24
+dotati anche loro di tantissima
+79:26
+intelligenza semplicemente leggermente
+79:28
+più nascosta che in altri ambiti
+79:31
+sì come si sta procedendo nella
+79:37
+direzione di batterie inquinanti
+79:40
+allora per quanto riguarda la tecnologia
+79:42
+delle batterie probabilmente ha nominato
+79:47
+uno dei settori più più promettenti
+79:52
+nella tecnologia moderna ma al tempo
+79:54
+stesso i più sfidanti perché sicuramente
+79:58
+diciamo per le basse potenze il litio
+80:02
+non avrà futuro nel lungo termine per
+80:06
+tanti vincoli che ci sono a livello
+80:09
+ambientale ma anche per la disponibilità
+80:12
+vera e propria quindi si stanno
+80:13
+studiando tante tecnologie per
+80:15
+rimpiazzarlo e quelle però con il litio
+80:20
+al massimo si può arrivare a gestire le
+80:23
+macchine elettriche più o meno come
+80:25
+ordine di grandezza è già lì solo alcune
+80:29
+tecnologie molto elevate oltre sì al
+80:35
+momento attuale si usa tanto il piombo
+80:37
+si usa si usa anche qualcosa legato al
+80:40
+carbonio
+80:41
+però questi storage di questa dimensione
+80:44
+non sono assolutamente green da produrre
+80:47
+per quanto paradossalmente siano molto
+80:50
+più riciclabili delle batterie piccole
+80:53
+quindi sull'alta e la media tensione
+80:58
+l'evoluzione sarà più lenta al momento
+81:01
+attuale ci si sta concentrando sulle
+81:03
+batterie fino all'ordine di grandezza
+81:06
+dei veicoli elettrici
+81:07
+perché per me la questione di volumi e
+81:10
+per la loro scarsissima ricicla
+81:13
+riciclabilità sono quelle che hanno
+81:15
+l'impatto ambientale maggiore se si è
+81:19
+d'altronde riflettiamo un secondo tra
+81:21
+telefono tablet computer orologi ormai
+81:25
+ma anche le stesse automobili abbiamo
+81:28
+una quantità di batteri e altamente
+81:30
+inquinante veramente impressionante
+81:33
+quindi prima vedremo l'evoluzione lì poi
+81:36
+vedremo l'evoluzione in questi tipo di
+81:39
+storage di media ed alta tensione sia
+81:42
+perché questi si riciclano
+81:45
+relativamente bene possono essere
+81:47
+diciamo rigenerati sia perché uno
+81:51
+storage di questa natura per quanto sia
+81:54
+inquinante un'unità che insomma da solo
+81:56
+gestisce più o meno una regione quindi
+81:59
+non ha grandissimi volumi che che
+82:04
+rendono così urgente un'evoluzione
+82:07
+tecnologica
+82:09
+ovviamente quando dico rendono urgente
+82:12
+si parla da un punto di vista
+82:14
+industriale quindi da un punto di vista
+82:17
+economico sempre perché ci sono sanzioni
+82:21
+obblighi a livello legislativo
+82:24
+altrimenti insomma non credo che ci
+82:29
+sarebbero sviluppi così forti come
+82:32
+quelli che si stanno vedendo sulle
+82:34
+batterie aa più o meno ogni mese cioè
+82:36
+una notizia su tutti persino sui
+82:39
+quotidiani quindi riviste che non sono
+82:41
+propriamente scientifiche sulle
+82:44
+innovazioni che ci sono né nelle
+82:47
+tecnologie delle batterie e io credo che
+82:50
+insomma da qui a pochi anni vedremo
+82:52
+vedremo sicuramente dei cambiamenti
+82:53
+anche per il mercato per il mercato
+82:56
+comune
+82:59
+ringrazio ne all allora tornando al
+83:02
+virtual power plant vediamo va beh
+83:06
+questo è semplicemente o vediamo in
+83:10
+simulazione come un calo di vento quindi
+83:13
+una una valle nella generazione
+83:17
+rinnovabile normalmente viene compensata
+83:22
+da generatore non sostenibili non
+83:29
+rinnovabili scusate quindi i generatori
+83:31
+a carbone con con la presenza invece no
+83:36
+sempre qui scusate con la presenza
+83:38
+invece degli storage che dovrebbero
+83:40
+essere si sono le linee a tratteggiare
+83:42
+il caso storage riusciamo a utilizzare
+83:47
+energia rinnovabile che avevamo messo da
+83:50
+parte in precedenza e quindi di fatto
+83:54
+nel complesso la rete si è comportata in
+83:57
+maniera
+83:57
+la più ecologica inoltre sempre perché
+84:01
+avevamo l'interesse insomma della rete
+84:04
+israeliana abbiamo incluso un caso
+84:07
+legato agli attacchi e gli attacchi sui
+84:10
+power plant quindi sui generatori sulle
+84:13
+centrali elettriche sono storicamente
+84:15
+tra i più gravi che possono accadere
+84:19
+il caso più famoso e lo stuxnet però ce
+84:24
+ne sono stati vari che lo stack smetterà
+84:26
+contro degli impianti nucleari di
+84:28
+generazione per dire è sostanzialmente
+84:33
+qual è l'idea che se c'è un attacco in
+84:37
+corso di qualche tipo e rilevarlo non è
+84:40
+una cosa assolutamente impossibile ci
+84:44
+sono sistemi anch'essi basati alcune
+84:47
+volte su dei risultati dell'automazione
+84:49
+per rilevare dei tipi di attacco però
+84:52
+questi magari li vedete al master stavo
+84:57
+dicendo se trovate un attacco in corso
+84:59
+in qualche modo se avete un sospetto di
+85:01
+attacco magari siete interessati a usare
+85:03
+meno possibile quel generatore ma se voi
+85:05
+usate meno possibile un generatore se la
+85:08
+domanda è uguale
+85:09
+la potenza la dovete trovare da un'altra
+85:11
+parte
+85:12
+e cosa si fa normalmente quando un
+85:15
+generatore è compromesso c'è un forte
+85:17
+sospetto si incrementa la produzione
+85:20
+degli altri ma ancora una volta se io
+85:24
+sto incrementando quindi sto creando un
+85:26
+picco di nella generazione l'efficienza
+85:31
+scende quindi io voglio evitare
+85:35
+sovrapproduzioni perché quanto più
+85:37
+produco nello stesso posto meno
+85:39
+efficiente quindi più soldi spreco più
+85:43
+inquino e così via
+85:45
+d'altra parte avendo gli storage posso
+85:49
+utilizzare tutta l'energia che mi sono
+85:52
+messa da parte quando magari costava
+85:54
+poco quando addirittura costava negativo
+85:56
+perché adesso con tutte le fonti
+85:59
+rinnovabili distribuite in alcune fasce
+86:03
+orarie l'energia elettrica avrebbe di
+86:06
+fatto un costo negativo ora nei
+86:08
+contratti commerciali questa cosa
+86:11
+ora non c'è almeno in italia in europa
+86:13
+però a livello di gestore a livello di
+86:16
+rete ci sono dei periodi temporali in
+86:18
+cui lui perde a produrre energia perché
+86:23
+ha più offerta che domanda quindi ha un
+86:26
+costo di doverla immagazzinare da
+86:28
+qualche parte doverla disperdere o
+86:30
+comunque ha un costo e quindi
+86:34
+spostandole in avanti tra virgolette
+86:36
+quindi utilizzando questa energia quando
+86:39
+serve ad esempio la risposta non
+86:41
+sarebbero attacco io posso essere in
+86:43
+grado di compensare non solo
+86:47
+fluttuazioni legate al vento ma anche
+86:48
+fluttuazioni legate ad attività ben più
+86:52
+seria e complessa quindi legato
+86:54
+all'attività di criminali o volendo
+86:57
+anche di guasti che ci sono all'interno
+86:59
+di dei miei dei miei dispositivi
+87:04
+l'ultimo esempio che vediamo per i power
+87:06
+systems ma vabbè giusto sempre per sommi
+87:09
+capi e quello del back start di questo
+87:12
+vabbè avete già la reference qua sotto
+87:14
+gli altri vi raggiungo il black start
+87:18
+come dice il nome è quello che segue un
+87:21
+black out quindi dopo un black out se io
+87:23
+voglio ripristinare un servizio devo
+87:25
+fare un black start e ovvero devo
+87:28
+avviare dal buio ok
+87:31
+da qui la parola è sostanzialmente per
+87:36
+quanto riguarda la rete elettrica black
+87:39
+start significa e riconnettere le varie
+87:42
+cabine alla rete per riportare l'energia
+87:45
+dopo queste è stata interrotta è
+87:50
+importante soprattutto diciamo per il
+87:54
+caso di studio italiano black start
+87:56
+perché dovreste ricordarvelo però
+87:59
+attorno al 2000
+88:00
+no quando era nel 2003 esatto ci fu un
+88:06
+grande blackout in italia che prende il
+88:09
+nome di black out del sud italia
+88:12
+questo blackout viene causato da una
+88:14
+dorsale con la francia che vende
+88:17
+interrotta crollò insomma una rete ad
+88:20
+alta e una una linea ad alta tensione e
+88:24
+sostanzialmente tutta la domanda
+88:26
+italiana
+88:28
+ma la domanda verso gli altri mercati
+88:30
+per questioni elettriche iniziò a
+88:33
+passare sulla linea con la svizzera ma
+88:37
+diciamo la linea non era minimamente
+88:40
+dimensionata per gestire un flusso di
+88:42
+elettricità tale e quindi salto anche
+88:45
+quella saltate due connessioni portanti
+88:49
+ovviamente venne giù tutto quindi di
+88:51
+fatto per per poco però comunque per
+88:56
+qualche ora si disconnette l'intera
+88:59
+italia venne disconnessa da dal mercato
+89:03
+elettrico quindi tutti quanto alla rete
+89:05
+venne giù il servizio elettrico fu
+89:09
+diciamo o sospeso in tutta la nazione
+89:15
+ora perché si chiama del sud italia
+89:16
+perché paradossalmente al sud ci vollero
+89:22
+più ore per riconnettere le utenze come
+89:29
+mai se accade questo nonostante al sud
+89:33
+ci fosse la presenza delle fonti
+89:36
+rinnovabili
+89:37
+di fatto nella giornata tipica
+89:40
+soprattutto estiva il sud produce più
+89:44
+elettricità di quanta ne consuma e
+89:46
+quindi per sempre per questioni
+89:49
+elettriche l'energia vada dal sud verso
+89:52
+il nord dove la domanda invece è
+89:55
+superiore alla produzione quindi è
+89:58
+diciamo intuitivamente un po strano che
+90:01
+non si sa se è accaduto così che la
+90:05
+connessione col sud abbia richiesto così
+90:07
+tanto più tempo beh la risposta viene
+90:11
+dal fatto che quando si aprono gli
+90:14
+automatismi di sicurezza che si aprono
+90:17
+quando cioè una corrente di guasto
+90:19
+quindi quando di fatto i cavi iniziano
+90:22
+quasi a bruciare per evitare che brucino
+90:24
+si apre tutto si aprono tutti
+90:27
+interruttori che abbiamo visto prima ma
+90:29
+anche ad alta tensione
+90:30
+la media dicevo aperti tutti le centrali
+90:37
+distribuite quindi le fonti rinnovabili
+90:39
+distribuite del sud sono anch'esse non
+90:43
+più connesse e quindi di fatto non
+90:46
+riescono a inviare la potenza elettrica
+90:49
+a nessuno sono sconnesse dal carico e
+90:53
+quindi non c'è proprio elettricità dopo
+90:57
+potrebbe dare a nessuno perché non c'è
+90:59
+non c'è più generazione perché sono
+91:01
+state tagliate fuori e nonostante
+91:03
+potessero abbondantemente sostenere la
+91:07
+domanda del meridione per come è fatta
+91:11
+la rete che deve essere connessa a
+91:13
+quella degli altri paesi per questioni
+91:14
+di resilienza quindi per forza di cose
+91:17
+venneri connessa prima alla rete del
+91:18
+nord e solo successivamente quella del
+91:22
+sud perché tutta la potenza su scala
+91:25
+nazionale passa per la rete ad alta
+91:28
+tensione perchè la rete a media tensione
+91:32
+attinge dall'alta tensione è possibile
+91:36
+però ipotizzare almeno a livello
+91:38
+regionale comunale o quel che sia di
+91:41
+utilizzare le fonti rinnovabili
+91:43
+distribuite quindi che sono presenti in
+91:46
+media tensione senza riconnettersi
+91:50
+all'alta tensione cioè anche se l'alta
+91:53
+tensione è fuori uso
+91:55
+posso utilizzare a livello locale tutte
+91:59
+le fonti rinnovabili che ho vicino a me
+92:01
+di fatto i cavi elettrici per far ciò ci
+92:04
+sono sono i cavi della media tensione
+92:06
+quindi almeno da un punto di vista del
+92:11
+del materiale dell'hardware non ci
+92:14
+sarebbe nessun problema a far fluire la
+92:17
+potenza da qui agli altri nodi
+92:19
+ad esempio se facciamo finta che questo
+92:21
+è rinnovabile
+92:23
+allora perché ciò non accade è perché
+92:25
+gli automatismi di rete quindi aprirono
+92:30
+tutti gli interruttori e questi
+92:32
+interruttori ovviamente andavano
+92:34
+richiusi sostanzialmente a mano e
+92:38
+inoltre questi interruttori della
+92:41
+distribuzione potevano essere richiusi
+92:43
+solo dopo che la trasmissione fosse
+92:46
+tornata operativa e quindi ovviamente
+92:50
+era un processo molto lungo
+92:52
+tenendo però aperta la trasmissione
+92:54
+quindi immaginando che non ci sia l'alta
+92:57
+tensione
+92:58
+io potrei ipotizzare di richiudere
+93:01
+comunque questi interruttori far fluire
+93:05
+la potenza come ho disegnato prima
+93:07
+quindi da un nodo di questi agli altri a
+93:10
+condizione che ci sia uno storage che mi
+93:15
+permette di compensare le per gli
+93:19
+eccessi di domanda e produzione che
+93:21
+istantaneamente accadono sostanzialmente
+93:24
+lo storage ci permette di portare quella
+93:29
+che normalmente si chiama inerzia
+93:32
+elettrica inerzia di rete alla
+93:36
+distribuzione
+93:37
+normalmente gli eccessi di dopo di
+93:40
+produzione o domanda sono compensati
+93:43
+dall'alta tensione ed è necessario che
+93:46
+ci sia qualcuno che compensa queste
+93:48
+discrepanze che sono dovute anche alle
+93:51
+perdite comunque sono di fatto di delle
+93:56
+mancanze degli eccessi di energia che da
+93:58
+qualche parte devono andare altrimenti
+94:01
+ovviamente la rete non è più equilibrata
+94:04
+e non può funzionare e ed è per questo
+94:10
+che il collegamento con l'alta tensione
+94:12
+importante lo storage di fatto può fare
+94:18
+la stessa cosa può compensare questi
+94:20
+squilibri e dunque questo studio si
+94:25
+poneva l'obiettivo di ragionare sul
+94:28
+possibile funzionamento in modalità ad
+94:30
+isola si dice della distribuzione ad
+94:34
+isola significa in modalità disconnessa
+94:38
+dall'alta tensione in presenza di
+94:41
+storage e di rinnovabili e quindi
+94:46
+avevamo di fatto disegnato
+94:50
+un sistema di controllo in grado di
+94:53
+determinare l'ordine di chiusura dei
+94:57
+vari switch al fine di permettere di
+95:01
+rialimentare una zona questa società
+95:06
+sempre su del livello di un quartiere o
+95:09
+poco più di una città oppure una zona
+95:13
+arruolare anche un po più estesa però
+95:15
+più o meno insomma diciamo delle
+95:17
+dimensioni di un quartiere in risposta
+95:22
+black out di livello nazionale e alla
+95:27
+fine quello che abbiamo ottenuto è un
+95:29
+sistema di controllo relativamente
+95:32
+distribuito perché come vi ho detto più
+95:37
+o meno un controllore per quartiere ma
+95:39
+nel complesso distribuendo tutti questi
+95:43
+sistemi di controllo sarebbe stato
+95:46
+almeno idealmente possibile sostenere
+95:51
+l'erogazione del servizio anche in
+95:54
+condizioni critiche come come quella lì
+95:56
+nel del 2003 oppure insomma in
+96:01
+situazioni di guasti seri su sull'alta
+96:04
+tensione
+96:06
+considerate che i guasti in alta
+96:08
+tensione sono eventi rari ma non
+96:10
+rarissimi nel senso che in italia dopo
+96:14
+il 2003 ne sono capitati anche degli
+96:16
+altri non così duraturi come quello del
+96:18
+2003 che durò quasi un giorno ma anche
+96:21
+in america ce ne sono tantissimi nella
+96:24
+storia e uno il black out della costa e
+96:28
+parte della costa est ma non vorrei
+96:30
+sbagliarmi dovrebbe essere della costa
+96:32
+est fu veramente un evento epocale con
+96:37
+interi stati disconnessi per per giorni
+96:41
+mi pare addirittura quindi utilizzare le
+96:45
+fonti rinnovabili discuto disponibili e
+96:48
+vicino ai consumatori è una cosa
+96:52
+utilissima che è importantissima ma
+96:56
+senza una logica di controllo è
+96:58
+ovviamente impossibile
+97:01
+vediamo adesso giusto un paio di esempi
+97:04
+del dominio aerospaziale che vennero
+97:09
+diciamo studiati durante il mio percorso
+97:12
+di tutta la dopo la zand a
+97:14
+thalesaleniaspace un azienda
+97:16
+storicamente molto vicina al gruppo del
+97:19
+professore con cui collabora pensata da
+97:23
+una quindicina d'anni se non di più
+97:25
+forse di più e in particolare studiamo
+97:31
+quelli che sono i problemi legati
+97:35
+all'assetto dei satelliti avesse linea
+97:39
+spese infatti è un'azienda che produce
+97:41
+satelliti proprio ricostruisce a varie
+97:44
+sedi anche a roma un'altra all'aquila
+97:48
+e vabbè potreste anche aver modo di fare
+97:51
+una tesi magistrale con loro qualora
+97:53
+foste interessati tramite tramite il
+97:56
+nostro gruppo vorrebbe fare claudio
+97:59
+questo qui che vediamo
+98:04
+è un esempio di una piattaforma
+98:06
+inerziale che simula e all anzhi il
+98:11
+comportamento di un funzionamento di un
+98:15
+satellite queste cose che vedete qui
+98:17
+girare queste rotelle prendono il nome
+98:20
+di reaction wheels e sono gli attuatori
+98:22
+che permettono di modificare l'assetto
+98:25
+quindi l'orientamento del del satellite
+98:30
+e si basano sul principio di
+98:33
+conservazione del momento di inerzia
+98:36
+sostanzialmente ruotando più o meno
+98:38
+forte
+98:39
+le varie rotelle quindi modificando i
+98:41
+loro momenti di inerzia quello che
+98:43
+accade che ruota fu del satellite e
+98:46
+quindi tenendo in considerazione la loro
+98:50
+conformazione geometrica e possibile di
+98:53
+fatto muovere il satellite
+98:56
+arbitrariamente per quanto riguarda il
+98:58
+suo assetto quindi come è orientato
+99:01
+possiamo dire il suo orientamento se
+99:04
+abbiamo almeno 33 rotelle disposte in
+99:10
+una maniera insomma che evita la
+99:11
+singolarità insomma diciamo dalle tre
+99:14
+alle quattro rotelle tipicamente non
+99:17
+trovo problemi su sul controllare
+99:20
+l'orientamento in maniera arbitraria
+99:22
+sotto le 3 ovviamente matematicamente
+99:24
+impossibile
+99:27
+e vabbè queste condizioni ovviamente
+99:28
+legato semplicemente al rango di una
+99:32
+matrice però per noi tutto sommato non
+99:35
+ci interessa allora qui vi ho riportato
+99:38
+ma giusto a livello così conoscitivo
+99:42
+permettervelo la struttura che a questo
+99:48
+sistema di assetto solo di un satellite
+99:52
+questo sistema è parzialmente lineare
+99:56
+perché ha delle componenti lineari che
+99:59
+se vedete avete la matrice alla matrice
+100:01
+b la matrice c
+100:03
+e così via però anche delle componenti
+100:07
+non lineari e in particolare sono tutte
+100:13
+quante raccolte nella nella funzione z
+100:17
+e questo di i modi di sistemi è
+100:22
+controllabile con tramite delle tecniche
+100:25
+che poi potrete potreste vedere se
+100:28
+continuate i vostri studi nell'ambito
+100:30
+dei controlli come sicuramente alcuni di
+100:35
+voi faranno tramite una tecnica che
+100:39
+prende il nome di feedback
+100:40
+linearizzazione ovvero la
+100:42
+linearizzazione tramite feed back che
+100:45
+cos'è in due parole ben sotto una serie
+100:48
+di ipotesi che non sono neanche poi
+100:50
+troppo restrittive però ovviamente vanno
+100:52
+verificate alcuni sistemi non lineari
+100:56
+possono essere controllati quasi come se
+101:00
+fossero dei sistemi lineari utilizzando
+101:03
+una legge di controllo che ha una
+101:05
+struttura un po particolare che però
+101:07
+alla fine assomiglia diciamo a questa
+101:10
+dove c'è un contro un controllo qua che
+101:15
+è disegnato come se il sistema pos e
+101:16
+lineare e una serie di altri termini che
+101:19
+servono tra virgolette a eliminarmi la
+101:23
+non linearità il sistema satellitare per
+101:27
+quanto riguarda l'assetto è per natura
+101:30
+propria e naturalmente un sistema che si
+101:33
+presta molto bene a essere controllato
+101:36
+tramite questa tecnica e quindi è solo
+101:40
+per darvi un cenno di come potrebbe
+101:42
+funzionare il primo caso di studio che
+101:45
+abbiamo fatto con thalesaleniaspace era
+101:48
+un sistema di supporto per satelliti che
+101:52
+vanno verso il fine della loro vita
+101:56
+verso la fine della loro operazione
+101:58
+diciamo e questo è un problema perché
+102:02
+ogni giorno quando un satellite si
+102:05
+spegne e di fatto quando smette di
+102:07
+funzionare e occupa comunque uno spazio
+102:09
+nel cielo che non è illimitato e prima o
+102:13
+poi cade come d'altronde è capitato
+102:15
+pochi giorni fa per un satellite cinese
+102:17
+con ovviamente una serie di problemi non
+102:22
+solo nella migliore delle ipotesi cade
+102:24
+nella peggiore delle ipotesi si come un
+102:26
+sistema spento che non può cambiare la
+102:28
+sua orbita può andare
+102:30
+posso un altro satellite e una
+102:32
+collisione tra satelliti genera una
+102:35
+serie di frammenti tantissime che
+102:37
+prendono il nome di detriti spaziali che
+102:40
+a loro volta andranno sbattere contro
+102:43
+altri satelliti
+102:45
+sostanzialmente quindi creando danni a
+102:48
+cascata terribili il problema dei
+102:51
+detriti spaziali e uno dei problemi in
+102:54
+realtà maggiore che stiamo affrontando
+102:57
+da un punto di vista della tecnologia
+103:00
+proprio perché almeno in linea teorica
+103:03
+se prima o poi non li gestiamo si
+103:06
+arriverà al punto in cui l'accesso allo
+103:08
+spazio sarà precluso alla presenza di
+103:11
+troppe detritiche butteranno giù
+103:13
+qualunque cosa noi riusciamo a mettere
+103:16
+in orbita e quindi ovviamente dobbiamo
+103:18
+evitare di aggiungere di raggiungere
+103:21
+quelle situazioni e quindi
+103:25
+sostanzialmente si stanno studiando dei
+103:28
+sistemi di recupero di minimizzazione
+103:30
+del numero dei detriti
+103:35
+tra i vari studi vabbè palestra
+103:37
+interessata a concepire un piccolo
+103:41
+dispositivo in grado di collegarsi a un
+103:45
+satellite orbitante per aggiornare la
+103:49
+sua strumentazione quindi magari dotarlo
+103:52
+di nuovi sensori una nuova telecamera
+103:55
+oppure sostituire qualche sensore che si
+103:58
+era rotto ma al tempo stesso oltre
+104:03
+sensori poteva portare anche dei nuovi
+104:04
+attuatori
+104:06
+questo perché perché avete visto prima
+104:08
+che anche la piattaforma inerziale aveva
+104:10
+quattro reaction wheels perché 4 quando
+104:14
+ne bastano 3 quando una di quelle costa
+104:16
+decine di migliaia di euro
+104:18
+perché semplicemente io non posso
+104:20
+rischiare di perdere il satellite se mi
+104:22
+si rompe una sola rotella perché nel
+104:25
+momento in cui io non ho più la
+104:27
+possibilità di controllare l'assetto del
+104:29
+satellite in maniera arbitraria di fatto
+104:32
+il satellite non è più operativo
+104:34
+quindi io devo garantire che avrò sempre
+104:36
+almeno 33 action uil atti e di
+104:41
+conseguenza al minimo ne devo mandare
+104:43
+4 nello spazio ma in realtà spesso se ne
+104:46
+mandano 6 o addirittura 8 secondo
+104:49
+ovviamente del satellite in questione
+104:52
+di conseguenza la possibilità di
+104:55
+aggiungere reaction wheels a un
+104:58
+satellite che sta lì magari da vent'anni
+105:01
+è un qualcosa che ha ricadute economiche
+105:04
+e tra virgolette ecologiche molto
+105:07
+immediate e anche molto significative
+105:11
+c'è un problema però italiani non sono
+105:15
+stati pensati soprattutto quelli già nel
+105:17
+cielo per avere uno slot d'espansione
+105:19
+per permettere un altro satellite di
+105:21
+attaccarci si è quindi beh questo è una
+105:28
+sfida da un punto di vista meccanico si
+105:31
+risolve facendo un satellite che si
+105:33
+aggrappa ora lo fisicamente tramite una
+105:35
+gabbia tramite delle teens al satellite
+105:37
+ma da un punto di vista del controllo
+105:40
+non è così immediato perché perché nel
+105:44
+momento in cui io vado a connettere due
+105:46
+corpi io vado a modificare il momento
+105:49
+d'inerzia di entrambi quindi se il
+105:52
+satellite originario è ancora acceso per
+105:55
+quanto tendente al fine vita in qualche
+105:58
+modo devo dirgli guarda il con momento
+106:00
+diverso è cambiato perché adesso c'è
+106:03
+anche questa scatolina d'altra parte la
+106:07
+scatolina dovrebbe avere ottime
+106:09
+informazioni sul momento di inerzia del
+106:11
+satellite di base però questa te li do
+106:13
+sta lì da vent'anni
+106:15
+magari la sua inerzia non è quella che
+106:17
+credo che sia quindi ci dovrebbe essere
+106:20
+un sistema in grado anche di stimare
+106:23
+l'inerzia del satellite a cui mi sto
+106:25
+attaccando non è comunque qualcosa di
+106:28
+banale allora l'idea al quale era
+106:31
+sostanzialmente ipotizzando che il
+106:34
+satellite di base stia lavorando per
+106:37
+conto suo
+106:39
+voglio deplorare nella logica di
+106:41
+controllo del satellite ulteriore del
+106:44
+satellite nuovo una logica di controllo
+106:48
+in grado di cancellare l'effetto sulla
+106:52
+dinamica che la connessione di questo
+106:54
+nuovo corpo ha quindi
+106:57
+il satellite di base continua a
+106:59
+funzionare esattamente come se non ci
+107:01
+fosse perché perché gli attuatori del
+107:03
+satellite nuovo del no del sistema di
+107:07
+supporto cancellano il ratto gli effetti
+107:10
+che questa connessione a sull'abitato
+107:14
+dinamica di base e quindi di fatto
+107:17
+rendono trasparente la presenza del del
+107:20
+nuovo satellite piccolo e con la
+107:25
+linearizzazione con la feedback
+107:26
+linearizzazione questo tutto sommato era
+107:29
+fattibile in maniera relativamente
+107:32
+semplice perché di fatto si era in grado
+107:36
+di studiare i sistemi quasi come se
+107:38
+fossero lineari e quindi per il
+107:40
+principio di sovrapposizione degli
+107:42
+effetti che avete visto probabilmente no
+107:44
+senza probabilmente avete visto per la
+107:47
+gestione dei disturbi e quant'altro di
+107:52
+fatto era possibile disegnare i due
+107:55
+controllori in maniera sostanzialmente
+107:59
+separata e quindi questa legge di
+108:02
+controllo che compensava l'effetto sulla
+108:04
+dinamica era in grado effettivamente di
+108:08
+rimuovere da un punto di vista della
+108:11
+logica del primo controllore la presenza
+108:13
+del del sistema di supporto
+108:16
+qui vediamo vabbè il funzionamento del
+108:20
+sistema satellitare interconnesso
+108:24
+tramite due controllori uno è ancora una
+108:27
+volta non è un pc
+108:29
+l'altro è un l qr l qr è una legge di
+108:35
+controllo che si cambi controllo ottimo
+108:39
+anch'esso controllo che ottimizza un
+108:42
+obiettivo ottimizza un parametro di
+108:44
+funzionamento e la differenza è che
+108:48
+l'anpi si gestisce con stretti in
+108:51
+maniera esplicita mentre guerre non lo
+108:54
+fa
+108:54
+quindi l qr non non è non ha la stessa
+108:58
+flessibilità dell'anpi si è l qr
+109:03
+significa linear quadrati
+109:10
+regulator alla fine dei giochi la legge
+109:17
+che esce fuori dalla lpr è uguale meno
+109:19
+kx con il k però trovato tramite un
+109:23
+processo non non proprio immediato cioè
+109:26
+una forma chiusa che parte dalle matrici
+109:28
+abc e da due matrici che caratterizzano
+109:31
+poi la funzione obiettivo comunque
+109:33
+quello che vi interessa che è una legge
+109:35
+comunque un feedback dallo stato ok e di
+109:42
+conseguenza essendo così semplice non
+109:45
+non è in grado di gestire i vincoli e se
+109:47
+non gestisce i vincoli deve essere più
+109:49
+conservativa e quindi quello che vediamo
+109:52
+e che l'anpi si si comporta meglio
+109:55
+nell'ottimizzazione di un sistema
+109:57
+vincolato nel senso che lo stabilizza
+110:01
+prima quindi le guerre perché non con
+110:05
+gestisce i vincoli è costretto a essere
+110:08
+più conservativo meno aggressivo e
+110:11
+quindi meno efficaci e meno efficiente
+110:15
+un altro caso di studio scusate l'audio
+110:21
+è un altro caso di studio che potrebbe
+110:26
+essere interessante anche per una tesi
+110:28
+magistrale per voi è quello del rendez
+110:31
+vous satellitare che è legato ovviamente
+110:34
+al rendezvous significa incontro quindi
+110:38
+è legato alla tematica di prima perché
+110:41
+per connettere il satellite nuovo
+110:43
+sistema di supporto al satellite
+110:45
+orbitante devo fare in modo che i due
+110:47
+satelliti si tocchino
+110:48
+ovviamente si tocchino velocità 0 quando
+110:51
+si parla di rendez vous in ingegneria si
+110:53
+intende questo stessa posizione velocità
+110:56
+uguale quindi velocità relativa a zero
+110:59
+altrimenti non è uno scontro e sistema
+111:03
+di rendez vous satellitare è qualcosa di
+111:06
+relativamente diffuso perché per vari
+111:11
+motivi satelliti spesso hanno delle
+111:15
+connessioni basti pensare alla stazione
+111:18
+internazionale
+111:20
+voglio dire ci si porta addirittura le
+111:22
+persone con nello spazio col sistema di
+111:24
+rendez vous però il sistema di rendez
+111:27
+vous è un sistema che richiede una legge
+111:31
+di controllo disegnata tenendo in
+111:34
+considerazione le potenzialità di danni
+111:37
+che ci sono ovvero bisogna disegnare un
+111:41
+con sistema di controllo in modo tale
+111:44
+che sia garantita con una ragionevole
+111:46
+certezza la la sicurezza di questo
+111:50
+contatto di questo incontro perché
+111:52
+ovviamente un errore come vi dicevo può
+111:55
+costare milioni di danni o addirittura
+111:58
+delle ditte quindi è un sistema di
+112:01
+controllo molto critico
+112:03
+e vabbè qua nel video ecco qui è appena
+112:06
+accaduto il rendez vous i due satelliti
+112:09
+in questione si sono incontrate qui
+112:12
+state vedendo da un punto di vista del
+112:14
+satellite
+112:16
+sostanzialmente il problema si tratta
+112:18
+prima di trovare la stessa orbita i
+112:21
+satelliti devo andare sulla stessa
+112:23
+orbita dopo di che devono anche
+112:27
+per raggiungere lo stesso punto e vabbè
+112:32
+o volendo delle tesi aperte di questo
+112:37
+perché è una tematica sempre di
+112:38
+interesse per per tale quindi tra
+112:40
+qualche anno potrebbe interessare anche
+112:43
+voi
+112:45
+ultima tematica per quanto riguarda
+112:48
+l'aerospace uno schema di controllo
+112:50
+robusto con robusto vuol dire come vi ho
+112:53
+detto prima resistente alle incertezze
+112:56
+incertezze che in ambito satellitare
+112:58
+sono critiche perché come vi ho
+113:00
+anticipato il momento di inerzia del
+113:02
+satellite può essere ben diverso da
+113:05
+quello che nominalmente a terra perché
+113:08
+perché il satellite dal viaggio potrebbe
+113:12
+durante il viaggio potrebbe dire
+113:13
+deformarsi perché capite che lanciare un
+113:17
+corpo nello spazio non è quanto di più
+113:19
+soft offre all'industria
+113:23
+inoltre può perdere pezzi può ricevere
+113:27
+contatti con detriti consuma il proprio
+113:31
+carburante quindi di fatto il momento di
+113:33
+inerzia cambia anche in base alla
+113:35
+posizione del carburante e così via
+113:40
+oltre a il momento d'inerzia poi gli
+113:45
+attuatori non è detto che funzionino
+113:47
+esattamente come dovrebbero per gli
+113:49
+stessi motivi anche per l'usura quindi
+113:52
+di conseguenza
+113:53
+siccome io voglio che il satellite
+113:54
+funzioni per tanto tempo una volta che
+113:57
+nello spazio tutte le leggi di controllo
+114:00
+satellitare devono offrire delle
+114:02
+robustezza nei confronti di queste
+114:04
+tematiche qui principalmente momento di
+114:07
+inerzia e funzionamento degli attuatori
+114:10
+questo qui che vedete è un sistema di
+114:15
+controllo dell'assetto che utilizza un
+114:21
+osservatore asintotico dello stato però
+114:24
+non quello che avete visto voi lineare
+114:26
+quello che avete visto noi diciamo può
+114:30
+essere applicato solo ai ai sistemi
+114:34
+lineari ma un osservatore non lineare
+114:37
+che permette di ricostruire lo stato
+114:42
+anche per per queste club e per altre
+114:45
+classi di di sistemi non lineari in più
+114:49
+grazie alle sue non linearità riesce a
+114:53
+farlo di fatto in maniera robusta quindi
+114:56
+indipendentemente da
+114:58
+errori su un momento di inerzia o sul
+115:02
+funzionamento degli attuatori e
+115:06
+sostanzialmente qui vedete dei grafici
+115:09
+dove l'obiettivo era stabilizzare queste
+115:11
+tre linee portare questa qui a 1 questa
+115:14
+qui prende il nome di rappresentazione a
+115:16
+quater nyoni la vedrete probabilmente in
+115:19
+robotica e come vediamo l'obiettivo
+115:23
+veniva raggiunto sia nel caso nominale
+115:26
+quindi col sistema perfetto che in caso
+115:29
+di un guasto guasti generalizzati questa
+115:32
+rappresentazione grafica non è
+115:34
+particolarmente comunicativa e quindi vi
+115:37
+ho fatto questa animazione pure questo è
+115:40
+uscito quindi vi darò il riferimento
+115:42
+bibliografico e vabbè qui vediamo il
+115:45
+satellite
+115:47
+nuotare e mettersi nella sua posizione
+115:50
+diciamo equilibrio quindi la sua
+115:53
+posizione di riferimento ovviamente più
+115:57
+velocemente per il caso senza guasti un
+116:00
+pochino dopo per il caso con un guasto
+116:04
+quindi con un una reaction uil fuori uso
+116:08
+e leggermente dopo anche quando non c'è
+116:13
+solo una reazione uil fuori uso ma le
+116:15
+altre comunque non funzionano in maniera
+116:17
+ideale ma perdono perdono giri e quindi
+116:25
+vabbè sostanzialmente questo è un
+116:28
+esempio veramente spiegato in due parole
+116:30
+di un sistema in grado di resistere non
+116:35
+solo a errori di stima ma anche di di
+116:38
+guasti quindi offriamo anche delle
+116:41
+capacità di quelle che di capacità che
+116:45
+si chiamano fault tolerance quindi
+116:49
+resistenza ai guasti
+116:52
+no scusate che è successo no si è
+116:58
+bloccato
+117:01
+eccoci ok andando per quanto riguarda
+117:07
+andando spendere due parole per quanto
+117:10
+riguarda il controllo di rete
+117:12
+parliamo adesso delle reti di
+117:14
+telecomunicazioni le reti di
+117:16
+telecomunicazioni sono forse è uno dei
+117:19
+sistemi cyber fisici più complessi in
+117:22
+assoluto c'è chi dice che è quello
+117:24
+elettrico c'è chi dice che quello di
+117:25
+telecomunicazione comunque sono entrambi
+117:28
+dei sistemi complicatissimi cyber fisici
+117:32
+perché ci sono sia i cavi ovviamente che
+117:34
+canali radio quindi domini fisici che
+117:38
+ovviamente perde di tlc in particolare
+117:42
+domini domini informatici quindi i
+117:46
+domini cyber qual è un problema di
+117:49
+controllo che è stato affrontato insomma
+117:54
+dal nostro gruppo è quello legato al
+117:57
+service mapping che cos'è il service
+118:00
+mapping quando
+118:03
+si è diffuso il cloud il cloud computing
+118:07
+cloud storage e così via internet è
+118:12
+sicuramente voluto è cambiato
+118:14
+e i servizi offerti sono diventati
+118:20
+sempre più basati sul cloud
+118:22
+quando noi pensiamo a un servizio
+118:24
+pensiamo a un software che gira in
+118:26
+qualche computer beh in realtà questi
+118:30
+software
+118:31
+questo software è diviso in tanti moduli
+118:33
+in tante funzioni software e non è
+118:35
+assolutamente detto che queste funzioni
+118:38
+girino tutte sullo stesso computer
+118:40
+inoltre non è detto che girino tutte
+118:43
+nello stesso data center nello stesso
+118:45
+centro di calcolo perché perché magari
+118:48
+alcune richiedono dell'hardware che quel
+118:52
+centro non offre ad esempio per se
+118:54
+pensiamo al di più learning alcune
+118:58
+funzioni richiedono una scheda grafica
+119:00
+che ad esempio microsoft nei suoi data
+119:04
+center non offre e quindi devo
+119:06
+interagire con un data center di amazon
+119:08
+e così via
+119:10
+di conseguenza un servizio software può
+119:16
+essere spacchettato in tante funzioni
+119:19
+software che sono queste verme e queste
+119:22
+funzioni di software vanno poi mappate
+119:25
+ovvero assegnate in data center su cui
+119:30
+poi vengono diciamo fatte girare nei
+119:33
+computer offerti dal data center nelle
+119:35
+macchine virtuali che ci sono nel data
+119:38
+center il modo in cui distribuisco
+119:44
+queste funzioni sui data center quindi
+119:48
+l'assegnazione che faccio
+119:50
+siccome a un grado di decisione
+119:53
+ovviamente ha un grado di controllo
+119:55
+brutalmente io potrei decidere lo
+119:58
+assegno dove costa meno è una politica
+120:01
+però magari facendo così il di lei che
+120:04
+c'è di comunicazione è troppo elevato
+120:07
+quindi ci sono ancora una volta dei
+120:10
+vincoli da gestire perché queste
+120:13
+funzioni comunque hanno dei vincoli
+120:15
+sulla qualità del servizio che ci deve
+120:18
+essere tra le comunicazioni e le
+120:20
+interazioni che devono esserci tra i due
+120:22
+nodi verde
+120:24
+di conseguenza la logica di controllo
+120:27
+era relativamente complicata perché
+120:29
+doveva tenere in conto di gestire
+120:32
+centinaia se non migliaia di richieste
+120:35
+di servizi
+120:37
+allora perché ogni servizio che veniva
+120:41
+tirato su deve essere mappato sud data
+120:43
+center in cloud e in più ci sono tutta
+120:47
+una serie di vincoli specifici sui vari
+120:51
+servizi cloud in questione di
+120:55
+conseguenza quello che abbiamo disegnato
+120:57
+è un sistema di controllo che prendo il
+121:02
+long che fa parte della tecnologia
+121:05
+scusate qua impazzito
+121:07
+eccolo qui nella metodologia di
+121:09
+controllo model free ovvero sono sistemi
+121:12
+di controllo che non sfruttano un
+121:14
+modello differenziale del sistema e anzi
+121:20
+apprendono di fatto il sì di
+121:22
+funzionamento del sistema osservando
+121:24
+come funziona se volete questi qua
+121:28
+spesso vengono chiamati sistemi di
+121:31
+controllo basati su intelligenza
+121:32
+artificiale non sono troppo d'accordo
+121:35
+con questa definizione ma verremo a
+121:37
+perché tra qualche slide però
+121:41
+nell'ambito del controllo model free
+121:44
+la metodologia applicata è quella del
+121:47
+reinforcement learning quindi della rr
+121:51
+ovvero l'apprendimento con rinforzo e
+121:55
+che praticamente permette al controllore
+121:58
+di apprendere come controllare il
+122:00
+sistema come d'altronde fanno fanno i
+122:04
+bambini affanno di fatto tutti quanti
+122:07
+tutti quanti gli esseri viventi
+122:10
+provi una cosa vedi che succede questo
+122:14
+vedi che succede e disegnato è fatto in
+122:19
+modo tale che enel
+122:20
+lungo periodo quindi il sistema di
+122:23
+controllo che risulta da questa
+122:24
+procedura modo il free teen enforcement
+122:26
+learning è un sistema in grado di
+122:30
+operare il sistema controllato in
+122:35
+maniera ottima nel lungo periodo quindi
+122:38
+non è una scelta semplice che dice
+122:42
+allora dalla costa meno ma è allocca qui
+122:45
+perché nel lungo periodo risparmierai
+122:48
+del denaro
+122:51
+e vabbè lo studio che avevamo fatto era
+122:55
+ormai un bel po d'anni fa credo sei anni
+122:59
+fa qualcosa del genere era legato come
+123:01
+vi ho detto a queste questo problema del
+123:04
+service mapping e avevamo visto che
+123:08
+sostanzialmente si si riusciva a
+123:11
+risparmiare tramite il sistema rl una
+123:15
+quantità significativa di di denaro
+123:20
+servendo stato il termine in realtà va
+123:22
+beh non erano propriamente degli euro
+123:24
+però sostanzialmente ci si avvicinava
+123:26
+molto al controllo ottimo che quello
+123:29
+ideale perfetto che assume una
+123:32
+conoscenza completa del sistema di
+123:36
+conseguenza quello che vi deve rimanere
+123:38
+della rl applicato alle reti e che
+123:41
+quando mi trovo davanti a un sistema
+123:44
+troppo complesso per essere modellato
+123:47
+tramite una tecnica standard potrei
+123:50
+valutare l'ipotesi di utilizzare un
+123:53
+sistema modo il free perché riesco lo
+123:55
+stesso a controllare ogni una maniera
+123:57
+molto vicina all'ottimo all'ottimo che
+124:00
+ho ottenuto con una conoscenza reale
+124:02
+però una conoscenza completa però è
+124:07
+inoltre il model free è anche molto più
+124:11
+semplice da implementare
+124:14
+qual è lo svantaggio del controllo model
+124:16
+free è che c'è una fase di training una
+124:19
+frase di apprendimento quindi se da una
+124:23
+parte risparmio mi risparmio l'analisi
+124:25
+di un sistema che può essere molto
+124:27
+complessa
+124:28
+dall'altra devono mettere in conto che
+124:31
+il mio controllore deve imparare
+124:34
+per imparare ovviamente deve anche
+124:36
+sbagliare quindi ci deve essere una fase
+124:39
+in cui io posso permettere la mia
+124:41
+controllore di funzionare in maniera su
+124:43
+botti ma proprio perché sta ancora
+124:45
+rifinendo la sua logica di controllo o
+124:50
+un ampio si potrebbe un attimo
+124:52
+rispiegare l'esempio di prima sul
+124:54
+software spacchettato perché non ho ben
+124:56
+capito qual era il problema allora
+124:58
+facciamo finta che questo è un sistema
+125:02
+di riconoscimento immagine io devo
+125:05
+garantire di avere una funzione che è
+125:08
+legata all'analisi dell'immagine tramite
+125:12
+una rete neurale che quindi richiede ad
+125:15
+esempio una scheda grafica e in più devo
+125:19
+garantire non so l'interfaccia utente
+125:23
+quindi un altro software che non
+125:25
+richiede la scheda grafica
+125:26
+ora ovviamente una soluzione allocarvi
+125:29
+entrambi dello stesso data center
+125:32
+magari nella stessa macchina e finché
+125:34
+sono solo due sono così semplici sembra
+125:36
+ragionevole ma magari che ne so
+125:39
+l'interfaccia grafica richiedeva un
+125:41
+altro hardware che in questo data center
+125:43
+non ha oppure offre a un costo troppo
+125:47
+elevato per il mio budget di conseguenza
+125:51
+io posso decidere di mapparli su dei
+125:54
+data center diversi e quindi avere le
+125:58
+due funzioni connesse tra loro tramite
+126:01
+la rete internet la rete che c'è tra i
+126:04
+data center
+126:05
+questo però lo posso fare solo se la
+126:07
+connessione mi garantisce che i vincoli
+126:12
+grosso la qualità del servizio delle
+126:15
+connessioni vengono rispettate
+126:19
+ora a decidere questo lo mappa su un
+126:23
+data center piuttosto che su un altro
+126:25
+può essere un problema semplice se io
+126:28
+sto affrontando una singola allocazione
+126:31
+ma se io né affronto migliaia di seguito
+126:35
+decidere quale quale scelta
+126:38
+complessivamente quindi per tutte le
+126:41
+migliaia alla fine del giorno mi ha
+126:43
+portato a un risparmio maggiore non è
+126:46
+banale
+126:47
+che di fatto io potrei saturare questo
+126:49
+data center o tutte richieste che poi mi
+126:54
+implica che non posso locali in futuro
+126:57
+al 3ds qui sopra e magari questo data
+127:01
+center era l'unico che poteva
+127:02
+permettermi di soddisfare delle
+127:05
+richieste che mi arrivano in serata e
+127:08
+quindi in una singola allocazione io
+127:10
+dovrei di tener conto anche degli
+127:12
+effetti che o sulle erogazioni
+127:14
+successive nel complesso quindi non sto
+127:18
+risolvendo un'ottimizzazione ma nessun
+127:21
+risolvendo tutte insieme
+127:22
+migliaia in avanti e alcune non so
+127:26
+neanche se davvero e ci sono cioè perché
+127:28
+sono nel futuro quindi posso stimare che
+127:31
+più o meno a una cert'ora mi arrivano
+127:33
+delle richieste ma non non ho la
+127:38
+certezza di ciò quindi per farlo devo
+127:42
+sfruttare come dicevo della conoscenza
+127:44
+statistica sul futuro sul tipo di
+127:46
+richieste ma modellarla non è banale e
+127:50
+quindi da qui il problema di
+127:53
+apprendimento diciamo uno del free che
+127:56
+apprende statisticamente come arrivano
+127:59
+le richieste e statisticamente apprende
+128:04
+che è meglio tipicamente allocare questa
+128:06
+qui è questa qui quindi prof
+128:10
+di base c'era la rete di
+128:13
+telecomunicazioni già esiste e il
+128:15
+problema nasce su quella scienza
+128:17
+sull'assegnare determinati task ai nodi
+128:22
+della rete di esatto cioè service
+128:24
+mapping perché io mappo i servizi su
+128:28
+cosa sui data center che sono questi
+128:31
+blocchi rosa di sì che sono dei centri
+128:35
+di calcolo fisici cioè questo potrebbe
+128:37
+essere quello di amazon a francoforte
+128:39
+quello di amazon a milano e che ne so
+128:42
+questo qua
+128:43
+facendosi avuto microsoft a zurigo
+128:47
+quindi sostanzialmente dove allocare le
+128:51
+macchine virtuali dove gira poi il il
+128:54
+software queste da un'ottica di chi
+128:58
+offre di fatto il servizio di
+129:00
+virtualizzazione perché dall'ottica
+129:02
+dell'utente tutto sommato è uguale però
+129:06
+il capite che il gestore del servizio
+129:09
+siccome a prezzi ben di acosty ben
+129:11
+diverso il secondo di quale data center
+129:13
+utilizza è interessato a minimizzare nel
+129:16
+durante l'intera giornata tra virgolette
+129:19
+la tariffa che gli arriva da eide vari
+129:22
+cloud provider pure di questo vabbè
+129:26
+avete riferimenti se volete se volete
+129:28
+leggere qualcosa è un problema simile
+129:32
+sempre di gestione delle risorse legato
+129:35
+al 5 g
+129:36
+in particolare al 5 g satellitare è
+129:40
+quello della multi connettività cui
+129:42
+abbiamo un utente che si sta vedendo ad
+129:45
+esempio un video e questo video gli va
+129:49
+portato tramite dei delle connessioni
+129:52
+radio ora le connessioni e tipicamente
+129:55
+sono di terra possono essere il 4g ad
+129:59
+esempio però in un'ottica 5g si prevede
+130:02
+che ci potranno essere integrate anche
+130:04
+connessioni di altro tipo come ad
+130:06
+esempio connessioni che arrivano da
+130:07
+droni in d'alta quota
+130:10
+oppure addirittura dal satellite o da
+130:13
+varie antenne di terra tutte quante allo
+130:16
+stesso tempo questo prende il nome di
+130:19
+multi connettività perché interessante
+130:23
+beh perché se io in strada le mie
+130:25
+connessioni non su un singolo canale ma
+130:29
+su tanti ovviamente posso portare più
+130:34
+informazioni quindi non ho più un
+130:36
+problema di saturazione e in più posso
+130:40
+anche muovermi più velocemente perché se
+130:44
+sono coperto sia da questa antenna che
+130:46
+da questa antenna non c'è bisogno di
+130:48
+fare lo switch così brusco della
+130:50
+connessione da qui a qui quando sto ad
+130:53
+esempio sul treno
+130:55
+ed esco dalla copertura della prima
+130:59
+questa è una delle funzioni chiave del 5
+131:02
+g però porta con sé un problema di
+131:05
+controllo perché io devo scegliere come
+131:07
+instradare il flusso di dati sulle varie
+131:11
+sui vari canali che o aperti normalmente
+131:15
+adesso come funziona io mi aggancio
+131:17
+all'antenna che ho più vicina a quella
+131:20
+da cui dicevo più potenza di fatto però
+131:23
+millina di principio questa politica non
+131:25
+è detto per niente che sia ottima di
+131:28
+conseguenza la decisione di come
+131:31
+instradare le informazioni sui vari
+131:34
+canali è un problema di controllo basato
+131:39
+su feedback perché posso avere diciamo
+131:43
+delle performance delle connessioni
+131:45
+diverse
+131:47
+sui vari canali e indipendenti dalla
+131:50
+vicinanza con l'antenna magari
+131:52
+un'antenna stanno funzionando e non mi
+131:55
+garantisce una qualità di servizio
+131:56
+adeguata quindi preferisco ricevervi da
+131:59
+una che sta un po più lontano che però
+132:01
+mi fa vedere il video bene in 4k
+132:04
+l'instradamento di questi flussi
+132:07
+d'informazione prende il nome di
+132:09
+problema del routing e il controllo del
+132:11
+routing dinamico è un problema
+132:14
+studiatissimo che va beh noi abbiamo
+132:16
+affrontato in 5 g all star di cui va beh
+132:20
+potete trovare i riferimenti su su
+132:24
+internet però vi aggiungo qui sotto un
+132:27
+paio di articoli che potreste trovare
+132:29
+interessanti da leggere sedi se vi
+132:32
+interessa diciamo il controllo del
+132:33
+traffico di rete ovviamente sempre in
+132:38
+ottica 5g essendoci anche delle antenne
+132:41
+mobili su di droni di alta quota è bassa
+132:44
+quota
+132:45
+c'è anche il problema legato al
+132:47
+movimento di questi droni
+132:49
+quindi questo è un ulteriore grado di
+132:51
+controllo perché perché i droni si
+132:52
+muovono verso la posizione dove si
+132:56
+aspettano di avere un ritorno no sennò
+133:00
+non si muoverebbero e la logica verso il
+133:05
+movimento e anche questa volta una
+133:07
+logica di controllo quindi la rete 5g
+133:10
+ancor più delle reti intelligenti del
+133:14
+cosiddetto feature internet che ciò che
+133:17
+è nato
+133:19
+diciamo con la diffusione di internet
+133:22
+vera e propria saranno ancor di più
+133:28
+legate a logiche di controllo l'oggi di
+133:32
+automazione e si configureranno le reti
+133:35
+5 g sempre di più sulla base di feedback
+133:42
+veniamo ad esempio del medicale ne
+133:44
+vediamo solo uno il pancreas artificiale
+133:46
+pancreas artificiale un sistema che
+133:48
+regola
+133:50
+l'iniezione di insulina nel corpo dei
+133:54
+pazienti in basso abbiamo una foto
+133:57
+storica di un pancreas artificiale
+134:01
+mi sembra questo qui degli anni 80 uno
+134:05
+dei primi insomma che venne prodotto ed
+134:07
+è questo scatolo qui
+134:09
+oggigiorno è sostanzialmente delle
+134:11
+dimensioni di quello che era un lettore
+134:14
+mp3 e adesso va beh sarà uno smartwatch
+134:18
+o giù di lì che sostanzialmente
+134:22
+implementa una logica anche molto più
+134:24
+evoluta di quella che poteva essere qui
+134:27
+e inoltre permette di essere portatile
+134:29
+quindi permette una qualità della vita
+134:32
+molto elevato ai pazienti diabetici
+134:35
+perché è un dispositivo che praticamente
+134:37
+possono indossare con sostanzialmente
+134:41
+nessun problema
+134:42
+questo dispositivo non è nient'altro che
+134:45
+un sistema di controllo vero e proprio
+134:47
+perché regola il dosaggio insulinico
+134:50
+sulla base della lettura del tasso
+134:54
+glicemico contenuto nel sangue quindi ha
+134:57
+un sensore che è una sonda che si si
+135:01
+mette sulla pelle e ea un attuatore che
+135:05
+è una pompa insulinico o alcuni ci hanno
+135:08
+anche una pompa per il glucagone che è
+135:10
+l'opposto dell'insulina se vogliamo
+135:16
+chiara la domanda no ok sostanzialmente
+135:21
+ci sono tantissimi studi sul pancreas
+135:25
+artificiale
+135:26
+quello che abbiamo visto prima
+135:29
+scusate ci stanno delle registrazioni
+135:32
+audio vecchie
+135:34
+[Applauso]
+135:35
+vabbè comunque sostanzialmente
+135:39
+l'evoluzione di questo di questo sistema
+135:43
+di controllo è verso un dispositivo che
+135:47
+è in grado di adattarsi quindi un
+135:49
+sistema di controllo che si adatta all
+135:51
+utilizzatore in maniera personalizzata
+135:54
+ovvero il pancreas artificiale sta
+135:59
+diventando sempre di più un sistema di
+136:03
+controllo personale che impara da solo
+136:07
+le dinamiche di funzionamento del
+136:09
+singolo paziente e quindi è un sistema
+136:12
+che cresce col paziente è infatti
+136:15
+sostanzialmente si sta ipotizzando un
+136:20
+sistema di controllo che sia in grado di
+136:24
+seguire i pazienti diabetici fin da
+136:26
+quando sono bambini e crescere con loro
+136:29
+questo lo si ottiene combinando
+136:32
+controllo diciamo tradizionale controllo
+136:35
+stabilizzante perché alla fine può
+136:37
+essere un problema di stabilizzazione
+136:39
+del tasso glicemico attorno a un
+136:41
+reference con tematiche machine learning
+136:45
+tematiche di learning che permettono
+136:48
+l'identificazione delle caratteristiche
+136:50
+del paziente
+136:51
+da un punto di vista diciamo del
+136:54
+funzionamento della dinamica se vogliamo
+136:57
+dire in termini controlli sti c oppure
+137:00
+delle feature salienti del del paziente
+137:04
+se lo vogliamo dire più alla computer
+137:06
+science sostanzialmente alla fine dei
+137:09
+giochi che accade che i parametri che
+137:12
+regolano la logica del controllore che
+137:15
+potete immaginare essere i parametri
+137:17
+numerici all'interno delle funzioni di
+137:19
+trasferimento da fineco efficiente idee
+137:21
+dei poli the day the core i nomi che
+137:24
+stanno al numeratore denominatore
+137:26
+qualcosa di questo genere ovviamente più
+137:28
+complesso però per darvi un'idea
+137:30
+qualcosa di simile a quello questi
+137:33
+parametri possono essere modificati o
+137:36
+adattati il termine più corretto allo
+137:39
+specifico paziente per fare in modo che
+137:42
+funzioni meglio il controllore
+137:44
+tutto ciò in maniera automatica e quindi
+137:47
+intelligente e quindi questo prende il
+137:50
+nome di pancreas artificiale
+137:52
+intelligente
+137:54
+va bè questo schema non è niente di che
+137:56
+e veniamo
+138:02
+sì c'era un altro esempio nell'ambito
+138:03
+della della medicina
+138:05
+scusate meno dimenticato questo qui è un
+138:08
+sistema per la stima dell'andamento
+138:11
+delle popolazioni nelle cellule
+138:14
+staminali sostanzialmente le staminali
+138:16
+vengono coltivate in vitro e quindi
+138:21
+dentro dei vetrini e tramite un sistema
+138:25
+di computer vision possono essere
+138:28
+contate dentro un vetrino quindi si può
+138:31
+sapere quante celle circolante cellule
+138:33
+ci sono in maniera automatica e sulla
+138:36
+base di questo conteggio si può poi
+138:39
+stimare tramite metodologie dei
+138:43
+controlli che prendono il nome di
+138:44
+filtraggio il l'andamento del della
+138:49
+popolazione quindi si può stimare un
+138:51
+modello che ci descrive tra che ne so
+138:54
+tre giorni quante cellule ci saranno e
+138:57
+quindi se la cultura sarà pronta o meno
+138:59
+per essere impiantata e anche questa è
+139:03
+una combinazione di qualcosa che viene
+139:05
+dalla computer science la computer in
+139:07
+particolare dal mondo della visione con
+139:11
+metodologie propriamente dei controlli
+139:14
+ho visto degli studi anche che
+139:16
+utilizzano filtri di calma nei e cose di
+139:19
+questa natura
+139:21
+venendo scottate ok e molto bene
+139:29
+venendo per finire il seminario che
+139:32
+direi a durato abbastanza veniamo a
+139:34
+giusto a due esempi di burning
+139:38
+utilizzato nell'ambito dei controlli e
+139:42
+in particolare vediamo quello che è il
+139:45
+different force mente l'eternit ovvero
+139:48
+l'apprendimento con rinforzo rl che
+139:51
+abbiamo nominato prima supportato dalle
+139:54
+reti neurali di quindi dal di learning
+139:58
+ora il di per enforcement learning non è
+140:01
+nient'altro che uno schema di controllo
+140:03
+model free è esattamente come il di
+140:06
+palermo
+140:06
+quindi c'è chi dice che il di preformate
+140:10
+learning è l'intelligenza artificiale
+140:14
+io preferisco la definizione che
+140:17
+l'intelligenza artificiale è un insieme
+140:20
+di tecnologie per il controllo o il
+140:25
+funzionamento di un sistema in maniera
+140:27
+autonoma il di per enforcement and
+140:29
+learning è solo una metodologia perché
+140:31
+l'intelligenza artificiale si può
+140:34
+raggiungere anche senza per enforcement
+140:36
+and learning però alla fine dei giochi
+140:39
+il di fine forse un player ning è un
+140:42
+sistema di controllo modo il free qui lo
+140:45
+vediamo applicato a due processi un po
+140:49
+particolari che sono due videogiochi
+140:52
+però abbiamo dei sensori che sono quelli
+140:56
+visivi vediamo lo schermo degli
+140:58
+attuatori che sono i pulsanti di gioco
+141:01
+lo stato del sistema quale è lo strato
+141:04
+di gioco ovvero la posizione della
+141:06
+pallina o di pac man e quindi di fatto
+141:09
+questo qui non è nient'altro che uno uno
+141:14
+schema classico per quanto insomma
+141:16
+applicato a qualcosa di un pò
+141:17
+particolare questo che abbiamo messo qua
+141:21
+di videogiochi il primo esempio di
+141:24
+different force centre learning davvero
+141:25
+famoso che con l'algoritmo chiamato di
+141:29
+qn di ptuj network dopo questo algoritmo
+141:34
+del 2013
+141:37
+cambio slide
+141:43
+sono nati tantissimi altri algoritmi che
+141:46
+hanno permesso la pubblicazione del di
+141:50
+per sé fortmente learning anche in
+141:54
+scenari più tipicamente legati ai
+141:57
+controlli qui vediamo un problema che è
+142:01
+un classico del controllo ottimo che il
+142:04
+problema legato al portare che la
+142:06
+macchinina in cima alla montagna
+142:08
+consumando il meno possibile il
+142:10
+carburante
+142:12
+che praticamente è un problema alla base
+142:14
+di tutti i problemi in cui si vuole
+142:17
+ottimizzare il cargo dell'utilizzo del
+142:18
+carburante che al per esempio per
+142:20
+l'allunaggio è stato molto importante
+142:23
+qui vediamo un manipolatore robotico
+142:26
+spostare un oggetto verso un target
+142:29
+segnato in rosso
+142:31
+e qui sotto vediamo dei sistemi che
+142:33
+imparano a camminare e quindi va beh
+142:36
+possiamo dire legati alla meccanica o
+142:38
+anche alla robotica questi qui sono
+142:41
+esempi di un altro algoritmo chiamato di
+142:44
+bpg però vabbè voi questo interessa
+142:47
+relativamente poco e solo per dirvi che
+142:50
+il deep run force mentre learning è
+142:54
+arrivato a interfacciarsi con quelle che
+142:57
+sono le tematiche tipiche del mondo dei
+143:00
+controlli ma proprio perché non è
+143:02
+nient'altro che una metodologia di
+143:05
+controllo del model free un ex slide ok
+143:12
+questo è uno studio che che avevamo
+143:16
+fatto l'anno scorso sul controllo di un
+143:20
+pendolo sul carrello che vedrete a
+143:22
+modellistica sicuramente l'anno prossimo
+143:24
+non più non più con me vabbè ma con il
+143:27
+prossimo tutor che ci sarà comunque
+143:30
+l'obiettivo quale tenere bilanciato
+143:33
+questo questo pendolo sopra il carrello
+143:37
+muovendo il carrello ed evitare insomma
+143:40
+che pendolo cada
+143:42
+qual è la parte interessante di questo
+143:44
+schema di controllo che è basato su di
+143:46
+rafforzamento e learning quindi non
+143:49
+assume nessuna conoscenza sulla dinamica
+143:51
+del carrello ma in più abbiamo creato un
+143:55
+sistema in grado di gestire al tempo
+143:58
+stesso una serie di requisiti e gli
+144:02
+obiettivi più che dei requisiti qui ad
+144:06
+esempio vedete un sistema classico di
+144:09
+pre forza mente learning che è in grado
+144:13
+perché pub e fatemeh provare ok questo
+144:24
+è un sistema classico che è in grado di
+144:28
+bilanciare il pendolo minimizzando lo
+144:31
+sforzo di controllo questo è fatto con
+144:34
+il pd pg di base però se vedete che
+144:38
+accade il carrello alla fine cammina il
+144:41
+pendolo oscilla un po d'altronde suo
+144:43
+unico obiettivo era minimizzare non lo
+144:47
+sforzo di controllo
+144:50
+qui invece vedete
+144:55
+l'angolo resta molto limitato perché
+144:59
+questo agente sempre classico era stato
+145:02
+allenato per tenere l'angolo limitato
+145:04
+però utilizza tantissimo contro la forte
+145:07
+questo lo vediamo perché il carrello
+145:09
+vibra un po in più tende a muoversi
+145:13
+d'altronde questo qui aveva come
+145:15
+obiettivo solo il controllo della
+145:17
+posizione delle bell'angolo
+145:22
+quest'altro
+145:24
+eccolo qui
+145:26
+ha come obiettivo quello di ed eccoci
+145:32
+qua scusate non so perché parte questa
+145:34
+vecchia registrazione poi ve l'avevo
+145:36
+questo qui ha l'obiettivo di tenere la
+145:40
+posizione del carrello dentro bound e lo
+145:44
+fa ovviamente facendo oscillare il palo
+145:47
+facendo oscillare il pendolo molto e
+145:50
+sfruttando anche molto molto contro
+145:53
+report perché vedete fan bang bang in
+145:56
+successione di conseguenza diciamo
+146:00
+questi agenti sono molto bravi a fare un
+146:05
+loro singolo tasca ma falliscono negli
+146:08
+altri e questo è un po un limite che c'è
+146:11
+quando io utilizza un sistema moda e
+146:15
+free di base quello che avevamo proposto
+146:20
+invece è questo qui che è un sistema che
+146:26
+riesce a mettere insieme tutti e tre gli
+146:29
+agenti di base combinandoli in una
+146:32
+maniera intelligente in maniera
+146:34
+automatica e creando un sistema di
+146:37
+controllo innestato in cui il
+146:39
+controllore cambia switch tra i vari 3
+146:43
+che abbiamo visto prima a seconda dello
+146:45
+stato del del sistema e quindi alla fine
+146:48
+nel complesso riesce a tenere e
+146:52
+prenderlo bilanciato tenere la posizione
+146:54
+dove deve stare e minimizzare il contro
+146:57
+report nel complesso
+146:59
+insomma ottenendo tutti e tre gli
+147:02
+obiettivi con le percentuali che i sì
+147:04
+erano state imposte
+147:10
+ok vabbè se abbiamo messo un pochino più
+147:14
+del previsto quindi va bè questo credo
+147:20
+non funzioni credo sia legato alla
+147:21
+versione dell'anno scorso velo giorno
+147:24
+comunque penso che di spunti ne abbiamo
+147:28
+visti più che a sufficienza in questo
+147:30
+seminario e spero che più o meno sia
+147:34
+stato interessante e verosimilmente
+147:38
+vabbè tra giugno e luglio non so bene
+147:41
+professore che vi ha detto capiterà una
+147:44
+domanda che diciamo potrebbe trarre
+147:48
+spunto dal contenuto di questo seminario
+147:50
+ovviamente non è che sia obbligatorio
+147:52
+che parliate di una delle applicazioni
+147:55
+che abbiamo visto insieme
+147:58
+potete assolutamente descrivere
+148:02
+un'applicazione dell'automatica che
+148:04
+trovate interessante voi per cultura
+148:07
+vostra
+148:09
+comunque diciamo spiritualmente questo
+148:13
+seminario tipicamente chiudeva il corso
+148:17
+di controlli
+148:20
+noi però ci vediamo così si possa fare
+148:23
+in un mondo certo è più una curiosità
+148:26
+sulle energie pulite
+148:28
+certo volevo solo sapere quanto è
+148:31
+presente il automatica nel nucleare nel
+148:35
+nucleare sì beh il nucleare diciamo è
+148:39
+forse la fonte in cui c'è bisogno dei
+148:43
+sistemi di controllo più stringenti
+148:46
+perché è naturale che un minimo errore
+148:48
+in un set point nel minimo errore nel
+148:51
+controllare una variabile potrebbe avere
+148:54
+conseguenze catastrofiche
+148:58
+c'è una bellissima serie tv su chernobyl
+149:00
+in cui nel primo episodio si vede una
+149:04
+stanza piena di monitor con una serie di
+149:07
+segnali stampati ora quella stanza al ii
+149:12
+è una stanza che prende il nome di
+149:14
+stanza di controllo del sistema scada
+149:19
+dove scada sta per
+149:23
+oddio bell acronimo adesso mi sfugge
+149:26
+comunque è un sistema è uno schema di
+149:28
+controllo per gli impianti industriali e
+149:33
+le fabbriche le centrali e le centrali
+149:36
+elettriche qualunque impianto
+149:38
+industriale e controllato tramite un
+149:40
+sistema di controllo nell'architettura
+149:42
+scada questa stanza di controllo che io
+149:47
+adesso in mente quella di chernobyl
+149:49
+perché ha detto centri nucleari però un
+149:52
+qualunque film dove c'è una scena di
+149:55
+americani davanti a tutti questi monitor
+149:57
+non è nient'altro che una sala scada lì
+150:01
+dentro diciamo cioè l'interfaccia utente
+150:05
+che mostra i responsabili del sito
+150:08
+cosa stanno facendo tutti i sistemi di
+150:11
+controllo che ci sono
+150:13
+nell'impianto nell'impianto nucleare
+150:16
+ovviamente ce ne sono tantissimi sia
+150:18
+legati proprio al controllo del
+150:21
+materiale nucleare quindi tutta processo
+150:24
+di fusione che non sono per niente
+150:27
+banali racconterò la temperatura e
+150:30
+quant'altro sia quelli legati al
+150:33
+controllo dell'energia perché ovviamente
+150:36
+trasformata st energia termica in
+150:38
+energia elettrica
+150:40
+ovviamente quella va portata poi nella
+150:42
+rete quindi cioè tutta quanta la parte
+150:46
+legata anche al a portare poi l'energia
+150:50
+dove effettivamente verrà consumato
+150:53
+quindi alla connessione con la rete di
+150:56
+conseguenza mosele dire che insomma
+150:58
+nelle centrali nucleari cioè quanto di
+151:00
+più avanzato e in particolare lo stuxnet
+151:06
+e altri attacchi che ci sono stati
+151:11
+visto che l'ho nominato praticamente
+151:13
+sono molto avanzati molto
+151:16
+ingegneristicamente complessi perché
+151:18
+furono in grado di attaccare gli
+151:21
+attaccanti di mostrare ai controllori
+151:25
+umani e supervisori umani che
+151:27
+normalmente non fanno nient'altro che
+151:29
+controllare gli schermi che tutto vada
+151:31
+bene se c'è una situazione anomala
+151:33
+cambiare un controllo
+151:35
+vorrei cambiare un qualcosa secondo
+151:36
+delle procedure dimostrarono questi
+151:41
+operatori umani sul sugli schermi dello
+151:44
+ska da delle situazioni assolutamente
+151:45
+normali quindi durante la crisi nucleare
+151:49
+che insomma va bene scampata comunque
+151:52
+durante la crisi nucleare
+151:55
+sembrava tutto andare bene dal punto di
+151:57
+vista della supervisione umana
+151:59
+i controllori a loro volta erano
+152:01
+ingannati da questo finto stato che
+152:04
+veniva dato loro e quindi insomma si
+152:08
+rischiava di andare verso situazioni di
+152:10
+instabilità
+152:12
+poi i controllori sono nei piani
+152:16
+nucleari sono disegnati in modo tale da
+152:19
+funzionare per anni e anni anche senza
+152:20
+supervisione umana infatti insomma e con
+152:25
+cibi sono concepiti in modo tale che
+152:27
+anche in caso di catastrofe non è che il
+152:30
+giorno dopo smettono di funzionare
+152:33
+rilascino materiale ci saranno vari anni
+152:37
+di margine se però prendete una centrale
+152:40
+elettrica normale per esempio una
+152:42
+turbina a gas è lì gli operatori umani
+152:46
+devono intervenire su base oraria cioè
+152:48
+lì se non c'è nessuno a lavorare il
+152:51
+giorno dopo qualcosa succede e ad
+152:55
+esempio sempre danzando all'esperienza
+152:58
+fatta in a te è na li hanno il problema
+153:00
+del sabato dove li non si lavora ma al
+153:03
+punto che non girano i treni non
+153:05
+chiamano gli ascensori insomma è molto e
+153:08
+molto seria la cosa del sabato e hanno
+153:12
+il problema che nessuno e nelle centrale
+153:15
+con la turbina a gas
+153:16
+se non un operatore di religione diversa
+153:22
+che gli permette di lavorare di sabato
+153:23
+che sta lì solo in caso di emergenza fa
+153:26
+qualcosa perché paradossalmente non
+153:30
+possono non potrebbero neanche
+153:32
+utilizzare l'energia elettrica se questo
+153:35
+è stata creata col lavoro di qualcuno e
+153:38
+quindi che si sono inventati un sistema
+153:40
+che simula la presenza di un umano che
+153:43
+che mi fate un sistema di intelligenza
+153:45
+artificiale
+153:46
+se vogliamo che più o meno registra
+153:49
+quello che gli umani fanno risposto a
+153:51
+determinate situazioni e più o meno le
+153:53
+applica
+153:55
+implementa le procedure di emergenza da
+153:58
+solo in maniera sperabilmente vabbè
+154:01
+funziona quindi direi in maniera
+154:04
+intelligente però in teoria prendendo il
+154:08
+posto della supervisione umana con
+154:10
+responsabilità legali insomma tutto è
+154:13
+molto complicate ok se c'è qualche altra
+154:18
+domanda curiosità prova a rispondere se
+154:22
+no vabbè avendo finito il seminario
+154:25
+comunque una mezz'ora di esercizi la
+154:27
+vorrei fare perché mi ero preparato un
+154:29
+paio di esercizi che secondo me sono
+154:32
+importanti
+154:33
+ovviamente va beh adesso non so se avete
+154:36
+lezione dopo di me comunque se non
+154:39
+riusciamo a finire gli esercizi veri
+154:42
+carico con la soluzione ben spiegata
+154:45
+così che non avete problemi anche
+154:48
+all'esame poi se non l'ha capito e mi
+154:50
+potete mi potete ovviamente scrivere ci
+154:52
+organizziamo
+154:53
+quindi direi vabbè giusto il tempo di
+154:57
+riprendere il materiale facciamo un
+155:00
+dieci minuti di pausa e poi vediamo
+155:03
+vediamo al volo gli esercizi che avevo
+155:05
+preparato
+162:03
+ok allora proviamo a vedere gli esercizi
+162:10
+allora il primo che mi faccio è ispirato
+162:14
+a quello di giugno 2020
+162:17
+però è un po più difficile è perché ha
+162:23
+il calcolo analitico del margine di fase
+162:27
+quindi è ispirato a questo non è proprio
+162:29
+lo stesso comunque io ve lo me lo metto
+162:31
+nella versione che lo che lo svolgo io
+162:35
+allora consideriamo questo schema qui
+162:39
+classico abbiamo una gds da determinare
+162:45
+una pds che è il nostro processo e
+162:54
+dobbiamo determinare il controllore in
+162:57
+modo tale che siano rispettati tutti i
+163:07
+ha avuto valore del sistema complessivo
+163:19
+minori o uguali a meno uno spet a
+163:28
+margine di case
+163:30
+chiamiamola mf uguale a 60 gradi
+163:37
+allora toro dove ho scritto uno a grazie
+163:44
+ok allora di conseguenza qua si procede
+163:53
+per tentativi e quindi proviamo gds
+163:56
+ovviamente tutta la dimensione minima
+163:58
+come al solito
+163:59
+facciamolo quale ak e vediamo se
+164:02
+troviamo una soluzione allora con gds
+164:07
+quale k
+164:09
+la wds che non è nient'altro che mf dove
+164:15
+f la catena aperta
+164:17
+sarebbe nf più sfratto ndf più nf e
+164:23
+questo non dovrebbe sorprendere nessuno
+164:26
+con f uguale agip con jim quale k
+164:32
+sostanzialmente la effe viene k
+164:35
+fratto s meno uno ora siamo per il punto
+164:41
+alfa siamo interessati a questo
+164:45
+polinomio qui questo polinomio qui
+164:49
+eccolo le cui radici di fatto sono
+164:54
+uguali agli auto valori del sistema
+164:57
+complessivo perché sono i poli della
+164:59
+funzione di trasferimento e non c'è
+165:01
+nessuna perdita di osservabilità
+165:03
+raggiungibilità viene fuori che è uguale
+165:07
+a questo qui quindi df più nf partendo
+165:13
+da questo viene fuori che esse mela 1
+165:17
+più k quasi cancella male scusate ok
+165:26
+allora questo qui di fatto a un polo
+165:31
+solo perché esse a grado 1 quindi
+165:37
+sicuramente sarà reale perché non
+165:40
+possiamo avere una coppia di complessi
+165:42
+coniugati lo vogliamo minore di minor
+165:45
+uguale a meno 1 e quindi siccome s è
+165:49
+uguale a k meno no scusate 1 si meno kp
+165:56
+uno se lo poniamo a zero se studiamo la
+165:59
+radice
+166:00
+k meno 11 meno k deve essere minore
+166:07
+uguale di meno uno per alfa e questo
+166:15
+diciamo è la parte standard
+166:17
+dell'esercizio
+166:18
+dovreste aver visto in abbondanza col
+166:21
+prof
+166:22
+comunque viviano e k maggiore o uguale
+166:24
+di due veniamo a beta beta era margine
+166:31
+di fase uguale a 60 gradi e ci chiedeva
+166:37
+esplicitamente di calcolarla in maniera
+166:39
+analitica allora dobbiamo di fatto
+166:45
+quando ci sono gli esercizi dove
+166:47
+dobbiamo determinare il margine di case
+166:50
+uguale a qualcosa qual è la nostra
+166:52
+variabile di interesse è la pulsazione
+166:57
+di attraversamento per questioni di
+167:01
+nomenklatura che così è uguale alla
+167:03
+soluzione la chiamiamo omega t io voglio
+167:08
+trovare di conseguenza una soluzione del
+167:13
+seguente problema io voglio che la fase
+167:18
+facciamo siamo più grande e la più
+167:21
+chiaro la fase della mia funzione in gm
+167:28
+gatti mi porti a un margine di fase tale
+167:36
+per cui un margine di case uguale a 60
+167:39
+gradi
+167:40
+allora la mia funzionato nello aperto e
+167:44
+kb perché il controllore che stiamo
+167:49
+testando è uguale a k questa cosa qui
+167:53
+abbiamo detto essere uguale a k fratto è
+167:56
+se meno uno sempre in fase la fase di un
+168:02
+rapporto abbiamo visto essere la
+168:07
+sottrazione delle fasi
+168:10
+quindi per calcolare questa fase non
+168:20
+dobbiamo fare altro che fare la fase di
+168:22
+k meno qua al posto di s indico j o
+168:29
+negati la fase di j
+168:37
+omega ti meno uno
+168:40
+ok
+168:43
+ora calcoliamo il margine come cosa
+168:49
+significa imporre il margine di fase
+168:51
+uguale a 60 gradi
+168:53
+facciamola così allora studio del
+168:56
+margine di fas se il margine di fase 60
+169:01
+gradi
+169:01
+vuol dire che la distanza che c'è tra la
+169:04
+fase in questione che amiamo la effe e
+169:12
+meno 180 gradi deve essere 60 se vi
+169:17
+ricordate i diagrammi io mi portavo da
+169:22
+sopra la pulsazione e poi prendevo
+169:26
+questa distanza se questi sono meno 180
+169:29
+gradi come margine di fase è importante
+169:33
+il segno
+169:35
+ok io per questo vi ho detto che le
+169:39
+forme chiuse le formulette sono un po
+169:41
+difficile da applicare questo tipo di
+169:43
+esercizi perché spesso e volentieri di
+169:47
+sbagliato il segno
+169:49
+allora se è preso positivo così questo a
+169:53
+questo punto qui è f questo è meno 180
+169:58
+questo è il margine di fase la relazione
+170:01
+che io sto cercando e che f è uguale a
+170:04
+cosa meno 180 più il margine di fase
+170:10
+almeno 180 perché la base come se fosse
+170:14
+lo zero più perché sto salendo quindi
+170:17
+allo stesso segno di f se sa essere il
+170:20
+margine di fase che nel mio caso sono 60
+170:22
+gradi quindi in questo questo calcolo
+170:27
+questa è la relazione che sta cercando
+170:31
+se volete in praticamente tutti gli
+170:33
+esercizi quest'acqua anche la forma
+170:35
+chiusa però io tipicamente ragionano
+170:39
+così ogni volta melo ridisegno vedo che
+170:42
+la direzione della stessa quindi f sta
+170:45
+sopra 180 di quanto di margine di fase
+170:48
+da questo semplice ragionamento ogni
+170:51
+volta ricavo ricavo la formula
+170:55
+ora andando a caratterizzare con quello
+170:59
+che abbiamo scritto sopra
+171:01
+allora margine di fase è 60 quindi f di
+171:06
+fatto deve venire uguale a meno 120 però
+171:12
+che cos'è f nel nostro caso
+171:16
+l'abbiamo calcolata a qua sopra
+171:21
+e allora
+171:28
+questo è un numero reale quindi a fase
+171:35
+nulla reale positivo scusate perchè
+171:39
+abbiamo detto dal punto di prima che era
+171:42
+maggiore di due quindi a fase 0 ora la
+171:47
+fase di questo qui la fase di questo qui
+171:52
+[Musica]
+171:54
+si allora ovviamente dobbiamo fare parte
+171:59
+immaginaria fratto parte reale quello
+172:04
+che è un po scomodo visto che ci sarebbe
+172:08
+la taodue di mezzo e che non siamo in
+172:11
+forma di bode e se come consiglio si
+172:16
+risolve è praticamente uguale in questo
+172:18
+caso però come consiglio io vi consiglio
+172:21
+di mettervi in forma di bode e quindi ve
+172:25
+lo riscrivo un secondo e lo calcoliamo a
+172:30
+partire dalla forma di bore questo non
+172:33
+ci avevo pensato però allora di kp j
+172:37
+home e gatti se facciamo tramite la
+172:41
+forma di bode e viene leggermente più
+172:44
+semplice in generale perché quel che
+172:47
+viene k fratto forma di bordo è sempre
+172:51
+uno più qualcosa no in questo caso viene
+172:54
+sempre uno più s
+172:57
+però ho portato un meno fuori no non 1
+173:06
+ps scusate uno in meno es
+173:12
+perché ho portato un meno fuori
+173:16
+di conseguenza partendo dalla forma di
+173:21
+bot e vi permette di utilizzare
+173:23
+praticamente sempre a cannes
+173:26
+ho studiato in due senza sbagliarli
+173:30
+facendo così viene
+173:34
+al numeratore
+173:37
+meno k meno la frase di uno meno j o
+173:45
+negativo facendo così sostanzialmente
+173:50
+risiede risolto il problema di atam due
+173:52
+perché il primo termine questa volta è
+173:56
+un reale sempre ma negativo quindi ad
+173:59
+una fase di meno 180 gradi e il secondo
+174:05
+termine è parte immaginaria fatto parte
+174:10
+reale e quindi non è nient'altro che
+174:14
+atam di omega t
+174:25
+ok ora
+174:29
+questa cosa uguale abbiamo detto almeno
+174:34
+120 gradi quindi meno 180 più atam di
+174:39
+omega di uguale meno 120 gradi implica
+174:47
+nome gatti mantova a meno no 60 scusate
+174:56
+più 60
+175:01
+ovviamente scusate mi sono dimenticato
+175:03
+latam quindi a tan di omega ti 60 gradi
+175:06
+quindi nome gatti è uguale a tangente il
+175:12
+contrario di atam di 60 gradi e quindi
+175:17
+radice di tre sostanzialmente non ho
+175:25
+fatto niente altro che risolvere con
+175:26
+nathan home e gatti come incognita
+175:30
+ora quindi la condizione che ho tirato
+175:34
+fuori è che la postazione di
+175:37
+attraversamento dovrebbe essere come
+175:40
+gatti uguale 1,7 circa che era dice di
+175:46
+tre ora questa condizione ovviamente non
+175:53
+è direttamente impattante su i parametri
+175:57
+del controllore perché questa è una
+176:00
+condizione che ho tirato fuori su quello
+176:02
+che dovrebbe fare di fatto il diagramma
+176:03
+di bode e quindi la devo tradurre in
+176:06
+cosa significherebbe per i parametri del
+176:11
+controllore che significa avere una home
+176:14
+e gatti uguale a 1,7 beh o negati
+176:18
+partiamo da cos'era o negati era la
+176:21
+pulsazione di attraversamento la
+176:24
+votazione di attraversamento è la
+176:27
+pulsazione per cui il modulo che era che
+176:33
+è il modulo di questa quantità cioè che
+176:36
+il modulo della funzione di
+176:37
+attraversamento calcolato in home e
+176:39
+gatti è uguale a 1
+176:43
+quindi se al posto di omega ti ci vado a
+176:48
+mettere radice di tre quindi gela dice
+176:55
+di tre alla fine questo qui mi diventa
+177:02
+nient'altro che modulo di k
+177:06
+fratto modulo di j
+177:09
+komen no di gela dice di tre meno uno
+177:16
+deve essere uguale a 1
+177:21
+questo qua sotto e un numero il modulo
+177:25
+di questa quantità è quindi radice di
+177:28
+tre più uno quindi radi e quindi dice
+177:32
+dire vabbè lo faccio sto provando a fare
+177:36
+troppi passaggi
+177:37
+allora il modulo di questo qua sotto non
+177:40
+è nient'altro radice di parte
+177:42
+immaginaria al quadrato quindi radice di
+177:45
+tre al quadrato più parte reale al
+177:49
+quadrato
+177:49
+questa quantità qua sotto fa quattro
+177:53
+quindi radice di 4 a 2
+178:00
+e quindi esce fuori modulo di k uguale 2
+178:07
+e quindi k uguale due perché prima
+178:13
+avevamo trovato che doveva essere
+178:15
+maggiore o uguale a 2 e quindi possiamo
+178:19
+escludere meno due
+178:21
+allora per ripercorrere un attimo
+178:23
+l'esercizio
+178:26
+i punti chiavi quali sono margine di
+178:30
+fase è la distanza che c'è tra la fase e
+178:33
+meno a 180 quindi da qui tirate fuori
+178:37
+questa uguaglianza semplicemente andato
+178:42
+a valutare la fase della funzione di
+178:46
+trasferimento che avete che era k fratto
+178:50
+s meno uno mi pare si vi consiglio di
+178:54
+farlo in forma di botte per semplicità
+178:57
+ma non è obbligatorio se state attenti
+179:00
+ha dato in due
+179:02
+da qui trovate come gatti e poi
+179:05
+utilizzate i parametri del controllore
+179:07
+per forzare o mediati a essere il valore
+179:12
+che volete
+179:13
+quali sono i parametri del controllore
+179:15
+su cui dovete agire in linea di
+179:18
+principio potreste farlo su tanti però
+179:20
+per farvi venire l'esercizio senza il
+179:24
+calcolatore tipicamente in guadagno
+179:27
+perché modificando il guadagno voi
+179:29
+alzato abbassate il diagramma di bode e
+179:31
+e quindi avete un impatto diretto sulla
+179:35
+postazione di attraversamento ok quindi
+179:41
+questo esercizio per quanto fosse
+179:43
+relativamente semplice nelle specifiche
+179:48
+siccome c'ha il calcolo della fase ma
+179:51
+anche il calcolo del del modulo di fatto
+179:54
+è abbastanza completo e quindi uno di
+179:57
+quelli che avevo selezionato per per
+180:00
+farvelo vedere
+180:02
+facciamone un altro che era l'altro
+180:06
+importante che le avevo segnato sulla
+180:11
+piattaforma bene carico un altro ancora
+180:13
+che però è un pochino troppo complicato
+180:17
+diciamo non ne abbiamo più di esercizi
+180:19
+di quella complessità quindi è giusto
+180:21
+per verifica vostra e prendiamo con
+180:26
+riferimento allo stesso schema di prima
+180:28
+ma questo esercizio del marzo del 2006
+180:38
+sì allora prendiamo gds costante quindi
+180:45
+già assegnato ad una struttura e pds è
+180:49
+uguale a 1 fratto s per sp 1 ora
+181:00
+specifica alfa errore regime per rt
+181:08
+uguale ti minore di 0,5 beta margine di
+181:21
+frase maggiore o uguale a 30 gradi
+181:33
+ok allora la specifica alfa si impone 3
+181:42
+0
+181:44
+vabbè questo diciamo è la parte più
+181:47
+standard quindi il risultato viene fuori
+181:49
+che k deve essere maggiore o uguale di
+181:51
+due e questo sostanzialmente non non è
+181:59
+diciamo la parte della nostra quindi non
+182:01
+ci dedichiamo più di tanto tempo ora
+182:05
+andando a studiare i diagrammi di bode e
+182:10
+voglio fare un po di spazio che eccoci
+182:15
+qua non mi girava la pagina studiamo un
+182:19
+attimo diagrammi di bode e allora io
+182:25
+voglio che la fase non inferiore a 30
+182:29
+gradi
+182:34
+giusto si ok allora per quanto riguarda
+182:39
+il modulo
+182:43
+io ho un comportamento di questo tipo
+182:49
+fissiamo fissiamo un ko facciamo ko
+182:52
+uguale uno così possiamo vedere
+182:55
+qualitativamente come come si comporta
+182:59
+diciamo il diagramma di bore e quindi di
+183:02
+conseguenza come come si comportano
+183:05
+anche i margini
+183:09
+allora se questo è uno il primo punto di
+183:12
+rottura cielo su uno ma in questo caso
+183:15
+essendo k positivo dalla specifica di
+183:18
+prima possiamo anche lasciarlo incognito
+183:20
+cioè tanto non influenza i diagrammi
+183:24
+cambia l'altezza non cambia la forma
+183:29
+però cambia di fatto il valore guadagna
+183:35
+stati così esatto cioè il componente
+183:37
+guadagno statico che compare quindi il
+183:39
+intercetta che poi è quella che è legata
+183:42
+quanto di più al margine di fase
+183:45
+cambia quindi lo fissiamo per perché poi
+183:49
+è il parametro che utilizzeremo per
+183:52
+imporre una postazione di
+183:55
+attraversamento dove vogliamo noi come
+183:57
+abbiamo fatto prima d'altronde allora la
+184:05
+forma di secondo solo a noi giusto
+184:17
+giusto
+184:18
+no mi stavo confondendo con l'esercizio
+184:20
+successivo che ci aveva una riflessione
+184:22
+un attimo più profonda sui punti critici
+184:25
+allora ci avevamo un contributo di 1
+184:29
+fratto s veniamo nome
+184:31
+quindi la pendenza qua era meno 20 di b
+184:35
+dopodiché in uno si è quindi in uno fra
+184:39
+total che viene uno non avevamo un
+184:41
+contributo che si aggiungeva di altri
+184:43
+meno 20db vieni qua stavamo a meno 40 db
+184:46
+sempre per decade
+184:50
+ok dopo di che per quanto riguarda
+184:54
+l'andamento della fase avevamo una fase
+184:59
+che inizia da meno 90 gradi sempre
+185:02
+legata alla presenza del monomio
+185:08
+dopo di che scende 40 gradi per decade
+185:13
+quindi alla fine perde 90 ho fatto
+185:16
+troppo ripido e quindi non aiuta la mia
+185:25
+skill grafica diciamo se queste 10 ann
+185:31
+che è successo
+185:36
+eccolo qua un comportamento di di questa
+185:40
+natura con qualche perdiamo 45 gradi per
+185:44
+decade allora che succede al variare di
+185:49
+k per questo diciamo tipicamente vi
+185:53
+consiglio di se ti capita di fissarla
+185:57
+uno che il valore più semplice perché
+185:59
+modificando k modificate li intercetta
+186:04
+con un intercetto intendo di fatto la
+186:06
+pulsazione di attraversamento se vuoi
+186:09
+aumentate k di fatto il modulo lo state
+186:13
+alzando state alzando la curva del
+186:15
+modulo quindi di fatto viene uguale però
+186:19
+traslato verso l'alto
+186:21
+alternativamente state abbassando questa
+186:25
+linea perché perché quello che qua e
+186:29
+zero di b
+186:31
+di fatto questa in realtà è il modulo di
+186:33
+kdb e quindi che accade che se aumentate
+186:38
+k questo punto che è quello che vi
+186:42
+determina la pulsazione di
+186:43
+attraversamento va verso destra e questo
+186:49
+penso sia abbastanza intuitivo si vede
+186:51
+relativamente relativamente subito di
+186:57
+conseguenza se questo punto va verso
+186:59
+destra che cosa succede al margine di
+187:03
+fase allora se sta qui fermo che succede
+187:07
+immagina di fare questo sembra a destra
+187:11
+il margine di fase diventa questo poi
+187:14
+questo poi questo ovvero il margine di
+187:17
+fase diminuisce all'aumentare di k ok
+187:26
+sondato troppo veloce penso penso di no
+187:29
+mi sembra abbastanza intuitivo
+187:32
+allora vogliamo supponiamo di volere un
+187:35
+margine di fase esattamente di 30 gradi
+187:39
+come prima
+187:41
+che vuol dire margine di fase 30 gradi
+187:44
+che la fase di
+187:46
+scusa fi che la fase di kp dj o negati
+187:53
+colonna gatti che è la nostra variabile
+187:55
+che dipende da k deve essere uguale a
+187:59
+180 gr almeno 180 gradi più 30 gradi
+188:03
+perché ancora una volta perché meno 180
+188:07
+e la base più 30 gradi quanto fa fa la
+188:11
+mia fase di conseguenza
+188:17
+facendo esattamente gli stessi passaggi
+188:19
+di prima
+188:21
+in questo caso non c'è manco bisogno di
+188:22
+calcolare la forma di bode e vi esce
+188:27
+fuori che la omega chi non li faccio per
+188:31
+questioni di tempo ma sono veramente gli
+188:34
+stessi di prima viene ancora una volta
+188:37
+radice di tre e questo va beh non
+188:41
+dovrebbe essere sorprendente visto che è
+188:43
+sostanzialmente i termini in gioco sono
+188:48
+gli stessi
+188:50
+ora è vero che prima c'era il meno però
+188:54
+questo giro ci sta il monomio quindi
+188:57
+viene esattamente la stessa cosa
+189:00
+imporre questa condizione la dobbiamo
+189:04
+imporre nel modulo come prima
+189:08
+quindi questa volta il modulo k fratto
+189:12
+es
+189:13
+per la sp1 mi pare si
+189:20
+il modulo calcolato in esse uguale j
+189:23
+radice di tre deve essere uguale a 1
+189:30
+ancora una volta quindi quando lo dica
+189:32
+ha fratto allora il modulo di gera dice
+189:39
+di tre viene fuori radice di tre è
+189:43
+questo qua abbiamo visto prima fa 2 il
+189:45
+modulo ds più uno calcolato in genere di
+189:48
+cedere quindi viene k il modulo uguale 2
+189:58
+radice di tre sì come prima avevamo
+190:01
+visto che doveva essere più grande di d2
+190:06
+possiamo escludere la la soluzione
+190:10
+negativa e quindi e quindi va beh
+190:14
+esce fuori che che vale circa 3,4 il k
+190:18
+che soddisfa all'uguaglianza il immagine
+190:24
+di fase di 30 gradi
+190:27
+sono perso perché il termine monomio non
+190:30
+ho influenzato la fase nola influenzata
+190:35
+così come gatti
+190:40
+vabbè prova lo facciamo
+190:43
+facciamo così no non l'ha influenzata
+190:45
+perché ha un contributo uguale almeno
+190:47
+nell'altro caso allora dove l'ho scritta
+190:51
+eccola qua la mia calcoliamo l'ha visto
+190:54
+che ci abbiamo qualche minuto allora la
+190:58
+fase
+190:59
+di k fratto es
+191:03
+per sp1 è uguale alla fase di kappa che
+191:09
+0 meno la fase di j
+191:16
+omega t ovviamente questo era calcolato
+191:19
+in esso quale già o negati
+191:25
+quindi questa è una fase di un
+191:27
+immaginario con omega t positivo quindi
+191:31
+quante 90
+191:37
+ovvero 90 ah no allora scusa ma ho detto
+191:41
+un'imprecisione 90 e poi qua abbiamo
+191:46
+invece un'altra volta
+191:51
+meno la fase di sp1 non s magi come
+191:59
+gatti no aveva ragione lei c'è una
+192:01
+differenza effettivamente nel calcolo e
+192:06
+nome era un attimo confuso tra 1 prato s
+192:10
+è la presenza del meno ok
+192:13
+e vabbè da qui viene fuori
+192:19
+qua ci abbiamo quindi alla fine meno 90
+192:26
+meno latam di o negati
+192:37
+e quindi questa quantità doveva essere
+192:42
+uguale a meno 180 abbiamo detto sto giro
+192:51
+più 30 e quindi viene fuori portando il
+192:59
+90 di là questo fa a tan di omega ti
+193:08
+uguale 60 ovviamente sono tutti i gradi
+193:13
+ho fatto bene il calcolo questo modo si
+193:17
+no cambio di segno si è quindi vabbè
+193:20
+viene come gatti uguale radice di tre
+193:22
+come prima però vabbè effettivamente non
+193:25
+era così immediato come su due piedi mi
+193:27
+sembrava affatto bene a farmelo notare
+193:30
+ok quindi l'accordo
+193:33
+ultima cosa e noi abbiamo scelto proprio
+193:35
+30
+193:39
+abbiamo scelto 30 perché allora perché
+193:42
+questo va beh non lo vedete perché ve
+193:46
+l'ho letta un po troppo di fretta
+193:48
+comunque il problema che deve trovare i
+193:51
+kappa per cui sia soddisfatta la
+193:54
+condizione sull'errore quindi k maggiore
+193:56
+di due e il margine sia non inferiore a
+194:03
+30 gradi
+194:04
+quindi questo ci dà una condizione k
+194:07
+almeno questo poi siccome il margine di
+194:10
+fase scende voglio trovare il k più
+194:13
+grande no qual è il k più grande che
+194:15
+posso mettere è quello per cui vale 30
+194:18
+perché ancora più grande e non lo posso
+194:19
+prendere per cooper che il margine di
+194:21
+fase verrebbe meno di 30 quindi da qua
+194:26
+ho trovato che k al massimo vale due
+194:30
+volte radice di tre quindi alla fine chi
+194:33
+k che sono
+194:36
+no non così sono più grandi di due
+194:41
+mi ricordo se maggiore o uguale o
+194:43
+maggiore comunque più grandi di due e
+194:48
+più piccoli di due radice di tre sono
+194:51
+quelli per cui ci abbiamo la condizione
+194:53
+sull'errore che era maggiore o uguale di
+194:56
+due numeri e in modulo e sono anche tali
+195:02
+per cui il margine di fase viene più
+195:04
+piccolo di no che più picco viene più
+195:08
+grande di 30 gradi perché che ne so
+195:10
+potrebbe essere questo per dire e quindi
+195:13
+sono sostanzialmente quelli quelli e
+195:16
+diciamo diciamo qui in mezzo
+195:18
+ok perché al crescere sostanzialmente
+195:27
+chiaro che ha quindi abbiamo assimilato
+195:28
+i margini di guadagno
+195:30
+[Musica]
+195:32
+il margine di guadagno no perché quello
+195:37
+di guadagno ha visto che ci siamo
+195:40
+spostati più a destra possibile cerchio
+195:43
+che adesso possibile se casi la
+195:45
+pulsazione dell'attraversamento ok
+195:48
+abbiamo preso la pulsazione
+195:49
+dell'attraversamento più alta possibile
+195:51
+e abbiamo visto diciamo qual era il
+195:55
+valore della postazione
+195:56
+dell'attraversamento più alta possibile
+195:58
+quindi dobbiamo essere al massimo qui
+196:03
+da qui diciamo a sinistra però per la
+196:06
+condizione sull'errore mi devo fermare
+196:08
+verso i due verso k quale dunque che si
+196:15
+tratta si tradurrà insomma in un'altra
+196:18
+pulsazione di attraversamento
+196:25
+più o meno mi sono spiegato sisi boschi
+196:28
+ok ok diciamo questi erano i due
+196:33
+esercizi che ci tenevo a farvi vedere
+196:35
+come vedete sono relativamente simili
+196:38
+alla fine sono tutti quelli come
+196:40
+richiede il calcolo analitico il calcolo
+196:43
+analitico si fa sempre così vi mettete a
+196:46
+fare la fase della funzione in cui avete
+196:49
+ancora il parametro è il parametro è
+196:52
+sempre il k
+196:53
+altrimenti state sbagliando qualcosa nel
+196:55
+90 per cento dei casi e da qui svolgete
+197:02
+termine per termine
+197:04
+li trovate diciamo la formuletta per il
+197:08
+margine di fase oppure se volete usare
+197:10
+la forma chiusa la applicate quindi meno
+197:13
+180 più il margine di fase deve essere
+197:15
+uguale alla fase che ho
+197:17
+trovo l'omega t e poi trovo k per cui
+197:22
+l'omega ti sia quella e quindi vabbè
+197:26
+assolutamente tutto sommato standard
+197:32
+vi metto poi sul sito quale era questo
+197:35
+qui anche quello del rosso aprile 2006
+197:42
+sì quello dello 0 4 0 6 che che è simile
+197:50
+è la stessa identica cosa però c'è una
+197:54
+seccatura in più che è quella che i
+197:58
+valori di omega sono sono scelta quindi
+198:01
+non vi dice trovata e l'omega per cui la
+198:04
+fase vale questo ma mi da 5 omega vi
+198:08
+dice trovate quello in cui il margine di
+198:09
+fase il più alto e quindi dovete fare il
+198:12
+calcolo cinque volte tutto qui
+198:15
+che è un po tedioso e tutto sommato non
+198:17
+è che sia utile al fine di mostrare che
+198:20
+avete capito come si fa a l'esercizio e
+198:22
+quindi direi un tipo di esercizio che
+198:25
+non vi ritrovate ok
+198:28
+penso che insomma più o meno si sa tutto
+198:33
+e vabbè avete la mia mail se avete
+198:36
+bisogno di altri esercizi di qualche
+198:38
+chiarimento
+198:39
+mi spiace che questi li abbiamo fatti un
+198:41
+po di corsa però siamo fuori tempo
+198:43
+massimo
+198:44
+neanche di poco quindi vi ringrazio per
+198:46
+essere rimasti e vabbè creda quanto ne
+198:50
+so il corso è finito anche per parte del
+198:53
+professor e quindi va bene ci vediamo e
+198:56
+poi e probabilmente in una tele presenza
+198:59
+per gli esami se non ci sono domande
+199:05
+chiudere qua la lezione
+199:15
+ok va bene allora arrivederci a tutti e
+199:20
+buon proseguimento eder c

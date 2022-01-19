@@ -1,0 +1,25 @@
+1) FATTO
+
+2) NULL
+
+3) NULL
+
+4) Nell'analisi della complessità, utilizzando la notazione O(), si ignorano le costanti moltiplicative e additive perchè asintoticamente il costo dell'algoritmo O(n) per una n che tende asintoticamente a infinito, non viene influenzata minimamente da una costante moltiplicativa ne additiva. Questa approssimazione però non esprime adeguatamente il costo per dei valori piccoli di n, dove le costanti moltiplicative o additive avrebbero molta influenza sul risultato finale della O().
+
+5)Per calcolare la lunghezza della sottostringa più lunga all'interno del codice, bisogna mettere all'interno del codice:
+if(xi = xj)
+	L[i,j] = 1
+else
+	L[i,j] = 0
+
+6) FATTO
+
+7) 7.1) FATTO
+7.2)  E' una gramatica di tipo 2 dato che nella parte sinistra delle produzioni troviamo soltanto un terminale e nella parte destra abbiamo una stringa arbitraria di terminali e non, senza nessuna epsilon-produzione.
+7.3) Il linguaggio generato dalla grammatica è: L={a^x b^y c^z | x>=0, y>=0, z>=1}
+
+8) Una grammatica si chiama ambigua se esiste almeno una stringa x tale che ci siano due o più alberi di derivazione che portino allo stesso risultato.
+Nel nostro caso la grammatica è di tipo ambiguo perchè la stringa "abcc" può essere derivata da S->aSc, S-> bc S-> abcc  oppure S->aTc, T-> bc, S-> abcc. 
+
+9)
+S -> a | aS 

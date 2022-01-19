@@ -1,0 +1,43 @@
+ls			list directory contents, -la for the ditails
+cd [directory]		change the working directory
+cd .. 			to the previous directory
+cd			to main 
+find [name]		search for files in a directory hierarchy
+grep pattern [file]	search for patterns in each file
+cp [source] [dest]	copy files and directories
+mv [source] [dest]	move (rename) files 
+rm			remove file or directories
+mkdir			make directories 
+rmdir			remove empty directories
+man			an interface to the system reference manuals 
+cat			concatenate file(s) to standard output
+chmod			change file mode bits (add or remove permissions for the file)
+geany [name]		open geany editor
+gedit [name]		open gedit editor
+vim [name]		open vim editor
+gio open [name.xxx]	to open extension file (Es. pdf)
+echo [string]		repeat what you write, echo $[] per variabili d'ambiente
+[command] > [name]	write the output of the command in a file name	
+zip [-] [name] [files]	zip some files in a file name.zip (-r is to get all the sub directory, -e encrypt, -q quiet)
+unzip [name]		unzip a file or directory
+file [name]		ti dice che tipo di file è
+objdump [-] [name]	-d disassembla un file in assembly, -d [] -M intel per disassemblare in intel
+touch [name]		crea file [name]
+gdb [name]		-q disassembla il file
+id			vedere identificativo utente
+su [name]		cambiare utente
+sudo [comando]		eseguire comando come utente root
+perl -e ['programma']	esegue il programma scritto all'interno (print)
+$(perl -e ['programma']) 	//			//
+env 			visualizza tutte le variabili d’ambiente 
+export [var = nome]	crea una variabile d'ambiente
+for i in $([name])	ciclo for o for i in num
+	do
+	commands
+	done
+pwd			states your position
+adduser [name]		add a new user
+
+gdb
+gef
+peda
